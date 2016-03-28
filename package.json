@@ -1,0 +1,44 @@
+{
+  "name": "ningjs",
+  "version": "0.0.1",
+  "description": "The repository for the upcoming Nanjing Javascript Meetup",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --devtool eval --colors --content-base build --port 6060",
+    "dist": "webpack --config webpack.config.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsconfcn/ningjs.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Wiredcraft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsconfcn/ningjs/issues"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.1",
+    "eslint-plugin-react": "^3.11.1",
+    "babel-core": "^5.8.24",
+    "babel-loader": "^5.3.2",
+    "babel-eslint": "^5.0.0-beta6",
+    "css-loader": "^0.18.0",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.12.3",
+    "autoprefixer-loader": "^3.2.0",
+    "json-loader": "^0.5.4"
+  },
+  "dependencies": {
+    "d3": "^3.5.16",
+    "lodash": "^4.6.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "topojson": "^1.6.24"
+  },
+  "homepage": ""
+}
