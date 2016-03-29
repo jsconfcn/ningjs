@@ -2,8 +2,9 @@ const webpack = require('webpack')
 var I18nPlugin = require("i18n-webpack-plugin")
 var languages = {
     "en": null,
-    "ch": require("./ch.json")
+    "zh": require("./zh.json")
 }
+var bourbon = require('node-bourbon').includePaths;
 
 module.exports = Object.keys(languages).map(function(language) {
   return {
@@ -29,7 +30,7 @@ module.exports = Object.keys(languages).map(function(language) {
           loader: 'babel'
         }, {
           test: /\.scss$/,
-          loader: 'style!css!autoprefixer?browsers=last 2 version!sass'
+          loader: 'style!css!autoprefixer?browsers=last 2 version!sass?includePaths[]=' + bourbon
         }, {
           test: /\.css$/,
           loader: 'style!css!autoprefixer?browsers=last 2 version'

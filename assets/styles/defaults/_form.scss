@@ -1,0 +1,52 @@
+input[type=text],
+textarea {
+  outline: 0;
+  background: none;
+  height: $button;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  line-height: 20px;
+  @include font-size($larger);
+  font-weight: 700;
+  &.dark {
+    border-color: $purple;
+  }
+  &:focus {
+    border-color: $purple;
+    color: #fff;
+    background: none;
+  }
+}
+
+::-webkit-input-placeholder {
+  font-weight: normal;
+  @include font-size($smaller);
+  color: rgba(255, 255, 255, 0.4)
+}
+
+input:-moz-placeholder {
+  font-weight: normal;
+  @include font-size($smaller);
+  color: rgba(255, 255, 255, 0.4)
+}
+
+// .field {
+//   margin-bottom: $gutter/2;
+//   .description {
+//     color: $grey;
+//     display: block;
+//     @include font-size($small);
+//     margin-top: $gutter/4;
+//   }
+// }
+// label,
+// .label {
+//   @include font-size($smaller);
+//   display: block;
+//   margin: 0 0 $gutter/5;
+// }
+// .select {
+//   select {
+//     @include button($light, true);
+//     padding: $gutter/5 1.5*$gutter $gutter/5 $gutter/2;
+//   }
+// }

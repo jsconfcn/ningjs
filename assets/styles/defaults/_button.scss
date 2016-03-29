@@ -1,0 +1,28 @@
+.button {
+  border-radius: $radius;
+  border: 1px solid;
+  background: none;
+  font-weight: 700;
+  height: $button;
+  outline: 0;
+  text-transform: uppercase;
+  padding: 0 $gutter*1.5;
+  @include font-size($smaller);
+  @include transition(all $ease ease-in-out);
+  &.green {
+    color: $green;
+    border-color: $green;
+    &:hover {
+      background: $green;
+      color: $black;
+    }
+  }
+  &.purple {
+    color: $purple;
+    border-color: $purple;
+    &:hover {
+      background: $purple;
+      color: #fff;
+    }
+  }
+}

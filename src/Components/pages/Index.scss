@@ -1,0 +1,261 @@
+@import 'assets/styles/main';
+
+/* ------
+partials 
+------- */
+
+
+/* header */
+
+#header {
+  height: 65px;
+  position: absolute;
+  a {
+    color: #fff;
+    font-weight: normal;
+    line-height: 25px;
+    @include font-size($normal);
+    @include breakpoint(mobile) {
+      @include font-size($smaller);
+    }
+  }
+  .logo {
+    float: left;
+    font-size: 38px;
+    height: 65px;
+    line-height: 65px;
+    margin-right: $gutter*4;
+    @include breakpoint(mobile) {
+      margin-right: $gutter;
+      font-size: 20px;
+    }
+  }
+  nav {
+    float: left;
+    height: 65px;
+    padding: $gutter 0;
+    a {
+      margin-right: $gutter*1.5;
+      &:last-child {
+        margin-right: 0px;
+      }
+      @include breakpoint(mobile) {
+        margin-right: $gutter/3;
+      }
+    }
+  }
+  .lang {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 65px;
+    padding: $gutter 0;
+  }
+}
+
+
+/* subscribe */
+
+.subscribe {
+  label {
+    display: block;
+    margin-bottom: $gutter/2;
+    width: 100%;
+    font-weight: normal;
+    @include font-size($large - 4);
+    @include breakpoint(mobile) {
+      @include font-size($larger - 2);
+    }
+  }
+  input {
+    float: left;
+    margin-right: $gutter/2;
+    min-width: 246px;
+    width: 35%;
+    @include breakpoint(mobile) {
+      margin-bottom: $gutter/2;
+      width: 246px;
+    }
+  }
+  p {
+    @include font-size($smaller);
+    color: rgba(255, 255, 255, 0.4);
+    margin: $gutter 0 $gutter/5;
+  }
+}
+
+
+/* Footer */
+
+#footer {
+  $button: 40px;
+  background: $darkpurple;
+  color: #fff;
+  @include font-size($smaller);
+  padding: $gutter*2 0;
+  .left {
+    display: inline-block;
+    label {
+      @include font-size($normal);
+      margin: 0px;
+    }
+    p {
+      margin-top: 0px;
+    }
+    input,
+    button {
+      height: 40px;
+    }
+    .SNS {
+      margin-top: $gutter*1.5;
+      a {
+        margin-right: $gutter;
+      }
+    }
+  }
+  .right {
+    color: rgba(255, 255, 255, 0.4);
+    float: right;
+    @include breakpoint(mobile) {
+      float: none;
+    }
+  }
+  .bottom {
+    margin-top: $gutter;
+    width: 100%;
+    div {
+      float: right;
+      a {
+        margin-right: $gutter*1.5;
+        &:last-child {
+          margin: 0px;
+        }
+      }
+      @include breakpoint(mobile) {
+        float: none;
+      }
+    }
+  }
+}
+
+
+/* ------
+pages - index
+------- */
+
+
+/* hero */
+
+#hero {
+  background: $black;
+  color: #fff;
+  display: table;
+  height: 1000px;
+  position: relative;
+  width: 100%;
+  @include breakpoint(mobile) {
+    height: 700px;
+  }
+  /* masthead */
+  .masthead {
+    padding: 0 10%;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+
+/* call-for-proposals */
+
+#call-for-proposals {
+  background: $green;
+  width: 100%;
+  .col-2 {
+    box-sizing: border-box;
+    background: $purple;
+    color: #fff;
+    display: inline-block;
+    padding: 10%;
+    width: 50%;
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
+    &:last-child {
+      color: $purple;
+      background: $green;
+    }
+    h2 {
+      margin-bottom: $gutter/2;
+    }
+    p {
+      margin: 0 0 $gutter*1.5;
+    }
+  }
+}
+
+
+/* about-us */
+
+#about-us {
+  padding-top: $gutter*12;
+  padding-bottom: $gutter*12;
+  @include breakpoint(mobile) {
+    padding-top: $gutter*6;
+    padding-bottom: $gutter*6;
+  }
+}
+
+
+/* display */
+
+#display-list {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+  li {
+    display: inline-block;
+    position: relative;
+    height: 400px;
+    a {
+      left: 0px;
+      top: 0px;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #ccc;
+    }
+    &:nth-child(1) {
+      width: 40%;
+      height: 800px;
+      a {}
+    }
+    &:nth-child(2) {
+      height: 800px;
+      width: 35%;
+      a {
+        height: 400px;
+        background: #222;
+        &:last-child {
+          top: auto;
+          bottom: 0px;
+          background: #ddd;
+        }
+      }
+    }
+    &:nth-child(3) {
+      width: 25%;
+      height: 800px;
+      a {
+        background: #666;
+      }
+    }
+  }
+}
+
+
+/* Review */
+
+#review {
+  @extend #about-us;
+}

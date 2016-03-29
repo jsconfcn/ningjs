@@ -1,0 +1,69 @@
+input,
+textarea,
+select {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+input:not([type=submit]),
+textarea {
+  box-shadow: rgba(0, 0, 0, 0.08) 0 1px 0 0 inset;
+}
+
+input:not([type=submit]),
+textarea,
+.select select {
+  background: $light;
+  border: 1px solid $line;
+  border-radius: $radius;
+  padding: $gutter/5 $gutter/2;
+  @include transition-property(background, border);
+  @include transition-duration($ease);
+  &:hover {
+    border-color: shade($line, 20%);
+  }
+  &:active,
+  &:focus {
+    background: #FFF;
+    border-color: $blue;
+    outline: none;
+  }
+  &[disabled],
+  &[disabled=disabled],
+  &[disabled=true],
+  &[disabled],
+  &[readonly=true],
+  &[readonly=readonly],
+  &[readonly] {
+    border-color: $light;
+    &:active,
+    &:focus,
+    &:hover {
+      background: $light;
+      border-color: $light;
+    }
+  }
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  & > select {
+    @include appearance(none);
+    background: #FFF;
+    cursor: pointer;
+  }
+  &:after {
+    bottom: 0;
+    content: '▾';
+    cursor: pointer;
+    @include font-size($smaller);
+    line-height: 1;
+    pointer-events: none;
+    position: absolute;
+    right: $gutter/2;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
+}

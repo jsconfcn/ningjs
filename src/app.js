@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Index from 'Components/pages/Index'
 
-import Header from 'Components/Header'
-
-ReactDOM.render(<Header />, document.querySelector('#app'))
+ReactDOM.render(<Index />, document.querySelector('#app'))

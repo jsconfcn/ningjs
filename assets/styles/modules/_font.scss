@@ -1,0 +1,13 @@
+@mixin font-size($size: $normal) {
+  font-size: $size + px;
+  font-size: ($size/10) + rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: $normal + px; // Because of Chrome bug (see https://code.google.com/p/chromium/issues/detail?id=319623)
+  line-height: 140%;
+}

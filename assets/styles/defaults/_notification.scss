@@ -1,0 +1,59 @@
+.notification {
+  background: $light;
+  border-radius: $radius;
+  display: block;
+  margin-bottom: $gutter;
+  padding: $gutter/2 1.5*$gutter/2;
+  &.error,
+  &.info,
+  &.success,
+  &.undefined,
+  &.warning {
+    color: #FFF;
+  }
+  &.error {
+    background: tint($red, 80%);
+    color: $red;
+  }
+  &.info {
+    background: tint($blue, 80%);
+    color: $blue;
+  }
+  &.success {
+    background: tint($green, 80%);
+    color: $green;
+  }
+  &.undefined {
+    background: tint($purple, 80%);
+    color: $purple;
+  }
+  &.warning {
+    background: tint($orange, 80%);
+    color: $orange;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+  a {
+    color: inherit;
+    text-decoration: underline;
+    &:active,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .close {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    float: right;
+    opacity: 0.5;
+    padding: 0;
+    text-decoration: none;
+    @include transition-property(opacity);
+    @include transition-duration($ease);
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+$green: #19E69B;
+$purple: #5245A0;
+$darkpurple: #18142E;
+$button: 46px;
+$font: 'Proxima-Nova',
+Arial,
+'Hiragino Sans GB',
+'Microsoft YaHei',
+sans-serif;
+$width: 1600px;
+$small-width: 1280px;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $black;
+  font-family: $font;
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  line-height: 180%;
+  min-width: 320px;
+  position: relative;
+  @include font-size($normal);
+  -webkit-font-smoothing: antialiased;
+  @include breakpoint(mobile) {
+    @include font-size($smaller);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 140%;
+  margin: 0 0 $gutter;
+}
+
+h1 {
+  @include font-size($gigantic);
+  @include breakpoint(mobile) {
+    @include font-size($huge);
+  }
+}
+
+h2 {
+  @include font-size($huge);
+  @include breakpoint(mobile) {
+    @include font-size($large);
+  }
+}
+
+h3 {
+  font-weight: normal;
+  @include font-size($large - 2);
+  @include breakpoint(mobile) {
+    @include font-size($larger);
+  }
+}
+
+.container {
+  margin: 0 5%;
+  width: 90%;
+}
+
+.wrapper {
+  margin: 0 10%;
+  width: 80%
+}
+
+a {
+  cursor: pointer;
+  color: $green;
+  font-weight: normal;
+  @include font-size($smaller);
+  text-decoration: none;
+  &:hover {
+    //color: shade($gold, 10%);
+  }
+  &:active {
+    // color: $gold;
+  }
+  @include breakpoint(mobile) {
+    @include font-size($small);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.disabled {
+  pointer-events: none;
+}
