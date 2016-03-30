@@ -1,11 +1,36 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import 'styles/pages/index.scss'
 
 export default class Index extends Component {
+  constructor() {
+    super()
+    this._onWindowChange = this._onWindowChange.bind(this)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this._onWindowChange)
+    window.removeEventListener('scroll', this._onWindowChange)
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this._onWindowChange)
+    window.addEventListener('scroll', this._onWindowChange)
+  }
+
+  _onWindowChange() {
+    if (document.body.offsetWidth > 1024) {
+      const heroSectionHeight = document.querySelector('#hero').offsetHeight
+      if (document.body.scrollTop < heroSectionHeight - 65) {
+        this.refs.container.classList.remove('header-fixed')
+      } else {
+        this.refs.container.classList.add('header-fixed')
+      }
+    }
+  }
+
   render() {
     return (
-      <div>
+      <div ref='container'>
         {/* hero */}
         <section id='hero'>
           <div className='bg-container'>
