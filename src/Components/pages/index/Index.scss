@@ -49,6 +49,33 @@ partials
   }
 }
 
+#sub-header {
+  bottom: 65px;
+  line-height: 45px;
+  opacity: 0;
+  padding: 12.5px 0;
+  position: absolute;
+  visibility: hidden;
+  @include transition(all 0.2s ease-in-out);
+  .subscription {
+    display: inline-block;
+    input,
+    button {
+      height: 40px;
+    }
+    input {
+      width: 246px;
+    }
+  }
+  .SNS,
+  .lang {
+    float: right;
+  }
+  .lang {
+    color: #fff;
+  }
+}
+
 
 /* subscription */
 
@@ -57,9 +84,9 @@ partials
     display: block;
     margin-bottom: $gutter/2;
     width: 100%;
-    @include font-size($large - 4);
-    @include breakpoint(mobile) {
-      @include font-size($larger - 2);
+    @include font-size($larger - 2);
+    @include breakpoint(desktop) {
+      @include font-size($large - 4);
     }
   }
   input {
@@ -92,7 +119,6 @@ partials
     display: inline-block;
     label {
       line-height: 100%;
-      @include font-size($larger);
       margin: 0px;
     }
     p {
@@ -143,6 +169,33 @@ partials
 }
 
 
+/* interactions - header-fixed */
+
+.header-fixed {
+  #hero {
+    @include breakpoint(desktop) {
+      .bg {
+        position: fixed;
+        left: 0px;
+        top: -800px;
+        margin-top: 65px;
+        z-index: 10;
+      }
+    }
+    @include breakpoint(highres) {
+      .bg {
+        top: -900px;
+      }
+    }
+    #sub-header {
+      visibility: visible;
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+}
+
+
 /* ------
 pages - index
 ------- */
@@ -151,32 +204,53 @@ pages - index
 /* hero */
 
 #hero {
-  background: $black;
   color: #fff;
   display: table;
-  min-height: 800px;
+  height: 800px;
   position: relative;
   width: 100%;
   @include breakpoint(highres) {
-    min-height: 900px;
+    height: 900px;
   }
   @include breakpoint(mobile) {
-    min-height: 700px;
+    height: 700px;
   }
-  /* masthead */
-  .masthead {
-    padding: 0 10%;
-    display: table-cell;
-    vertical-align: middle;
+  .bg {
+    background: $black;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    height: 800px;
     width: 100%;
-    a {
-      @include font-size($smaller + 1);
+    @include breakpoint(highres) {
+      height: 900px;
     }
-    h1 {
-      margin-bottom: 0px;
+    @include breakpoint(mobile) {
+      height: 700px;
     }
-    h3 {
-      margin-bottom: $gutter*2;
+    .box {
+      height: 100%;
+      position: relative;
+      display: table;
+      width: 100%;
+      /* masthead */
+      .masthead {
+        padding: 0 8%;
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        a {
+          @include font-size($smaller + 1);
+        }
+        h1 {
+          color: #fff;
+          margin-bottom: 0px;
+        }
+        h4 {
+          color: #fff;
+          margin-bottom: $gutter*2;
+        }
+      }
     }
   }
 }
@@ -192,7 +266,7 @@ pages - index
     background: $purple;
     color: #fff;
     display: inline-block;
-    padding: 10%;
+    padding: 8%;
     width: 50%;
     @include breakpoint(mobile) {
       width: 100%;
@@ -200,8 +274,12 @@ pages - index
     &:last-child {
       color: $purple;
       background: $green;
+      h2 {
+        color: $purple;
+      }
     }
     h2 {
+      color: #fff;
       margin-bottom: $gutter/2;
     }
     p {
@@ -214,11 +292,170 @@ pages - index
 /* about-us */
 
 #about-us {
-  padding-top: $gutter*12;
-  padding-bottom: $gutter*12;
-  @include breakpoint(mobile) {
-    padding-top: $gutter*6;
-    padding-bottom: $gutter*6;
+  @extend #review;
+  ul {
+    list-style: none;
+    padding: 0px;
+  }
+  .left {
+    width: 80%;
+    ul.statistic {
+      margin-top: $gutter*4;
+      li {
+        background: #fff;
+        border-radius: $radius;
+        border: 1px solid $line;
+        display: inline-block;
+        padding: $gutter $gutter/4;
+        margin-right: 3%;
+        text-align: center;
+        width: 22.7%;
+        h1 {
+          line-height: 100%;
+          color: $green;
+          margin-bottom: 0;
+        }
+        span {
+          color: darken($grey, 20%);
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
+        @include breakpoint(mobile) {
+          margin-bottom: 12px;
+          width: 48%;
+          &:nth-child(even) {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+    .graph {
+      margin-top: $gutter*4;
+      ul {
+        li {
+          padding-top: 30px;
+          position: relative;
+          margin-bottom: $gutter*2.5;
+          width: 100%;
+          span {
+            line-height: 24px;
+            float: left;
+            &.year {
+              width: 50px;
+              @include font-size($normal);
+              @include breakpoint(desktop) {
+                width: 80px;
+                @include font-size($larger + 2);
+              }
+            }
+            &.title {
+              color: darken($dark, 5%);
+              left: 50px;
+              position: absolute;
+              top: 0px;
+              @include font-size($smaller + 1);
+              @include breakpoint(desktop) {
+                @include font-size($normal + 1);
+                left: 80px;
+              }
+            }
+            &.progress {
+              height: 24px;
+              margin-right: $gutter/2;
+              @include breakpoint(desktop) {
+                margin-right: $gutter;
+              }
+            }
+            &.number {
+              font-weight: bold;
+              width: 30px;
+              @include font-size($larger -2);
+              @include breakpoint(desktop) {
+                @include font-size($large - 2);
+                width: 50px;
+              }
+            }
+          }
+          &:nth-child(1) {
+            span {
+              &.progress {
+                background: lighten($green, 30%);
+                width: calc(45% - 90px);
+                @include breakpoint(desktop) {
+                  width: calc(35% - 150px);
+                }
+              }
+              &.number {
+                color: lighten($black, 30%);
+              }
+            }
+          }
+          &:nth-child(2) {
+            span {
+              &.progress {
+                background: lighten($green, 20%);
+                width: calc(65% - 90px);
+                @include breakpoint(desktop) {
+                  width: calc(50% - 150px);
+                }
+              }
+              &.number {
+                color: lighten($black, 20%);
+              }
+            }
+          }
+          &:nth-child(3) {
+            span {
+              &.progress {
+                background: lighten($green, 10%);
+                width: calc(75% - 90px);
+                @include breakpoint(desktop) {
+                  width: calc(70% - 150px);
+                }
+              }
+              &.number {
+                color: lighten($black, 10%);
+              }
+            }
+          }
+          &:nth-child(4) {
+            margin-bottom: $gutter*3.5;
+            span {
+              &.progress {
+                background: $green;
+                width: calc(90% - 90px);
+                @include breakpoint(desktop) {
+                  width: calc(90% - 150px);
+                }
+              }
+              &.number {
+                color: $black;
+              }
+            }
+          }
+          &:nth-child(5) {
+            border-top: 1px solid $line;
+            span {
+              color: $purple;
+              font-weight: bold;
+              &.title {
+                left: 0px;
+                margin-right: $gutter;
+                position: relative;
+              }
+              &.date {
+                font-weight: normal;
+              }
+              @include font-size($normal);
+              @include breakpoint(desktop) {
+                @include font-size($larger + 2);
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -273,5 +510,10 @@ pages - index
 /* Review */
 
 #review {
-  @extend #about-us;
+  padding-top: $gutter*12;
+  padding-bottom: $gutter*12;
+  @include breakpoint(mobile) {
+    padding-top: $gutter*6;
+    padding-bottom: $gutter*6;
+  }
 }
