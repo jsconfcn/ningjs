@@ -1,0 +1,122 @@
+/* header */
+
+#header {
+  box-sizing: border-box;
+  height: 65px;
+  position: absolute;
+  a {
+    color: #fff;
+    font-weight: normal;
+    line-height: 25px;
+  }
+  .logo {
+    float: left;
+    font-size: 38px;
+    height: 65px;
+    line-height: 65px;
+    margin-right: $gutter*4;
+    @include breakpoint(mobile) {
+      margin-right: $gutter;
+      font-size: 20px;
+    }
+  }
+  .nav {
+    float: right;
+    button {
+      border-radius: $radius;
+      background: #000;
+      color: #fff;
+      display: block;
+      margin: 12.5px 0;
+      height: 40px;
+      margin-left: $gutter;
+      width: 40px;
+    }
+    nav {
+      display: none;
+      top: $gutter*2.5 + 4;
+      border-radius: $radius;
+      background: rgba(0, 0, 0, 0.9);
+      height: auto;
+      left: 0px;
+      position: absolute;
+      width: 100%;
+      a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        float: left;
+        padding: $gutter/2 $gutter;
+        margin-right: $gutter*1.5;
+        width: 100%;
+        &:last-child {
+          margin-right: 0px;
+        }
+        &.active {
+          color: $green;
+        }
+      }
+    }
+    @include breakpoint(desktop) {
+      float: left;
+      button {
+        display: none;
+      }
+      nav {
+        background: none;
+        display: block;
+        top: 0;
+        position: relative;
+        padding: $gutter 0;
+        height: 65px;
+        float: none;
+        a {
+          border: 0;
+          width: auto;
+          padding: 0;
+          &.active {
+            border-bottom: 1px solid $green;
+          }
+        }
+      }
+    }
+    &.menu-open {
+      nav {
+        display: block;
+      }
+    }
+  }
+  .lang {
+    float: right;
+    // position: absolute;
+    // right: 0px;
+    // top: 0;
+    height: 65px;
+    padding: $gutter 0;
+  }
+}
+
+#sub-header {
+  bottom: 65px;
+  line-height: 45px;
+  opacity: 0;
+  padding: 12.5px 0;
+  position: absolute;
+  visibility: hidden;
+  @include transition(all 0.2s ease-in-out);
+  .subscription {
+    display: inline-block;
+    input,
+    button {
+      height: 40px;
+    }
+    input {
+      width: 246px;
+    }
+  }
+  .SNS,
+  .lang {
+    float: right;
+  }
+  .lang {
+    color: #fff;
+  }
+}

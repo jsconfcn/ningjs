@@ -22,5 +22,11 @@
 @import 'defaults/_button';
 @import 'defaults/_notification';
 
-/* page */
-@import 'pages/index';
+
+/* partials */
+@import 'partials/_footer';
+@import 'partials/_header';
+@import 'partials/_hero';
+@import 'partials/_interactions';
+@import 'partials/_SNS';
+@import 'partials/_subscription';

@@ -1,0 +1,67 @@
+
+/* Footer */
+
+#footer {
+  $button: 40px;
+  background: $darkpurple;
+  color: #fff;
+  padding: $gutter*2 0 $gutter*1.5;
+  .left {
+    display: inline-block;
+    label {
+      line-height: 100%;
+      margin: 0px;
+    }
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    input,
+    button {
+      height: 40px;
+    }
+    .SNS {
+      margin-top: $gutter*1.5;
+    }
+  }
+  .right {
+    color: rgba(255, 255, 255, 0.4);
+    float: right;
+    @include breakpoint(mobile) {
+      float: none;
+    }
+    .qrcode {
+      @include font-size($normal - 1);
+      margin: ($gutter - 5) auto 0;
+      width: 80px;
+      position: relative;
+      @include breakpoint(mobile) {
+        margin: ($gutter - 5) 0 0
+      }
+    }
+  }
+  .bottom {
+    display: inline-block;
+    @include font-size($smaller + 1);
+    margin-top: $gutter;
+    width: 100%;
+    div {
+      float: none;
+      a {
+        margin-right: $gutter*1.5;
+        &:last-child {
+          margin: 0px;
+        }
+      }
+      @include breakpoint(mobile) {
+        a {
+          float: left;
+          width: 100%;
+        }
+      }
+      @include breakpoint(desktop) {
+        float: right;
+      }
+    }
+  }
+}

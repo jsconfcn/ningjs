@@ -1,0 +1,25 @@
+/* interactions - header-fixed */
+
+.header-fixed {
+  #hero {
+    @include breakpoint(desktop) {
+      .bg {
+        position: fixed;
+        left: 0px;
+        top: -800px;
+        margin-top: 65px;
+        z-index: 10;
+      }
+    }
+    @include breakpoint(highres) {
+      .bg {
+        top: -900px;
+      }
+    }
+    #sub-header {
+      visibility: visible;
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+}

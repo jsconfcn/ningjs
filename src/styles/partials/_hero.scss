@@ -1,0 +1,53 @@
+/* hero */
+
+#hero {
+  color: #fff;
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+  @include breakpoint(highres) {
+    height: 900px;
+  }
+  @include breakpoint(mobile) {
+    height: 700px;
+  }
+  .bg {
+    background: $black;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    height: 800px;
+    width: 100%;
+    @include breakpoint(highres) {
+      height: 900px;
+    }
+    @include breakpoint(mobile) {
+      height: 700px;
+    }
+    .box {
+      height: 100%;
+      position: relative;
+      display: table;
+      width: 100%;
+      /* masthead */
+      .masthead {
+        padding: 0 8%;
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        a {
+          @include font-size($smaller + 1);
+        }
+        h1 {
+          color: #fff;
+          margin-bottom: 0px;
+        }
+        h4 {
+          color: #fff;
+          margin-bottom: $gutter*2;
+        }
+      }
+    }
+  }
+}

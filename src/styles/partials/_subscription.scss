@@ -1,0 +1,29 @@
+/* subscription */
+
+.subscription {
+  label {
+    display: block;
+    margin-bottom: $gutter/2;
+    width: 100%;
+    @include font-size($larger - 2);
+    @include breakpoint(desktop) {
+      @include font-size($large - 4);
+    }
+  }
+  input {
+    float: left;
+    margin-right: $gutter/2;
+    min-width: 246px;
+    width: 35%;
+    @include breakpoint(mobile) {
+      margin-bottom: $gutter/2;
+      width: 246px;
+    }
+  }
+  p {
+    @include font-size($smaller + 1);
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 100%;
+    margin: $gutter 0 0;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import 'styles/main.scss'
+import 'styles/pages/index.scss'
 
 export default class Index extends Component {
   render() {
