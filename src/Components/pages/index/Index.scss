@@ -14,10 +14,6 @@ partials
     color: #fff;
     font-weight: normal;
     line-height: 25px;
-    @include font-size($normal);
-    @include breakpoint(mobile) {
-      @include font-size($smaller);
-    }
   }
   .logo {
     float: left;
@@ -54,14 +50,13 @@ partials
 }
 
 
-/* subscribe */
+/* subscription */
 
-.subscribe {
+.subscription {
   label {
     display: block;
     margin-bottom: $gutter/2;
     width: 100%;
-    font-weight: normal;
     @include font-size($large - 4);
     @include breakpoint(mobile) {
       @include font-size($larger - 2);
@@ -78,9 +73,10 @@ partials
     }
   }
   p {
-    @include font-size($smaller);
+    @include font-size($smaller + 1);
     color: rgba(255, 255, 255, 0.4);
-    margin: $gutter 0 $gutter/5;
+    line-height: 100%;
+    margin: $gutter 0 0;
   }
 }
 
@@ -91,16 +87,17 @@ partials
   $button: 40px;
   background: $darkpurple;
   color: #fff;
-  @include font-size($smaller);
-  padding: $gutter*2 0;
+  padding: $gutter*2 0 $gutter*1.5;
   .left {
     display: inline-block;
     label {
-      @include font-size($normal);
+      line-height: 100%;
+      @include font-size($larger);
       margin: 0px;
     }
     p {
-      margin-top: 0px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     input,
     button {
@@ -108,9 +105,6 @@ partials
     }
     .SNS {
       margin-top: $gutter*1.5;
-      a {
-        margin-right: $gutter;
-      }
     }
   }
   .right {
@@ -121,6 +115,7 @@ partials
     }
   }
   .bottom {
+    @include font-size($smaller + 1);
     margin-top: $gutter;
     width: 100%;
     div {
@@ -139,6 +134,15 @@ partials
 }
 
 
+/* SNS */
+
+.SNS {
+  a {
+    margin-right: $gutter;
+  }
+}
+
+
 /* ------
 pages - index
 ------- */
@@ -150,11 +154,14 @@ pages - index
   background: $black;
   color: #fff;
   display: table;
-  height: 1000px;
+  min-height: 800px;
   position: relative;
   width: 100%;
+  @include breakpoint(highres) {
+    min-height: 900px;
+  }
   @include breakpoint(mobile) {
-    height: 700px;
+    min-height: 700px;
   }
   /* masthead */
   .masthead {
@@ -162,6 +169,15 @@ pages - index
     display: table-cell;
     vertical-align: middle;
     width: 100%;
+    a {
+      @include font-size($smaller + 1);
+    }
+    h1 {
+      margin-bottom: 0px;
+    }
+    h3 {
+      margin-bottom: $gutter*2;
+    }
   }
 }
 
@@ -210,6 +226,7 @@ pages - index
 /* display */
 
 #display-list {
+  height: 800px;
   padding: 0px;
   list-style: none;
   margin: 0px;
@@ -228,7 +245,6 @@ pages - index
     &:nth-child(1) {
       width: 40%;
       height: 800px;
-      a {}
     }
     &:nth-child(2) {
       height: 800px;

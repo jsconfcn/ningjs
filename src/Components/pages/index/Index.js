@@ -14,15 +14,16 @@ export default class Index extends Component {
             <nav>
               <a>{__('Call for Speakers')}</a>
               <a>{__('Call for Sponsors')}</a>
+              <a>{__('About Us')}</a>
             </nav>
-            <a href='chIndex.html' className='lang'>{__('中文')}</a>
+            <a href='/en/' className='lang'>{__('中文')}</a>
           </header>
 
           {/* masthead */}
           <div className='masthead'>
             <h1>JSconf China 2016</h1>
             <h3>2016.09.02 - 09.03 @NanJing</h3>
-            <div className='subscribe'>
+            <div className='subscription'>
               <label>{__('Stay Tuned')}</label>
               <input type='text' placeholder='Email Address' />
               <button className='button green'>{__('notify me')}</button>
@@ -63,7 +64,7 @@ export default class Index extends Component {
         {/* Review */}
         <section id='review' className='wrapper'>
         <h2>{__('ShenJs 2015 @ Shenzhen')}</h2>
-        <p>To see presentations from last year\'s ShenJS, please look at our past conference sites at jsconf.cn or check out the videos on YouTube or Tudou. </p>
+        <p>To see presentations from last year's ShenJS, please look at our past conference sites at jsconf.cn or check out the videos on YouTube or Tudou. </p>
         <a>{__('Take a look')}&gt;</a>
         </section>
 
@@ -71,12 +72,14 @@ export default class Index extends Component {
        <footer id='footer'>
         <div className='container'>
           <div className='left'>
-            <div className='subscribe'>
+            {/* Subscription */}
+            <div className='subscription'>
               <label>{__('Stay Tuned')}</label>
               <p>Be the first to hear about our offers and announcements.</p>
               <input type='text' placeholder='Email Address' />
               <button className='button green'>{__('notify me')}</button>
             </div>
+            {/* SNS */}
             <div className='SNS'>
               <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
               <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>

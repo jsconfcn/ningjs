@@ -18,15 +18,19 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
   font-weight: normal;
-  @include font-size($smaller);
-  color: rgba(255, 255, 255, 0.4)
+  @include font-size($normal);
 }
 
 input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.4);
   font-weight: normal;
-  @include font-size($smaller);
-  color: rgba(255, 255, 255, 0.4)
+  @include font-size($normal);
+}
+
+label {
+  font-weight: 700;
 }
 
 // .field {

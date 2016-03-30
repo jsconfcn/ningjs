@@ -7,7 +7,7 @@
   outline: 0;
   text-transform: uppercase;
   padding: 0 $gutter*1.5;
-  @include font-size($smaller);
+  @include font-size($smaller + 1);
   @include transition(all $ease ease-in-out);
   &.green {
     color: $green;
