@@ -8,28 +8,42 @@ export default class Index extends Component {
       <div>
         {/* hero */}
         <section id='hero'>
+          <div className='bg'>
+            <div className='box'>
+            {/* header */}
+            <header id='header' className='container'>
+              <a className='logo' href='/'>JSconfCN</a>
+              <nav>
+                <a>{__('Call for Speakers')}</a>
+                <a>{__('Call for Sponsors')}</a>
+                <a>{__('About Us')}</a>
+              </nav>
+              <a href='/en/' className='lang'>{__('中文')}</a>
+            </header>
+            <header id='sub-header' className='container'>
+              <a className='logo' href='/'>JSconfCN</a>
+              <a href='/en/' className='lang'>{__('中文')}</a>
+              {/* SNS */}
+              <div className='SNS'>
+                <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
+                <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>
+                <a className='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
+                <a className='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
+              </div>
+            </header>
 
-          {/* header */}
-          <header id='header' className='container'>
-            <a className='logo' href='/'>JSconfCN</a>
-            <nav>
-              <a>{__('Call for Speakers')}</a>
-              <a>{__('Call for Sponsors')}</a>
-              <a>{__('About Us')}</a>
-            </nav>
-            <a href='/en/' className='lang'>{__('中文')}</a>
-          </header>
-
-          {/* masthead */}
-          <div className='masthead'>
-            <h1>JSconf China 2016</h1>
-            <h3>2016.09.02 - 09.03 @NanJing</h3>
-            <div className='subscription'>
-              <label>{__('Stay Tuned')}</label>
-              <input type='text' placeholder='Email Address' />
-              <button className='button green'>{__('notify me')}</button>
-              <p>Interested in sponsorship opportunities at NingJSConf CN 2016?</p>
-              <a>{__('Sponsor now!')}</a>
+            {/* masthead */}
+            <div className='masthead'>
+              <h1>JSconf China 2016</h1>
+              <h4>2016.09.02 - 09.03 @NanJing</h4>
+              <div className='subscription'>
+                <label>{__('Stay Tuned')}</label>
+                <input type='text' placeholder='Email Address' />
+                <button className='button green'>{__('notify me')}</button>
+                <p>Interested in sponsorship opportunities at NingJSConf CN 2016?</p>
+                <a>{__('Sponsor now!')}</a>
+              </div>
+            </div>
             </div>
           </div>
 
@@ -51,8 +65,52 @@ export default class Index extends Component {
 
         {/* About us */}
         <section id='about-us' className='wrapper'>
-          <h2>{__('About Us')}</h2>
-          <p>Creativity can provide all that which is required to make your advertising an attractive and effective one. Getting your product endorsed with an increase in its popularity figure has become quite easy these days with the availability of several advertising mediums in market. Among them advertising blimps and balloons can bring your brand interesting visual advertising without much cost. They are capable to grab maximum attention of the audience, especially if the blimp is visually crafted and appealing to look from a great distance.</p>
+         <div className='left'>
+            <div className='intro'>
+            <h2>{__('About Us')}</h2>
+            <p>Creativity can provide all that which is required to make your advertising an attractive and effective one. Getting your product endorsed with an increase in its popularity figure has become quite easy these days with the availability of several advertising mediums in market. Among them advertising blimps and balloons can bring your brand interesting visual advertising without much cost. They are capable to grab maximum attention of the audience, especially if the blimp is visually crafted and appealing to look from a great distance.</p>
+            </div>
+            <ul className='statistic'>
+              <li><h1>5</h1><span>Year</span></li>
+              <li><h1>1730+</h1><span>Attendees</span></li>
+              <li><h1>80+</h1><span>Speakers</span></li>
+              <li><h1>40+</h1><span>Sponsors</span></li>
+            </ul>
+            <div className='graph'>
+              <h3>Attendees</h3>
+              <ul>
+                <li>
+                  <span className='year'>2012</span>
+                  <span className='title'>HuJS@Shanghai</span>
+                  <span className='progress'></span>
+                  <span className='number'>237</span>
+                </li>
+                <li>
+                  <span className='year'>2013</span>
+                  <span className='title'>HuJS@Shanghai</span>
+                  <span className='progress'></span>
+                  <span className='number'>318</span>
+                </li>
+                <li>
+                  <span className='year'>2014</span>
+                  <span className='title'>HuJS@Shanghai</span>
+                  <span className='progress'></span>
+                  <span className='number'>525</span>
+                </li>
+                <li>
+                  <span className='year'>2015</span>
+                  <span className='title'>HuJS@Shanghai</span>
+                  <span className='progress'></span>
+                  <span className='number'>650</span>
+                </li>
+                <li>
+                  <span className='year'>2016</span>
+                  <span className='title'>NingJS@NanJing</span>
+                  <span className='date'>09.02 - 09.03</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         {/* Display list */}

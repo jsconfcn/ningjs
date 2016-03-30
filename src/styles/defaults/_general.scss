@@ -1,3 +1,4 @@
+$dark: #777;
 $green: #19E69B;
 $purple: #5245A0;
 $darkpurple: #18142E;
@@ -12,17 +13,17 @@ sans-serif;
 }
 
 body {
-  color: $black;
+  color: $dark;
   font-family: $font;
   font-weight: normal;
   letter-spacing: 0.3px;
   line-height: 180%;
   min-width: 320px;
   position: relative;
-  @include font-size($normal + 1);
+  @include font-size($smaller + 1);
   -webkit-font-smoothing: antialiased;
-  @include breakpoint(mobile) {
-    @include font-size($smaller + 1);
+  @include breakpoint(desktop) {
+    @include font-size($normal + 1);
   }
 }
 
@@ -32,29 +33,37 @@ h3,
 h4,
 h5,
 h6 {
+  color: $black;
   line-height: 140%;
   margin: 0 0 $gutter;
 }
 
 h1 {
-  @include font-size($gigantic + 1);
-  @include breakpoint(mobile) {
-    @include font-size($huge + 1);
+  @include font-size($huge + 1);
+  @include breakpoint(desktop) {
+    @include font-size($gigantic + 1);
   }
 }
 
 h2 {
-  @include font-size($huge + 1);
-  @include breakpoint(mobile) {
-    @include font-size($large + 1);
+  @include font-size($large + 1);
+  @include breakpoint(desktop) {
+    @include font-size($huge + 1);
   }
 }
 
 h3 {
+  @include font-size($larger);
+  @include breakpoint(desktop) {
+    @include font-size($large - 2);
+  }
+}
+
+h4 {
   font-weight: normal;
-  @include font-size($large - 2);
-  @include breakpoint(mobile) {
-    @include font-size($larger);
+  @include font-size($larger);
+  @include breakpoint(desktop) {
+    @include font-size($large - 2);
   }
 }
 
@@ -62,6 +71,7 @@ h3 {
   margin: 0 4%;
   width: 92%;
 }
+
 .wrapper {
   margin: 0 8%;
   width: 84%
@@ -76,7 +86,7 @@ a {
     color: shade($green, 20%);
   }
   &:active {
-   color: $green;
+    color: $green;
   }
 }
 
