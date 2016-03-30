@@ -2,7 +2,7 @@
   "name": "ningjs",
   "version": "0.0.1",
   "description": "The repository for the upcoming Nanjing Javascript Meetup",
-  "main": "",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --devtool eval --colors --content-base build --port 6060",
@@ -43,5 +43,5 @@
     "react-dom": "^0.14.7",
     "topojson": "^1.6.24"
   },
-  "homepage": ""
+  "homepage": "https://github.com/jsconfcn/ningjs#readme"
 }

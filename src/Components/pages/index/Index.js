@@ -8,46 +8,47 @@ export default class Index extends Component {
       <div>
         {/* hero */}
         <section id='hero'>
-          <div className='bg'>
+          <div className='bg-container'>
             <div className='box'>
-            {/* header */}
-            <header id='header' className='container'>
-              <a className='logo' href='/'>JSconfCN</a>
-              <div className='nav'>
-              <button className='toggle-button'>三</button>
-              <nav>
-                <a>{__('Call for Speakers')}</a>
-                <a>{__('Call for Sponsors')}</a>
-                <a>{__('About Us')}</a>
-              </nav>
-              </div>
-              <a href='/en/' className='lang'>{__('中文')}</a>
-            </header>
-            <header id='sub-header' className='container'>
-              <a className='logo' href='/'>JSconfCN</a>
-              <a href='/en/' className='lang'>{__('中文')}</a>
-              {/* SNS */}
-              <div className='SNS'>
-                <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
-                <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>
-                <a className='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
-                <a className='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
-              </div>
-            </header>
+              {/* header */}
+              <header id='header' className='container'>
+                <a className='logo' href='/'>JSconfCN</a>
+                <div className='nav'>
+                <button className='toggle-button'>三</button>
+                <nav>
+                  <a>{__('Call for Speakers')}</a>
+                  <a>{__('Call for Sponsors')}</a>
+                  <a>{__('About Us')}</a>
+                </nav>
+                </div>
+                <a href='/en/' className='lang'>{__('中文')}</a>
+              </header>
+              <header id='sub-header' className='container'>
+                <a className='logo' href='/'>JSconfCN</a>
+                <a href='/en/' className='lang'>{__('中文')}</a>
+                {/* SNS */}
+                <div className='SNS'>
+                  <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
+                  <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>
+                  <a className='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
+                  <a className='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
+                </div>
+              </header>
 
-            {/* masthead */}
-            <div className='masthead'>
-              <h1>JSconf China 2016</h1>
-              <h4>2016.09.02 - 09.03 @NanJing</h4>
-              <div className='subscription'>
-                <label>{__('Stay Tuned')}</label>
-                <input type='text' placeholder='Email Address' />
-                <button className='button green'>{__('notify me')}</button>
-                <p>Interested in sponsorship opportunities at NingJSConf CN 2016?</p>
-                <a>{__('Sponsor now!')}</a>
+              {/* masthead */}
+              <div className='masthead'>
+                <h1>JSconf China 2016</h1>
+                <h4>2016.09.02 - 09.03 @NanJing</h4>
+                <div className='subscription'>
+                  <label>{__('Stay Tuned')}</label>
+                  <input type='text' placeholder='Email Address' />
+                  <button className='button green'>{__('notify me')}</button>
+                  <p>Interested in sponsorship opportunities at NingJSConf CN 2016?</p>
+                  <a>{__('Sponsor now!')}</a>
+                </div>
               </div>
             </div>
-            </div>
+            <div className='bg'></div>
           </div>
 
         </section>
@@ -84,25 +85,25 @@ export default class Index extends Component {
               <ul>
                 <li>
                   <span className='year'>2012</span>
-                  <span className='title'>HuJS@Shanghai</span>
+                  <span className='title'><a>HuJS@Shanghai</a></span>
                   <span className='progress'></span>
                   <span className='number'>237</span>
                 </li>
                 <li>
                   <span className='year'>2013</span>
-                  <span className='title'>HuJS@Shanghai</span>
+                  <span className='title'><a>JingJS@Beijing</a></span>
                   <span className='progress'></span>
                   <span className='number'>318</span>
                 </li>
                 <li>
                   <span className='year'>2014</span>
-                  <span className='title'>HuJS@Shanghai</span>
+                  <span className='title'><a>HangJS@Hangzhou</a></span>
                   <span className='progress'></span>
                   <span className='number'>525</span>
                 </li>
                 <li>
                   <span className='year'>2015</span>
-                  <span className='title'>HuJS@Shanghai</span>
+                  <span className='title'><a>ShenJS@Shenzhen</a></span>
                   <span className='progress'></span>
                   <span className='number'>650</span>
                 </li>

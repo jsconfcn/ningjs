@@ -3,7 +3,7 @@
 .header-fixed {
   #hero {
     @include breakpoint(desktop) {
-      .bg {
+      .bg-container {
         position: fixed;
         left: 0px;
         top: -800px;
@@ -12,7 +12,7 @@
       }
     }
     @include breakpoint(highres) {
-      .bg {
+      .bg-container {
         top: -900px;
       }
     }

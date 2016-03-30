@@ -1,0 +1,43 @@
+@import '../main';
+
+/* ------
+article
+------- */
+
+#hero {
+  height: 400px;
+  @include breakpoint(highres) {
+    height: 600px;
+  }
+  @include breakpoint(mobile) {
+    height: 300px;
+  }
+  .bg-container {
+    @extend #hero;
+    .box {
+      .masthead {
+        text-align: center;
+        h1 {
+          @include font-size($huge - 5);
+          @include breakpoint(desktop) {
+            @include font-size($gigantic - 5);
+          }
+        }
+        p {
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
+
+
+/* content */
+
+article {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  div.section {
+  	margin-bottom: $gutter*4;
+  }
+}

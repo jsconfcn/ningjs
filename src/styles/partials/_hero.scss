@@ -12,8 +12,8 @@
   @include breakpoint(mobile) {
     height: 700px;
   }
-  .bg {
-    background: $black;
+  .bg-container {
+    background: #000;
     left: 0px;
     position: absolute;
     top: 0px;
@@ -25,11 +25,26 @@
     @include breakpoint(mobile) {
       height: 700px;
     }
+    .bg {
+      opacity: 0.5;
+      background: url('/assets/images/bg-index.jpg') no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      left: 0px;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      z-index: 0;
+    }
     .box {
       height: 100%;
       position: relative;
       display: table;
       width: 100%;
+      z-index: 8;
       /* masthead */
       .masthead {
         padding: 0 8%;

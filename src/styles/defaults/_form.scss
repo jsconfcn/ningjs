@@ -1,5 +1,6 @@
 input[type=text],
 textarea {
+  box-shadow: none;
   outline: 0;
   background: none;
   height: $button;
@@ -31,6 +32,36 @@ input:-moz-placeholder {
 
 label {
   font-weight: 700;
+}
+
+form {
+  margin: 10% auto;
+  width: 60%;
+  .filed {
+    label {
+      display: inline-block;
+      width: 100%;
+      em {
+        color: $red;
+      }
+    }
+    input[type=text],
+    textarea {
+      color: $black;
+      background: #fff;
+      border-color: rgba(0, 0, 0, 0.2);
+      width: 100%;
+      &:focus {
+        border-color: $purple;
+      }
+    }
+    ::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.4);
+    }
+    input:-moz-placeholder {
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
 }
 
 // .field {

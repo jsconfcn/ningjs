@@ -8,7 +8,7 @@
   text-transform: uppercase;
   padding: 0 $gutter*1.5;
   @include font-size($smaller + 1);
-    @include transition(all 0.1s ease-in-out);
+  @include transition(all 0.1s ease-in-out);
   &.green {
     color: $green;
     border-color: $green;
@@ -23,6 +23,20 @@
     &:hover {
       background: $purple;
       color: #fff;
+    }
+  }
+}
+
+article {
+  .button {
+    &.green {
+      color: #fff;
+      background: $green;
+      border-color: $green;
+      &:hover {
+        background: none;
+        color: $green;
+      }
     }
   }
 }
