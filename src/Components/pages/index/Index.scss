@@ -8,6 +8,7 @@ partials
 /* header */
 
 #header {
+  box-sizing: border-box;
   height: 65px;
   position: absolute;
   a {
@@ -26,24 +27,75 @@ partials
       font-size: 20px;
     }
   }
-  nav {
-    float: left;
-    height: 65px;
-    padding: $gutter 0;
-    a {
-      margin-right: $gutter*1.5;
-      &:last-child {
-        margin-right: 0px;
+  .nav {
+    float: right;
+    button {
+      border-radius: $radius;
+      background: #000;
+      color: #fff;
+      display: block;
+      margin: 12.5px 0;
+      height: 40px;
+      margin-left: $gutter;
+      width: 40px;
+    }
+    nav {
+      display: none;
+      top: $gutter*2.5 + 4;
+      border-radius: $radius;
+      background: rgba(0, 0, 0, 0.9);
+      height: auto;
+      left: 0px;
+      position: absolute;
+      width: 100%;
+      a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        float: left;
+        padding: $gutter/2 $gutter;
+        margin-right: $gutter*1.5;
+        width: 100%;
+        &:last-child {
+          margin-right: 0px;
+        }
+        &.active {
+          color: $green;
+        }
       }
-      @include breakpoint(mobile) {
-        margin-right: $gutter/3;
+    }
+    @include breakpoint(desktop) {
+      float: left;
+      button {
+        display: none;
+      }
+      nav {
+        background: none;
+        display: block;
+        top: 0;
+        position: relative;
+        padding: $gutter 0;
+        height: 65px;
+        float: none;
+        a {
+          border: 0;
+          width: auto;
+          padding: 0;
+          &.active {
+            border-bottom: 1px solid $green;
+          }
+        }
+      }
+    }
+    &.menu-open {
+      nav {
+        display: block;
       }
     }
   }
   .lang {
-    position: absolute;
-    right: 0px;
-    top: 0;
+    float: right;
+    // position: absolute;
+    // right: 0px;
+    // top: 0;
     height: 65px;
     padding: $gutter 0;
   }
@@ -101,7 +153,7 @@ partials
   }
   p {
     @include font-size($smaller + 1);
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
     line-height: 100%;
     margin: $gutter 0 0;
   }
@@ -141,11 +193,12 @@ partials
     }
   }
   .bottom {
+    display: inline-block;
     @include font-size($smaller + 1);
     margin-top: $gutter;
     width: 100%;
     div {
-      float: right;
+      float: none;
       a {
         margin-right: $gutter*1.5;
         &:last-child {
@@ -153,7 +206,13 @@ partials
         }
       }
       @include breakpoint(mobile) {
-        float: none;
+        a {
+          float: left;
+          width: 100%;
+        }
+      }
+      @include breakpoint(desktop) {
+        float: right;
       }
     }
   }
@@ -266,8 +325,16 @@ pages - index
     background: $purple;
     color: #fff;
     display: inline-block;
-    padding: 8%;
+    padding: 11% 8%;
     width: 50%;
+    h2 {
+      color: #fff;
+      margin-bottom: $gutter/2;
+    }
+    p {
+      margin: 0 0 $gutter*1.5;
+      color: rgba(255, 255, 255, 0.6);
+    }
     @include breakpoint(mobile) {
       width: 100%;
     }
@@ -277,13 +344,9 @@ pages - index
       h2 {
         color: $purple;
       }
-    }
-    h2 {
-      color: #fff;
-      margin-bottom: $gutter/2;
-    }
-    p {
-      margin: 0 0 $gutter*1.5;
+      p {
+        color: $purple;
+      }
     }
   }
 }
@@ -298,7 +361,10 @@ pages - index
     padding: 0px;
   }
   .left {
-    width: 80%;
+    width: 70%;
+    @include breakpoint(mobile) {
+      width: 80%;
+    }
     ul.statistic {
       margin-top: $gutter*4;
       li {
@@ -510,10 +576,10 @@ pages - index
 /* Review */
 
 #review {
-  padding-top: $gutter*12;
-  padding-bottom: $gutter*12;
-  @include breakpoint(mobile) {
-    padding-top: $gutter*6;
-    padding-bottom: $gutter*6;
-  }
+  padding-top: 11%;
+  padding-bottom: 11%;
+  // @include breakpoint(mobile) {
+  //   padding-top: $gutter*6;
+  //   padding-bottom: $gutter*6;
+  // }
 }

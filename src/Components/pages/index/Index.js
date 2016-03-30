@@ -12,11 +12,14 @@ export default class Index extends Component {
             {/* header */}
             <header id='header' className='container'>
               <a className='logo' href='/'>JSconfCN</a>
+              <div className='nav'>
+              <button className='toggle-button'>三</button>
               <nav>
                 <a>{__('Call for Speakers')}</a>
                 <a>{__('Call for Sponsors')}</a>
                 <a>{__('About Us')}</a>
               </nav>
+              </div>
               <a href='/en/' className='lang'>{__('中文')}</a>
             </header>
             <header id='sub-header' className='container'>
