@@ -189,6 +189,15 @@ partials
     @include breakpoint(mobile) {
       float: none;
     }
+    .qrcode {
+      @include font-size($normal - 1);
+      margin: ($gutter - 5) auto 0;
+      width: 80px;
+      position: relative;
+      @include breakpoint(mobile) {
+        margin: ($gutter - 5) 0 0
+      }
+    }
   }
   .bottom {
     display: inline-block;
@@ -576,8 +585,4 @@ pages - index
 #review {
   padding-top: 11%;
   padding-bottom: 11%;
-  // @include breakpoint(mobile) {
-  //   padding-top: $gutter*6;
-  //   padding-bottom: $gutter*6;
-  // }
 }

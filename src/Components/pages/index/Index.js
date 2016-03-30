@@ -152,8 +152,7 @@ export default class Index extends Component {
           <div className='right'>
             <span>Follow us on WeChat</span>
             <div className='qrcode'>
-              <img src='./assets/images/qrcode.jpg' className='img' width='50' />
-              <img src='./assets/images/qrcode.jpg' className='tooltip' />
+              <img src='./assets/images/qrcode.jpg' className='img' width='80' />
             </div>
           </div>
           <div className='bottom'>
