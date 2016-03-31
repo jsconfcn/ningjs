@@ -13,11 +13,11 @@
   input {
     float: left;
     margin-right: $gutter/2;
-    min-width: 246px;
+    min-width: 270px;
     width: 35%;
     @include breakpoint(mobile) {
       margin-bottom: $gutter/2;
-      width: 246px;
+      width: 270px;
     }
   }
   p {

@@ -37,7 +37,7 @@ export default class Index extends Component {
             <div className='box'>
               {/* header */}
               <header id='header' className='container'>
-                <a className='logo' href='/'>JSconfCN</a>
+                <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
                 <div className='nav'>
                 <button className='toggle-button'>三</button>
                 <nav>
@@ -49,7 +49,7 @@ export default class Index extends Component {
                 <a href='/en/' className='lang'>{__('中文')}</a>
               </header>
               <header id='sub-header' className='container'>
-                <a className='logo' href='/'>JSconfCN</a>
+                <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
                 <a href='/en/' className='lang'>{__('中文')}</a>
                 {/* SNS */}
                 <div className='SNS'>
@@ -80,16 +80,18 @@ export default class Index extends Component {
 
         {/* Call for proposals */}
         <section id='call-for-proposals'>
-          <div className='col-2'>
+          <a className='col-2'>
             <h2>{__('Call for Speakers')}</h2>
             <p>Proposals are being accepted for the JS Conference China 2016 from now until Sep 01, 2016.</p>
-            <button className='button green'>submit</button>
-          </div>
-          <div className='col-2'>
+            <button className='button green'>apply</button>
+            <div className='bg'></div>
+          </a>
+          <a className='col-2'>
             <h2>{__('Call for Sponsors')}</h2>
             <p>Get out all the ads you ran last year. Go ahead. Tear them out of your magazines or newspapers.</p>
             <button className='button purple'>sponsor</button>
-          </div>
+            <div className='bg'></div>
+          </a>
         </section>
 
         {/* About us */}
@@ -140,6 +142,7 @@ export default class Index extends Component {
               </ul>
             </div>
           </div>
+          <img src='./assets/images/map.jpg' className='map' />
         </section>
 
         {/* Display list */}
@@ -150,10 +153,12 @@ export default class Index extends Component {
         </ul>
 
         {/* Review */}
-        <section id='review' className='wrapper'>
-        <h2>{__('ShenJs 2015 @ Shenzhen')}</h2>
-        <p>To see presentations from last year's ShenJS, please look at our past conference sites at jsconf.cn or check out the videos on YouTube or Tudou. </p>
-        <a>{__('Take a look')}&gt;</a>
+        <section id='review'>
+          <div className='wrapper'>
+            <h2>{__('ShenJs 2015 @ Shenzhen')}</h2>
+            <p>To see presentations from last year's ShenJS, please look at our past conference sites at jsconf.cn or check out the videos on YouTube or Tudou. </p>
+            <a>{__('Take a look')}&gt;</a>
+          </div>
         </section>
 
        {/* Footer */}

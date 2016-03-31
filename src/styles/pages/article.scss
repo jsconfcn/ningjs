@@ -7,7 +7,7 @@ article
 #hero {
   height: 400px;
   @include breakpoint(highres) {
-    height: 600px;
+    height: 500px;
   }
   @include breakpoint(mobile) {
     height: 300px;
@@ -39,5 +39,13 @@ article {
   padding-bottom: 7%;
   div.section {
   	margin-bottom: $gutter*4;
+    h2 {
+      text-align: center;
+    }
+    .action {
+      margin-top: $gutter*2;
+      text-align: center;
+      width: 100%;
+    }
   }
 }

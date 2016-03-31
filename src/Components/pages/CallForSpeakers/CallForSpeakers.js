@@ -57,7 +57,7 @@ export default class Index extends Component {
            <p>Catch a glimpse of what we are interested in hearing about, here is the program for the past years (2012, 2013, 2014, 2015). We have videos from 2015 ShenJS available on YouTube and Tudou. </p>
            <h4>We encourage presentations of all levels and are happy to provide you support. </h4>
            <p>Is this your first time speaking? Want some feedback before submitting your proposal? Get in touch with the event organizer at <a href="mailto:coco@wiredcraft.com">coco@wiredcraft.com </a> and we'll be happy to help. Submissions through email won't be accepted, so please use the form. </p>
-           <button className='button green'>Apply now</button>
+           <div className='action'><button className='button green'>Apply now</button></div>
          </div>
 
          <div className='section'>
@@ -94,7 +94,7 @@ export default class Index extends Component {
               <input type='text' />
             </p>
 
-            <button type='submit' className='button green'>submit your proposal</button>
+            <div className='action'><button type='submit' className='button green'>submit your proposal</button></div>
             </form>
          </div>
 

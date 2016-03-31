@@ -34,6 +34,7 @@ h4,
 h5,
 h6 {
   color: $black;
+  font-weight: 800;
   line-height: 140%;
   margin: 0 0 $gutter;
 }
@@ -73,13 +74,22 @@ button {
 }
 
 .container {
-  margin: 0 4%;
-  width: 92%;
+  margin: 0 3%;
+  width: 94%;
 }
 
 .wrapper {
-  margin: 0 8%;
-  width: 84%
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 80%;
+  @include breakpoint(highres) {
+    max-width: 1400px;
+  }
+}
+
+.padding {
+  padding-top: 11%;
+  padding-bottom: 11%;
 }
 
 a {

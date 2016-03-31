@@ -8,16 +8,8 @@
     color: #fff;
     font-weight: normal;
     line-height: 25px;
-  }
-  .logo {
-    float: left;
-    font-size: 38px;
-    height: 65px;
-    line-height: 65px;
-    margin-right: $gutter*4;
-    @include breakpoint(mobile) {
-      margin-right: $gutter;
-      font-size: 20px;
+    &:hover {
+      color: $green;
     }
   }
   .nav {
@@ -94,14 +86,42 @@
   }
 }
 
+
+/* logo */
+
+.logo {
+  float: left;
+  font-size: 38px;
+  height: 65px;
+  line-height: 65px;
+  margin-right: $gutter*4;
+  padding: $gutter - 5 0;
+  width: 200px;
+  img {
+    float: left;
+    width: 100%;
+  }
+  @include breakpoint(mobile) {
+    margin-right: $gutter;
+    font-size: 20px;
+  }
+}
+
+
+/* sub header */
+
 #sub-header {
+  display: none;
   bottom: 65px;
   line-height: 45px;
   opacity: 0;
-  padding: 12.5px 0;
   position: absolute;
   visibility: hidden;
   @include transition(all 0.2s ease-in-out);
+  .logo {
+    width: 150px;
+    padding: 21px 0;
+  }
   .subscription {
     display: inline-block;
     input,
@@ -114,9 +134,13 @@
   }
   .SNS,
   .lang {
+    padding: 12.5px 0;
     float: right;
   }
   .lang {
     color: #fff;
+  }
+  @include breakpoint(desktop) {
+    display: block;
   }
 }

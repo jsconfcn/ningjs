@@ -12,7 +12,7 @@
   }
 
   @else if $class == highres {
-    @media (min-width: 1281px) { @content; }
+    @media (min-width: 1682px) { @content; }
   }
 
   @else {

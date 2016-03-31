@@ -19,6 +19,7 @@
     input,
     button {
       height: 40px;
+      line-height: 40px;
     }
     .SNS {
       margin-top: $gutter*1.5;
@@ -51,12 +52,6 @@
         margin-right: $gutter*1.5;
         &:last-child {
           margin: 0px;
-        }
-      }
-      @include breakpoint(mobile) {
-        a {
-          float: left;
-          width: 100%;
         }
       }
       @include breakpoint(desktop) {

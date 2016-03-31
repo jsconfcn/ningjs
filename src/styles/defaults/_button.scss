@@ -4,6 +4,7 @@
   background: none;
   font-weight: 700;
   height: $button;
+  line-height: $button;
   outline: 0;
   text-transform: uppercase;
   padding: 0 $gutter*1.5;
@@ -34,8 +35,10 @@ article {
       background: $green;
       border-color: $green;
       &:hover {
-        background: none;
-        color: $green;
+        background: darken($green, 5%);
+        border-color: darken($green, 5%);
+        color: #fff;
+        //color: $green;
       }
     }
   }
