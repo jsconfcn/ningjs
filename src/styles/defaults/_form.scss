@@ -1,5 +1,6 @@
 input[type=text],
-textarea {
+textarea,
+select {
   box-shadow: none;
   outline: 0;
   background: none;
@@ -8,6 +9,9 @@ textarea {
   line-height: 20px;
   @include font-size($larger);
   font-weight: 700;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   &.dark {
     border-color: $purple;
   }
@@ -37,30 +41,79 @@ label {
 form {
   margin: 10% auto;
   min-width: 280px;
-  width: 60%;
+  max-width: 800px;
+  width: 70%;
   .filed {
+    margin-bottom: 20px;
     label {
+      margin-bottom: $gutter/4;
+      font-weight: normal;
+      color: #000;
       display: inline-block;
       width: 100%;
       em {
         color: $red;
       }
     }
+    .select {
+      font-weight: 600;
+      position: relative;
+      width: 100%;
+      &:after {
+        bottom: 0;
+        @include icon;
+        content: 'd';
+        cursor: pointer;
+        @include font-size($large);
+        line-height: 1;
+        pointer-events: none;
+        position: absolute;
+        right: $gutter/2;
+        top: 22px;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        &:hover {
+          color: inherit;
+        }
+      }
+      &:hover {
+        &:after {
+          color: inherit;
+        }
+      }
+      select {
+        border: 1px solid $line;
+        height: $button;
+        width: 100%;
+      }
+    }
     input[type=text],
-    textarea {
+    textarea,
+    select {
       color: $black;
       background: #fff;
-      border-color: rgba(0, 0, 0, 0.2);
+      border-color: $line;
       width: 100%;
+      &:hover {
+        border-color: darken($line, 10%);
+
+      }
       &:focus {
         border-color: $purple;
       }
     }
+    textarea {
+      padding: $gutter/2;
+      height: 200px;
+      max-width: 100%;
+      //resize: none;
+    }
     ::-webkit-input-placeholder {
-      color: rgba(0, 0, 0, 0.4);
+      color: darken($line, 10%);
     }
     input:-moz-placeholder {
-      color: rgba(0, 0, 0, 0.4);
+      color: darken($line, 10%);
     }
   }
 }

@@ -19,6 +19,9 @@
       margin-bottom: $gutter/2;
       width: 270px;
     }
+    @media (max-width: 400px) {
+      margin-right: 0px;
+    }
   }
   p {
     @include font-size($smaller + 1);

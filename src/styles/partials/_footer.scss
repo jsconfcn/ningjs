@@ -2,10 +2,12 @@
 /* Footer */
 
 #footer {
+  display: inline-block;
   $button: 40px;
   background: $darkpurple;
   color: #fff;
-  padding: $gutter*2 0 $gutter*1.5;
+  padding: $gutter*2.5 0;
+  width: 100%;
   .left {
     display: inline-block;
     label {
@@ -57,6 +59,13 @@
       @include breakpoint(desktop) {
         float: right;
       }
+    }
+  }
+  @include breakpoint(mobile) {
+    padding: 9% 0;
+    .container {
+      margin: 0 auto;
+      width: 80%;
     }
   }
 }

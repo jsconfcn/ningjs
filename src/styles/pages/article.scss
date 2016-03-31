@@ -4,29 +4,51 @@
 article
 ------- */
 
-#hero {
-  height: 400px;
-  @include breakpoint(highres) {
-    height: 500px;
-  }
-  @include breakpoint(mobile) {
-    height: 300px;
-  }
-  .bg-container {
-    @extend #hero;
-    .box {
-      .masthead {
-        text-align: center;
-        h1 {
-          @include font-size($huge - 5);
-          @include breakpoint(desktop) {
-            @include font-size($gigantic - 5);
+.article {
+  #hero {
+    height: 450px;
+    @include breakpoint(highres) {
+      height: 500px;
+    }
+    @include breakpoint(mobile) {
+      height: 300px;
+    }
+    .bg-container {
+      @extend #hero;
+      .box {
+        .masthead {
+          text-align: center;
+          h1 {
+            margin-bottom: $gutter/4;
+            @include font-size($huge - 3);
+            @include breakpoint(tablet) {
+              @include font-size($gigantic - 5);
+            }
+          }
+          p {
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0px;
           }
         }
-        p {
-          margin: 0px;
-        }
       }
+    }
+  }
+  .wrapper {
+    max-width: 980px;
+  }
+  &.call-for-speakers {
+    .bg {
+      background-image: url('/assets/images/bg-call-for-speakers.jpg')!important;
+    }
+  }
+  &.call-for-sponsors {
+    .bg {
+      background-image: url('/assets/images/bg-call-for-sponsors.jpg')!important;
+    }
+  }
+  &.coc {
+    .bg {
+      background-image: url('/assets/images/bg-coc.jpg')!important;
     }
   }
 }
@@ -38,14 +60,134 @@ article {
   padding-top: 7%;
   padding-bottom: 7%;
   div.section {
-  	margin-bottom: $gutter*4;
+    float: left;
+    margin-bottom: $gutter*6;
+    width: 100%;
     h2 {
+      color: #000;
       text-align: center;
+      margin-bottom: $gutter*1.5;
+    }
+    h4 {
+      color: #000;
+    }
+    strong {
+      color: $black;
     }
     .action {
       margin-top: $gutter*2;
       text-align: center;
       width: 100%;
+    }
+  }
+  .icon-group {
+    margin: $gutter*2 0px 0;
+    float: left;
+    width: 100%;
+    ul.icon-list {
+      float: left;
+      position: relative;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      li {
+        line-height: 140%;
+        text-align: center;
+        float: left;
+        padding: $gutter*5.5 2% 0;
+        position: relative;
+        width: 25%;
+        &:before {
+          background: url('/assets/images/icons.png') no-repeat -4px -5px;
+          content: '';
+          position: absolute;
+          top: 0px;
+          left: 50%;
+          margin-left: -50px;
+          height: $gutter*5;
+          width: $gutter*5;
+        }
+        @include breakpoint(mobile) {
+          width: 50%;
+        }
+      }
+    }
+    p.doc {
+      float: left;
+      margin-top: $gutter*4;
+      margin-bottom: $gutter*4;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+.call-for-speakers {
+  .icon-group {
+    margin-bottom: $gutter*4;
+    ul.icon-list {
+      padding-bottom: $gutter*4;
+      &:after {
+        border-top: 1px solid $line;
+        content: '';
+        height: 1px;
+        width: 40%;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -20%;
+      }
+      li {
+        &:nth-child(2) {
+          &:before {
+            background-position: -113px -5px;
+          }
+        }
+        &:nth-child(3) {
+          &:before {
+            background-position: -237px -5px;
+          }
+        }
+        &:nth-child(4) {
+          &:before {
+            background-position: -368px -5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.call-for-sponsors {
+  .icon-group {
+    border-bottom: 1px solid $line;
+    ul.icon-list {
+      &:after {
+        display: none;
+      }
+      li {
+        &:nth-child(1) {
+          &:before {
+            background-position: -4px -105px;
+          }
+        }
+        &:nth-child(2) {
+          &:before {
+            background-position: -113px -105px;
+          }
+        }
+        &:nth-child(3) {
+          &:before {
+            background-position: -237px -105px;
+          }
+        }
+        &:nth-child(4) {
+          &:before {
+            background-position: -368px -105px;
+          }
+        }
+      }
     }
   }
 }

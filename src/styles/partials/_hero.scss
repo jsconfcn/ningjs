@@ -10,7 +10,7 @@
     height: 900px;
   }
   @include breakpoint(mobile) {
-    height: 700px;
+    height: 600px;
   }
   .bg-container {
     background: #000;
@@ -23,10 +23,10 @@
       height: 900px;
     }
     @include breakpoint(mobile) {
-      height: 700px;
+      height: 600px;
     }
     .bg {
-      opacity: 0.5;
+      opacity: 0.6;
       background: url('/assets/images/bg-index.jpg') no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -47,7 +47,7 @@
       z-index: 8;
       /* masthead */
       .masthead {
-        padding: 0 8%;
+        padding: 65px 8% 0;
         display: table-cell;
         vertical-align: middle;
         width: 100%;

@@ -17,7 +17,7 @@ pages - index
     color: #fff;
     float: left;
     overflow: hidden;
-    padding: 11% 8%;
+    padding: 10% 8%;
     position: relative;
     width: 50%;
     @include breakpoint(mobile) {
@@ -110,6 +110,10 @@ pages - index
           line-height: 100%;
           color: $green;
           margin-bottom: 0;
+          @include font-size($huge + 1);
+          @include breakpoint(desktop) {
+            @include font-size($gigantic + 1);
+          }
         }
         span {
           color: darken($grey, 20%);
@@ -265,44 +269,37 @@ pages - index
 /* display */
 
 #display-list {
-  height: 800px;
+  background: $darkpurple;
   padding: 0px;
   list-style: none;
   margin: 0px;
+  float: left;
+  width: 100%;
   li {
-    display: inline-block;
+    float: left;
     position: relative;
-    height: 400px;
-    a {
-      left: 0px;
-      top: 0px;
-      position: absolute;
-      height: 100%;
+    img {
+      float: left;
       width: 100%;
-      background: #ccc;
     }
     &:nth-child(1) {
-      width: 40%;
-      height: 800px;
+      width: 41.14%;
     }
     &:nth-child(2) {
-      height: 800px;
-      width: 35%;
-      a {
-        height: 400px;
-        background: #222;
-        &:last-child {
-          top: auto;
-          bottom: 0px;
-          background: #ddd;
-        }
-      }
+      width: 33.53%;
     }
     &:nth-child(3) {
-      width: 25%;
-      height: 800px;
-      a {
-        background: #666;
+      width: 25.31%;
+    }
+    @include breakpoint(mobile) {
+      &:nth-child(1) {
+        width: 100%;
+      }
+      &:nth-child(2) {
+        width: 56.8%;
+      }
+      &:nth-child(3) {
+        width: 43.2%;
       }
     }
   }
@@ -313,12 +310,14 @@ pages - index
 
 #review {
   @extend .padding;
+  float: left;
   color: #fff;
   background: url('/assets/images/bg-city.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width: 100%;
   h2 {
     color: #fff;
   }

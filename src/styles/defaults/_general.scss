@@ -22,7 +22,7 @@ body {
   position: relative;
   @include font-size($smaller + 1);
   -webkit-font-smoothing: antialiased;
-  @include breakpoint(desktop) {
+  @include breakpoint(tablet) {
     @include font-size($normal + 1);
   }
 }
@@ -41,21 +41,21 @@ h6 {
 
 h1 {
   @include font-size($huge + 1);
-  @include breakpoint(desktop) {
+  @include breakpoint(tablet) {
     @include font-size($gigantic + 1);
   }
 }
 
 h2 {
   @include font-size($large + 1);
-  @include breakpoint(desktop) {
+  @include breakpoint(tablet) {
     @include font-size($huge + 1);
   }
 }
 
 h3 {
   @include font-size($larger);
-  @include breakpoint(desktop) {
+  @include breakpoint(tablet) {
     @include font-size($large - 2);
   }
 }
@@ -63,7 +63,7 @@ h3 {
 h4 {
   font-weight: normal;
   @include font-size($larger);
-  @include breakpoint(desktop) {
+  @include breakpoint(tablet) {
     @include font-size($large - 2);
   }
 }
@@ -80,16 +80,16 @@ button {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1400px;
   width: 80%;
-  @include breakpoint(highres) {
-    max-width: 1400px;
-  }
+  // @include breakpoint(highres) {
+  //   max-width: 1100px;
+  // }
 }
 
 .padding {
-  padding-top: 11%;
-  padding-bottom: 11%;
+  padding-top: 9%;
+  padding-bottom: 9%;
 }
 
 a {

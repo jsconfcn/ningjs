@@ -39,7 +39,7 @@ export default class Index extends Component {
               <header id='header' className='container'>
                 <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
                 <div className='nav'>
-                <button className='toggle-button'>三</button>
+                <button className='toggle-button'></button>
                 <nav>
                   <a>{__('Call for Speakers')}</a>
                   <a>{__('Call for Sponsors')}</a>
@@ -147,9 +147,9 @@ export default class Index extends Component {
 
         {/* Display list */}
         <ul id='display-list'>
-          <li><a href='#'></a></li>
-          <li><a href='#'></a><a href='#'></a></li>
-          <li><a href='#'></a></li>
+          <li><img src='./assets/images/media-01.jpg' /></li>
+          <li><img src='./assets/images/media-02.jpg' /><img src='./assets/images/media-03.jpg' /></li>
+          <li><img src='./assets/images/media-04.jpg' /></li>
         </ul>
 
         {/* Review */}
@@ -157,7 +157,7 @@ export default class Index extends Component {
           <div className='wrapper'>
             <h2>{__('ShenJs 2015 @ Shenzhen')}</h2>
             <p>To see presentations from last year's ShenJS, please look at our past conference sites at jsconf.cn or check out the videos on YouTube or Tudou. </p>
-            <a>{__('Take a look')}&gt;</a>
+            <a>{__('Take a look')} &gt;</a>
           </div>
         </section>
 
