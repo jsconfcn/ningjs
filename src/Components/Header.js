@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 
+import { pageScrollTopAnimate } from 'Helpers/browser.js'
 import 'styles/pages/article.scss'
 
 export default class Header extends Component {
@@ -45,6 +46,11 @@ export default class Header extends Component {
     window.location.reload()
   }
 
+  _onNavToFooter() {
+     const footer = document.querySelector('#footer')
+     pageScrollTopAnimate(footer.offsetTop, 500)
+  }
+
   render() {
     const { activeTag } = this.props
     const isZh = this._checkCurrentLanguage()
@@ -82,7 +88,7 @@ export default class Header extends Component {
           >
             {__('Call for Sponsors')}
           </Link>
-          <a>{__('About Us')}</a>
+          <a onClick={() => this._onNavToFooter()}>{__('About Us')}</a>
         </nav>
         </div>
         <a
