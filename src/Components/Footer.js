@@ -21,10 +21,10 @@ export default class Footer extends Component {
            {/* Subscription */}
            <div className='subscription'>
              <label>{__('Stay Tuned')}</label>
-             <p>Be the first to hear about our offers and announcements.</p>
+             <p>{__('Be the first to hear about our offers and announcements.')}</p>
              <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=ce3898dd2e' method='post' target='_blank'>
                <input type='email' name='EMAIL' className='required email' placeholder='Email Address' />
-               <input type='submit' value='notify me' name='subscribe' className='button green' />
+               <button type='submit' name='subscribe' className='button green'>{__('notify me')}</button>
              </form>
            </div>
            {/* SNS */}
@@ -35,7 +35,7 @@ export default class Footer extends Component {
            </div>
          </div>
          <div className='right'>
-           <span>Follow us on WeChat</span>
+           <span>{__('Follow us on WeChat')}</span>
            <div className='qrcode'>
              <img src='./assets/images/qrcode.jpg' className='img' width='80' />
            </div>
