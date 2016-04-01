@@ -67,7 +67,7 @@ export default class Header extends Component {
           <Link
             className={activeTag === 'Speaker' ? 'active' : ''}
             to={{
-              pathname: '/Speakers',
+              pathname: '/speakers',
               query
             }}
           >
@@ -76,7 +76,7 @@ export default class Header extends Component {
           <Link
             className={activeTag === 'Sponsor' ? 'active' : ''}
             to={{
-              pathname: '/Sponsors',
+              pathname: '/sponsors',
               query
             }}
           >

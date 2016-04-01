@@ -1,15 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Index from 'Components/pages/Index/Index'
-import Speakers from 'Components/pages/CallForSpeakers/Speakers'
-import Sponsors from 'Components/pages/CallForSponsors/Sponsors'
+import Index from 'Components/pages/Index'
+import Speakers from 'Components/pages/Speakers'
+import Sponsors from 'Components/pages/Sponsors'
+import Coc from 'Components/pages/Coc'
 import { Router, Route, hashHistory } from 'react-router'
 
 const routes = (
   <Router history={hashHistory}>
     <Route path='/' component={Index}/>
-    <Route path='/Speakers' component={Speakers}/>
-    <Route path='/Sponsors' component={Sponsors}/>
+    <Route path='/speakers' component={Speakers}/>
+    <Route path='/sponsors' component={Sponsors}/>
+    <Route path='/coc' component={Coc}/>
   </Router>
 )
 

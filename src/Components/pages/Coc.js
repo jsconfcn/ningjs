@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+
+import Header from 'Components/Header'
+import Footer from 'Components/Footer'
 import 'styles/pages/article.scss'
 
 export default class Index extends Component {
@@ -11,18 +14,7 @@ export default class Index extends Component {
           <div className='bg-container'>
             <div className='box'>
               {/* header */}
-              <header id='header' className='container'>
-                <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
-                <div className='nav'>
-                <button className='toggle-button'></button>
-                <nav>
-                  <a>{__('Call for Speakers')}</a>
-                  <a>{__('Call for Sponsors')}</a>
-                  <a>{__('About Us')}</a>
-                </nav>
-                </div>
-                <a href='/en/' className='lang'>{__('中文')}</a>
-              </header>
+              <Header />
               <header id='sub-header' className='container'>
                 <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
                 <a href='/en/' className='lang'>{__('中文')}</a>
@@ -64,43 +56,7 @@ export default class Index extends Component {
        </article>
 
        {/* Footer */}
-       <footer id='footer'>
-        <div className='container'>
-          <div className='left'>
-            {/* Subscription */}
-            <div className='subscription'>
-              <label>{__('Stay Tuned')}</label>
-              <p>Be the first to hear about our offers and announcements.</p>
-              <input type='text' placeholder='Email Address' />
-              <button className='button green'>{__('notify me')}</button>
-            </div>
-            {/* SNS */}
-            <div className='SNS'>
-              <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
-              <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>
-              <a className='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
-              <a className='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
-            </div>
-          </div>
-          <div className='right'>
-            <span>Follow us on WeChat</span>
-            <div className='qrcode'>
-              <img src='./assets/images/qrcode.jpg' className='img' width='80' />
-            </div>
-          </div>
-          <div className='bottom'>
-            <span>Buile by</span> <a href='http://wiredcraft.com'>Wiredcraft</a>
-            <div>
-              <a href="/code-of-conduct" target="_self">Code Of Conduct</a>
-              <a href="http://jsconf.cn" target="new">JSConf.cn</a>
-              <a href="#" target="new">Media Contact</a>
-              <a href="https://creativecommons.org/licenses/by/3.0/" target="new">CCA 3.0 License</a>
-            </div>
-          </div>
-        </div>
-       </footer>
-
-
+       <Footer />
       </div>
     )
   }
