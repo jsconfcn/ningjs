@@ -9,16 +9,19 @@ export default class Header extends Component {
   constructor() {
     super()
     this._onWindowChange = this._onWindowChange.bind(this)
+    this._onHideNavBar = this._onHideNavBar.bind(this)
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this._onWindowChange)
     window.removeEventListener('scroll', this._onWindowChange)
+    window.removeEventListener('click', this._onHideNavBar)
   }
 
   componentDidMount() {
     window.addEventListener('resize', this._onWindowChange)
     window.addEventListener('scroll', this._onWindowChange)
+    window.addEventListener('click', this._onHideNavBar)
   }
 
   _onWindowChange() {
@@ -57,6 +60,17 @@ export default class Header extends Component {
     }, 0)
   }
 
+  _onMenuToggle() {
+    document.querySelector('.nav').classList.toggle('menu-open')
+  }
+
+  _onHideNavBar(event) {
+    const targetIsToggleButton = this.refs.toggleButton.contains(event.target)
+    if (!targetIsToggleButton) {
+      document.querySelector('.nav').classList.remove('menu-open')
+    }
+  }
+
   render() {
     const { activeTag } = this.props
     const isZh = checkCurrentLanguage()
@@ -74,7 +88,11 @@ export default class Header extends Component {
           <img src='./assets/images/logo.png' />
         </Link>
         <div className='nav'>
-        <button className='toggle-button'></button>
+        <button
+          className='toggle-button'
+          onClick={() => this._onMenuToggle()}
+          ref='toggleButton'
+        />
         <nav>
           <Link
             className={activeTag === 'Speakers' ? 'active' : ''}
