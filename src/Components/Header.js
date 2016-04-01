@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 
 import { pageScrollTopAnimate } from 'Helpers/browser.js'
+import { checkCurrentLanguage } from 'Helpers/language.js'
 import 'styles/pages/article.scss'
 
 export default class Header extends Component {
@@ -32,12 +33,8 @@ export default class Header extends Component {
     }
   }
 
-  _checkCurrentLanguage() {
-    return location.hash.indexOf('ln=zh') !== -1
-  }
-
   _onSwitchLanguage() {
-    const isZh = this._checkCurrentLanguage()
+    const isZh = checkCurrentLanguage()
     if (location.hash.indexOf('ln=') === -1) {
       window.location.hash = window.location.hash.replace('?', `?ln=${isZh ? 'en' : 'zh'}&`)
     }else {
@@ -54,7 +51,7 @@ export default class Header extends Component {
 
   render() {
     const { activeTag } = this.props
-    const isZh = this._checkCurrentLanguage()
+    const isZh = checkCurrentLanguage()
     const query = { ln: isZh ? 'zh' : 'en' }
 
     return (

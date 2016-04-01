@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 
+import { checkCurrentLanguage } from 'Helpers/language.js'
 import 'styles/pages/article.scss'
 
 export default class Footer extends Component {
   render() {
+    const isZh = checkCurrentLanguage()
+    const query = { ln: isZh ? 'zh' : 'en' }
     return (
       <footer id='footer'>
        <div className='container'>
@@ -33,7 +36,7 @@ export default class Footer extends Component {
          <div className='bottom'>
            <span>Buile by</span> <a href='http://wiredcraft.com'>Wiredcraft</a>
            <div>
-             <a href="/code-of-conduct" target="_self">Code Of Conduct</a>
+             <Link to={{ pathname: '/coc', query }}>Code Of Conduct</Link>
              <a href="http://jsconf.cn" target="new">JSConf.cn</a>
              <a href="#" target="new">Media Contact</a>
              <a href="https://creativecommons.org/licenses/by/3.0/" target="new">CCA 3.0 License</a>
