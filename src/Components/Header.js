@@ -47,8 +47,9 @@ export default class Header extends Component {
   }
 
   _onNavToFooter() {
-     const footer = document.querySelector('#footer')
-     pageScrollTopAnimate(footer.offsetTop, 500)
+    const footer = document.querySelector('#footer')
+    const timeInMS = 500
+    pageScrollTopAnimate(footer.offsetTop, timeInMS)
   }
 
   render() {
