@@ -5,7 +5,7 @@ import Footer from 'Components/Footer'
 import { pageScrollTopAnimate } from 'Helpers/browser.js'
 import 'styles/pages/article.scss'
 
-export default class Proposals extends Component {
+export default class Speakers extends Component {
   _onApply() {
     const submitForm = document.querySelector('#submitForm')
     const timeInMS = 300
@@ -14,13 +14,13 @@ export default class Proposals extends Component {
 
   render() {
     return (
-      <div id='container' className='article call-for-proposals'>
+      <div id='container' className='article call-for-speakers'>
         {/* hero */}
         <section id='hero'>
           <div className='bg-container'>
             <div className='box'>
               {/* header */}
-              <Header activeTag='Proposals' />
+              <Header activeTag='Speakers' />
               <header id='sub-header' className='container'>
                 <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
                 <a href='/en/' className='lang'>{__('中文')}</a>
@@ -28,14 +28,14 @@ export default class Proposals extends Component {
                 <div className='SNS'>
                   <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
                   <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>
-                  <a className='github' href='http://github.com/jsconfcn/NingJS' target='_blank'><span>GitHub</span></a>
+                  <a className='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
                 </div>
               </header>
 
               {/* masthead */}
               <div className='masthead'>
-                <h1>{__('Call for Proposals')}</h1>
-                <p>Proposals are being accepted for the JS Conference China 2016 from now until Sep 01, 2016. </p>
+                <h1>{__('Call for Speakers')}</h1>
+                <p>{__('Proposals are being accepted for the JS Conference China 2016 from now until Sep 01, 2016.')}</p>
               </div>
             </div>
             <div className='bg'>
@@ -72,7 +72,7 @@ export default class Proposals extends Component {
              <li>Flight and<br/> Accomodation</li>
              <li>Speaker<br/> Dinner</li>
              <li>Conference<br/> Ticket</li>
-             <li>Professioa<br/> Photography / Video</li>
+             <li>Professional<br/> Photography / Video</li>
              </ul>
            </div>
             <p>As a reminder,  the purpose of JSChina presentations are to share knowledge, skills, and experience.We welcome talks letting ` know how you are using tools in your work, but discourage any proposals with the aim of selling a product or service.</p>

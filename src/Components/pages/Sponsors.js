@@ -13,7 +13,7 @@ export default class Sponsors extends Component {
           <div className='bg-container'>
             <div className='box'>
               {/* header */}
-              <Header activeTag='Sponsor' />
+              <Header activeTag='Sponsors' />
               <header id='sub-header' className='container'>
                 <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
                 <a href='/en/' className='lang'>{__('中文')}</a>

@@ -46,9 +46,9 @@ export default class Index extends Component {
         </section>
 
         {/* Call for proposals */}
-        <section id='call-for-proposals'>
+        <section id='call-for-speakers'>
           <a className='col-2'>
-            <h2>{__('Call for Proposals')}</h2>
+            <h2>{__('Call for Speakers')}</h2>
             <p>Proposals are being accepted for the JS Conference China 2016 from now until Sep 01, 2016.</p>
             <button className='button green'>apply</button>
             <div className='bg'></div>
