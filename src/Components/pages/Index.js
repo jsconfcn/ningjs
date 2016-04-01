@@ -1,38 +1,13 @@
 import React, { Component } from 'react'
-import 'styles/pages/index.scss'
 
 import Header from 'Components/Header'
+import Footer from 'Components/Footer'
+import 'styles/pages/index.scss'
 
 export default class Index extends Component {
-  constructor() {
-    super()
-    this._onWindowChange = this._onWindowChange.bind(this)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this._onWindowChange)
-    window.removeEventListener('scroll', this._onWindowChange)
-  }
-
-  componentDidMount() {
-    window.addEventListener('resize', this._onWindowChange)
-    window.addEventListener('scroll', this._onWindowChange)
-  }
-
-  _onWindowChange() {
-    if (document.body.offsetWidth > 1024) {
-      const heroSectionHeight = document.querySelector('#hero').offsetHeight
-      if (document.body.scrollTop < heroSectionHeight - 65) {
-        this.refs.container.classList.remove('header-fixed')
-      } else {
-        this.refs.container.classList.add('header-fixed')
-      }
-    }
-  }
-
   render() {
     return (
-      <div id='container' ref='container'>
+      <div id='container'>
         {/* hero */}
         <section id='hero'>
           <div className='bg-container'>
@@ -46,8 +21,7 @@ export default class Index extends Component {
                 <div className='SNS'>
                   <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
                   <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>
-                  <a className='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
-                  <a className='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
+                  <a className='github' href='http://github.com/jsconfcn/NingJS' target='_blank'><span>GitHub</span></a>
                 </div>
               </header>
 
@@ -153,47 +127,7 @@ export default class Index extends Component {
             <a>{__('Take a look')} &gt;</a>
           </div>
         </section>
-
-       {/* Footer */}
-       <footer id='footer'>
-        <div className='container'>
-          <div className='left'>
-            {/* Subscription */}
-            <div className='subscription'>
-              <label>{__('Stay Tuned')}</label>
-              <p>Be the first to hear about our offers and announcements.</p>
-              <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=ce3898dd2e' method='post' target='_blank'>
-                <input type='email' name='EMAIL' className='required email' placeholder='Email Address' />
-                <input type='submit' value='notify me' name='subscribe' className='button green' />
-              </form>
-            </div>
-            {/* SNS */}
-            <div className='SNS'>
-              <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
-              <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>
-              <a className='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
-              <a className='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
-            </div>
-          </div>
-          <div className='right'>
-            <span>Follow us on WeChat</span>
-            <div className='qrcode'>
-              <img src='./assets/images/qrcode.jpg' className='img' width='80' />
-            </div>
-          </div>
-          <div className='bottom'>
-            <span>Buile by</span> <a href='http://wiredcraft.com'>Wiredcraft</a>
-            <div>
-              <a href="/code-of-conduct" target="_self">Code Of Conduct</a>
-              <a href="http://jsconf.cn" target="new">JSConf.cn</a>
-              <a href="#" target="new">Media Contact</a>
-              <a href="https://creativecommons.org/licenses/by/3.0/" target="new">CCA 3.0 License</a>
-            </div>
-          </div>
-        </div>
-       </footer>
-
-
+        <Footer />
       </div>
     )
   }

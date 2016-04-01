@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 
+import { pageScrollTopAnimate } from 'Helpers/browser.js'
 import 'styles/pages/article.scss'
 
 export default class Header extends Component {
@@ -31,14 +32,39 @@ export default class Header extends Component {
     }
   }
 
+  _checkCurrentLanguage() {
+    return location.hash.indexOf('ln=zh') !== -1
+  }
+
+  _onSwitchLanguage() {
+    const isZh = this._checkCurrentLanguage()
+    if (location.hash.indexOf('ln=') === -1) {
+      window.location.hash = window.location.hash.replace('?', `?ln=${isZh ? 'en' : 'zh'}&`)
+    }else {
+      window.location.hash = window.location.hash.replace(`${isZh ? 'zh' : 'en'}`, `${isZh ? 'en' : 'zh'}`)
+    }
+    window.location.reload()
+  }
+
+  _onNavToFooter() {
+    const footer = document.querySelector('#footer')
+    const timeInMS = 500
+    pageScrollTopAnimate(footer.offsetTop, timeInMS)
+  }
+
   render() {
     const { activeTag } = this.props
+    const isZh = this._checkCurrentLanguage()
+    const query = { ln: isZh ? 'zh' : 'en' }
 
     return (
       <header id='header' className='container'>
         <Link
           className='logo'
-          to={{pathname:'/'}}
+          to={{
+            pathname: '/',
+            query
+          }}
         >
           <img src='./assets/images/logo.png' />
         </Link>
@@ -47,20 +73,31 @@ export default class Header extends Component {
         <nav>
           <Link
             className={activeTag === 'Proposals' ? 'active' : ''}
-            to={{pathname:'/Proposals'}}
+            to={{
+              pathname: '/proposals',
+              query
+            }}
           >
             {__('Call for Proposals')}
           </Link>
           <Link
             className={activeTag === 'Sponsor' ? 'active' : ''}
-            to={{pathname:'/Sponsors'}}
+            to={{
+              pathname: '/sponsors',
+              query
+            }}
           >
             {__('Call for Sponsors')}
           </Link>
-          <a>{__('About Us')}</a>
+          <a onClick={() => this._onNavToFooter()}>{__('About Us')}</a>
         </nav>
         </div>
-        <a href='/en/' className='lang'>{__('中文')}</a>
+        <a
+          className='lang'
+          onClick={() => this._onSwitchLanguage()}
+        >
+          {__('中文')}
+        </a>
       </header>
     )
   }
