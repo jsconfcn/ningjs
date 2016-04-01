@@ -36,9 +36,9 @@ article
   .wrapper {
     max-width: 980px;
   }
-  &.call-for-speakers {
+  &.call-for-proposals {
     .bg {
-      background-image: url('/assets/images/bg-call-for-speakers.jpg')!important;
+      background-image: url('/assets/images/bg-call-for-proposals.jpg')!important;
     }
   }
   &.call-for-sponsors {
@@ -65,7 +65,7 @@ article {
     width: 100%;
     h2 {
       color: #000;
-      text-align: center;
+      text-align: left;
       margin-bottom: $gutter*1.5;
     }
     h4 {
@@ -75,9 +75,12 @@ article {
       color: $black;
     }
     .action {
-      margin-top: $gutter*2;
+      margin-top: $gutter*5;
       text-align: center;
       width: 100%;
+      a {
+        display: inline-block;
+      }
     }
   }
   .icon-group {
@@ -91,10 +94,13 @@ article {
       padding: 0;
       margin: 0;
       width: 100%;
+      text-align: center;
       li {
+        display: inline-block;
         line-height: 140%;
+        margin-bottom: 40px;
         text-align: center;
-        float: left;
+        // float: left;
         padding: $gutter*5.5 2% 0;
         position: relative;
         width: 25%;
@@ -111,6 +117,12 @@ article {
         @include breakpoint(mobile) {
           width: 50%;
         }
+        div {
+          position: absolute;
+          left: 0px;
+          top: 100px;
+          width: 100%;
+        }
       }
     }
     p.doc {
@@ -121,9 +133,59 @@ article {
       width: 100%;
     }
   }
+  .else {
+    list-style: none;
+    margin: $gutter*4 0 0 0;
+    padding: 0px;
+    li {
+      position: relative;
+      padding-left: $gutter*8;
+      margin-bottom: $gutter*3;
+      @include breakpoint(mobile) {
+        padding-left: 0;
+        padding-top: $gutter*5;
+      }
+      h5 {
+        display: inline-block;
+        margin-top: $gutter;
+        width: 100%;
+      }
+      p {
+        margin: 0;
+      }
+      &:before {
+        background: url('/assets/images/icons.png') no-repeat -4px -5px;
+        content: '';
+        position: absolute;
+        left: 0px;
+        height: $gutter*5;
+        top: 0px;
+        width: $gutter*5;
+        @include breakpoint(mobile) {
+          left: 50%;
+          margin-left: -$gutter*2.5
+        }
+      }
+      &:nth-child(1) {
+        &:before {
+          background-position: -4px -280px;
+        }
+      }
+      &:nth-child(2) {
+        &:before {
+          background-position: -111px -270px;
+        }
+      }
+      &:nth-child(3) {
+        &:before {
+          background-position: -240px -274px;
+        }
+      }
+    }
+  }
 }
 
-.call-for-speakers {
+.call-for-proposals {
   .icon-group {
     margin-bottom: $gutter*4;
     ul.icon-list {
@@ -161,32 +223,46 @@ article {
 
 .call-for-sponsors {
   .icon-group {
-    border-bottom: 1px solid $line;
+    margin-bottom: $gutter*4;
     ul.icon-list {
       &:after {
         display: none;
       }
       li {
+        padding-top: 170px;
+        min-width: 170px;
+        &:before {
+          width: 170px;
+          height: 170px;
+          margin-left: -85px;
+        }
         &:nth-child(1) {
           &:before {
-            background-position: -4px -105px;
+            background-position: 5px -105px;
           }
         }
         &:nth-child(2) {
           &:before {
-            background-position: -113px -105px;
+            background-position: -157px -105px;
           }
         }
         &:nth-child(3) {
           &:before {
-            background-position: -237px -105px;
+            background-position: -318px -105px;
           }
         }
-        &:nth-child(4) {
-          &:before {
-            background-position: -368px -105px;
-          }
+        div {
+          top: 172px;
         }
+      }
+    }
+  }
+  .action {
+    a {
+      @include breakpoint(mobile) {
+        height: auto;
+        line-height: 160%;
+        padding: 10px 30px;
       }
     }
   }

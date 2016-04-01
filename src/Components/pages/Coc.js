@@ -22,8 +22,7 @@ export default class Index extends Component {
                 <div className='SNS'>
                   <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
                   <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>
-                  <a className='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
-                  <a className='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
+                  <a className='github' href='http://github.com/jsconfcn/NingJS' target='_blank'><span>GitHub</span></a>
                 </div>
               </header>
 
@@ -55,8 +54,8 @@ export default class Index extends Component {
           <p>This Code of Conduct was forked from the example policy from the Geek Feminism wiki, created by the Ada Initiative and other volunteers, which is under a Creative Commons Zero license.</p>
        </article>
 
-       {/* Footer */}
        <Footer />
+
       </div>
     )
   }

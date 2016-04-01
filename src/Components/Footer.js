@@ -16,15 +16,16 @@ export default class Footer extends Component {
            <div className='subscription'>
              <label>{__('Stay Tuned')}</label>
              <p>Be the first to hear about our offers and announcements.</p>
-             <input type='text' placeholder='Email Address' />
-             <button className='button green'>{__('notify me')}</button>
+             <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=ce3898dd2e' method='post' target='_blank'>
+               <input type='email' name='EMAIL' className='required email' placeholder='Email Address' />
+               <input type='submit' value='notify me' name='subscribe' className='button green' />
+             </form>
            </div>
            {/* SNS */}
            <div className='SNS'>
              <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
              <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>
-             <a className='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
-             <a className='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
+             <a className='github' href='http://github.com/jsconfcn/NingJS' target='_blank'><span>GitHub</span></a>
            </div>
          </div>
          <div className='right'>

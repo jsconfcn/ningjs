@@ -21,8 +21,7 @@ export default class Index extends Component {
                 <div className='SNS'>
                   <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
                   <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>
-                  <a className='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
-                  <a className='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
+                  <a className='github' href='http://github.com/jsconfcn/NingJS' target='_blank'><span>GitHub</span></a>
                 </div>
               </header>
 
@@ -32,8 +31,10 @@ export default class Index extends Component {
                 <h4>2016.09.02 - 09.03 @NanJing</h4>
                 <div className='subscription'>
                   <label>{__('Stay Tuned')}</label>
-                  <input type='text' placeholder='Email Address' />
-                  <button className='button green'>{__('notify me')}</button>
+                  <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=ce3898dd2e' method='post' target='_blank'>
+                    <input type='email' name='EMAIL' className='required email' placeholder='Email Address' />
+                    <input type='submit' value='notify me' name='subscribe' className='button green' />
+                  </form>
                   <p>Interested in sponsorship opportunities at NingJSConf CN 2016?</p>
                   <a>{__('Sponsor now!')}</a>
                 </div>
@@ -47,7 +48,7 @@ export default class Index extends Component {
         {/* Call for proposals */}
         <section id='call-for-proposals'>
           <a className='col-2'>
-            <h2>{__('Call for Speakers')}</h2>
+            <h2>{__('Call for Proposals')}</h2>
             <p>Proposals are being accepted for the JS Conference China 2016 from now until Sep 01, 2016.</p>
             <button className='button green'>apply</button>
             <div className='bg'></div>

@@ -10,17 +10,24 @@
       @include font-size($large - 4);
     }
   }
-  input {
-    float: left;
-    margin-right: $gutter/2;
-    min-width: 270px;
-    width: 35%;
-    @include breakpoint(mobile) {
-      margin-bottom: $gutter/2;
-      width: 270px;
-    }
-    @media (max-width: 400px) {
-      margin-right: 0px;
+  form {
+    padding: 0px;
+    margin: 0px;
+    min-width: auto;
+    max-width: 100%;
+    width: 100%;
+    input[type=email] {
+      float: left;
+      margin-right: $gutter/2;
+      min-width: 270px;
+      width: 35%;
+      @include breakpoint(mobile) {
+        margin-bottom: $gutter/2;
+        width: 270px;
+      }
+      @media (max-width: 400px) {
+        margin-right: 0px;
+      }
     }
   }
   p {

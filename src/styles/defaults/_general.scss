@@ -68,6 +68,15 @@ h4 {
   }
 }
 
+h5 {
+  margin-bottom: 0;
+  font-weight: 700;
+  @include font-size($smaller +1);
+  @include breakpoint(tablet) {
+    @include font-size($normal + 1);
+  }
+}
+
 button {
   border: 0px;
   outline: 0;

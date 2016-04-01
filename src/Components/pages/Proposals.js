@@ -5,7 +5,7 @@ import Footer from 'Components/Footer'
 import { pageScrollTopAnimate } from 'Helpers/browser.js'
 import 'styles/pages/article.scss'
 
-export default class Speakers extends Component {
+export default class Proposals extends Component {
   _onApply() {
     const submitForm = document.querySelector('#submitForm')
     const timeInMS = 300
@@ -14,13 +14,13 @@ export default class Speakers extends Component {
 
   render() {
     return (
-      <div id='container' className='article call-for-speakers'>
+      <div id='container' className='article call-for-proposals'>
         {/* hero */}
         <section id='hero'>
           <div className='bg-container'>
             <div className='box'>
               {/* header */}
-              <Header activeTag='Speaker' />
+              <Header activeTag='Proposals' />
               <header id='sub-header' className='container'>
                 <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
                 <a href='/en/' className='lang'>{__('中文')}</a>
@@ -28,14 +28,13 @@ export default class Speakers extends Component {
                 <div className='SNS'>
                   <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
                   <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>
-                  <a className='github' href='http://github.com/jsconfcn/ShenJS' target='_blank'><span>GitHub</span></a>
-                  <a className='slack' href='https://shenjs.herokuapp.com/' target='_blank'><span>Slack</span></a>
+                  <a className='github' href='http://github.com/jsconfcn/NingJS' target='_blank'><span>GitHub</span></a>
                 </div>
               </header>
 
               {/* masthead */}
               <div className='masthead'>
-                <h1>{__('Call for Speakers')}</h1>
+                <h1>{__('Call for Proposals')}</h1>
                 <p>Proposals are being accepted for the JS Conference China 2016 from now until Sep 01, 2016. </p>
               </div>
             </div>
