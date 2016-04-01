@@ -1,28 +1,18 @@
 import React, { Component } from 'react'
 
+import Header from 'Components/Header'
 import 'styles/pages/article.scss'
 
 export default class Sponsors extends Component {
   render() {
     return (
-      <div className='article call-for-sponsors'>
+      <div id='container' className='article call-for-sponsors'>
         {/* hero */}
         <section id='hero'>
           <div className='bg-container'>
             <div className='box'>
               {/* header */}
-              <header id='header' className='container'>
-                <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
-                <div className='nav'>
-                <button className='toggle-button'></button>
-                <nav>
-                  <a>{__('Call for Speakers')}</a>
-                  <a className='active'>{__('Call for Sponsors')}</a>
-                  <a>{__('About Us')}</a>
-                </nav>
-                </div>
-                <a href='/en/' className='lang'>{__('中文')}</a>
-              </header>
+              <Header activeTag='Sponsor' />
               <header id='sub-header' className='container'>
                 <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
                 <a href='/en/' className='lang'>{__('中文')}</a>

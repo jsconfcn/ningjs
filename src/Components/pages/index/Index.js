@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import 'styles/pages/index.scss'
 
+import Header from 'Components/Header'
+
 export default class Index extends Component {
   constructor() {
     super()
@@ -30,24 +32,13 @@ export default class Index extends Component {
 
   render() {
     return (
-      <div ref='container'>
+      <div id='container' ref='container'>
         {/* hero */}
         <section id='hero'>
           <div className='bg-container'>
             <div className='box'>
               {/* header */}
-              <header id='header' className='container'>
-                <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
-                <div className='nav'>
-                <button className='toggle-button'></button>
-                <nav>
-                  <a>{__('Call for Speakers')}</a>
-                  <a>{__('Call for Sponsors')}</a>
-                  <a>{__('About Us')}</a>
-                </nav>
-                </div>
-                <a href='/en/' className='lang'>{__('中文')}</a>
-              </header>
+              <Header />
               <header id='sub-header' className='container'>
                 <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
                 <a href='/en/' className='lang'>{__('中文')}</a>
