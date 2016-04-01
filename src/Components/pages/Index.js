@@ -78,18 +78,28 @@ export default class Index extends Component {
 
         {/* Call for proposals */}
         <section id='call-for-speakers'>
-          <a className='col-2'>
+                            <Link
+                    to={{
+                      pathname: '/speakers',
+                      query
+                    }}
+                  className='col-2'>
             <h2>{__('Call for Speakers')}</h2>
             <p>{__('Proposals are being accepted for the JS Conference China 2016 from now until Jun. 01, 2016.')}</p>
             <button className='button green'>{__('apply')}</button>
             <div className='bg'></div>
-          </a>
-          <a className='col-2'>
+          </Link>
+          <Link
+                    to={{
+                      pathname: '/sponsors',
+                      query
+                    }}
+                  className='col-2'>
             <h2>{__('Call for Sponsors')}</h2>
             <p>{__('Get out all the ads you ran last year. Go ahead. Tear them out of your magazines or newspapers.')}</p>
             <button className='button purple'>{__('sponsor')}</button>
             <div className='bg'></div>
-          </a>
+          </Link>
         </section>
 
         {/* About us */}
