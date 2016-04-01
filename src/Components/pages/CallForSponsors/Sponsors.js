@@ -39,37 +39,37 @@ export default class Sponsors extends Component {
        {/* content */}
        <article className='wrapper'>
          <div className='section'>
-           <h2>Why You Should Sponsor?</h2>
+           <h2>Call For Sponsors</h2>
+           <p> You are invited to support the 2016 JSConf China (NingJS) in Nangjing, China on September 3rd-4th, 2016. JSConf China is a two-day developer-driven non-profit event focused on JavaScript and Node.js technologies. We bring together notable figures from both the Chinese and international JavaScript communities to share their knowledge and passion for JavaScript. Here is the program for the past JSConf China (<a href='http://2012.jsconf.cn' target='new'>2012</a>, <a href='http://2013.jsconf.cn' target='new'>2013</a>, <a href='http://2014.jsconf.cn' target='new'>2014</a>, <a href='http://2015.jsconf.cn' target='new'>2015</a>). </p>
+           <p>This is an ideal way to demonstrate your organization's commitment to the JavaScript community. Sponsor support is typically used to cover the fees of the venue, catering, speakers, event promotion and operation. The support from sponsors allows us to offer tickets at lower prices, increasing attendance and support for the JS community in China. </p>
+           <h4>Sponsorship Options</h4>
+           <p>NingJS Conf has three sponsorship levels: gold, silver, bronze. Your support is very important to the conference, and the conference committee ensures that these contributions are well recognized. We list the benefits and costs below. We are open to any sponsorship needs - chat with an organizer about package details at <a href='mailto:support@jsconf.cn'>support@jsconf.cn</a>.</p>
            <div className='icon-group'>
              <ul className='icon-list'>
-             <li>Supporting the <br/>local JS community </li>
-             <li>Recruitment<br/> access</li>
-             <li>Branding</li>
-             <li>Learn about cutting edge<br/> technologies</li>
+               <li><div>Gold Sponsor</div></li>
+               <li><div>Sliver Sponsor</div></li>
+               <li><div>Bronze Sponsor</div></li>
              </ul>
-             <p className='doc'>For more information download our <a>PDF</a> or get in touch with us at <a href='mailto:mail@jsconfcn.com'>mail@jsconfcn.com</a>.</p>
+           </div>
+           <h4>What else can you sponsor?</h4>
+           <ul className='else'>
+             <li>
+               <h5>Speaker sponsor</h5>
+               <p>Cover the transportation and accommodation of the speaker from your company</p>
+             </li>
+             <li>
+               <h5>Afterparty food&beverage sponsor</h5>
+               <p>Brand exposure limited to the afterparty/coffee break. Can be a non-tech type of brand.</p>
+             </li>
+             <li>
+               <h5>Media partner</h5>
+               <p>Non-cash partnership. Mutual relationship with the partner company while getting as much promotional value as possible.</p>
+             </li>
+           </ul>
+           <div className='action'>
+             <a className='button green'>DOWNLOAD THE SPONSOR PACKAGE</a>
            </div>
          </div>
-         <div className='section'>
-            <h2>Let's Talk!</h2>
-            <form>
-            <p className='filed'>
-              <label><span>Full Name</span><em>*</em></label>
-              <input type='text' />
-            </p>
-            <p className='filed'>
-              <label><span>Email</span><em>*</em></label>
-              <input type='text' />
-            </p>
-            <p className='filed'>
-              <label><span>Talk about yourself briefly</span></label>
-              <textarea placeholder=""></textarea>
-            </p>
-            <div className='action'><button type='submit' className='button green'>submit</button></div>
-            </form>
-         </div>
-
-
        </article>
 
 
@@ -81,8 +81,10 @@ export default class Sponsors extends Component {
             <div className='subscription'>
               <label>{__('Stay Tuned')}</label>
               <p>Be the first to hear about our offers and announcements.</p>
-              <input type='text' placeholder='Email Address' />
-              <button className='button green'>{__('notify me')}</button>
+              <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=ce3898dd2e' method='post' target='_blank'>
+                <input type='email' name='EMAIL' className='required email' placeholder='Email Address' />
+                <input type='submit' value='notify me' name='subscribe' className='button green' />
+              </form>
             </div>
             {/* SNS */}
             <div className='SNS'>

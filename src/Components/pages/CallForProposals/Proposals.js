@@ -6,13 +6,13 @@ import Header from 'Components/Header'
 export default class Speakers extends Component {
   render() {
     return (
-      <div id='container' className='article call-for-speakers'>
+      <div id='container' className='article call-for-proposals'>
         {/* hero */}
         <section id='hero'>
           <div className='bg-container'>
             <div className='box'>
               {/* header */}
-              <Header activeTag='Speaker' />
+              <Header activeTag='Proposals' />
               <header id='sub-header' className='container'>
                 <a className='logo' href='/'><img src='./assets/images/logo.png' /></a>
                 <a href='/en/' className='lang'>{__('中文')}</a>
@@ -27,7 +27,7 @@ export default class Speakers extends Component {
 
               {/* masthead */}
               <div className='masthead'>
-                <h1>{__('Call for Speakers')}</h1>
+                <h1>{__('Call for Proposals')}</h1>
                 <p>Proposals are being accepted for the JS Conference China 2016 from now until Sep 01, 2016. </p>
               </div>
             </div>
@@ -55,10 +55,10 @@ export default class Speakers extends Component {
            <p>If you get selected as a speaker at NingJS Conf 2016, here's what you get:</p>
            <div className='icon-group'>
              <ul className='icon-list'>
-             <li>Flight and<br/> Accomodation</li>
-             <li>Speaker<br/> Dinner</li>
-             <li>Conference<br/> Ticket</li>
-             <li>Professioa<br/> Photography / Video</li>
+             <li><div>Flight and<br/> Accomodation</div></li>
+             <li><div>Speaker<br/> Dinner</div></li>
+             <li><div>Conference<br/> Ticket</div></li>
+             <li><div>Professioa<br/> Photography / Video</div></li>
              </ul>
            </div>
             <p>As a reminder,  the purpose of JSChina presentations are to share knowledge, skills, and experience.We welcome talks letting ` know how you are using tools in your work, but discourage any proposals with the aim of selling a product or service.</p>
@@ -123,8 +123,10 @@ export default class Speakers extends Component {
             <div className='subscription'>
               <label>{__('Stay Tuned')}</label>
               <p>Be the first to hear about our offers and announcements.</p>
-              <input type='text' placeholder='Email Address' />
-              <button className='button green'>{__('notify me')}</button>
+              <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=ce3898dd2e' method='post' target='_blank'>
+                <input type='email' name='EMAIL' className='required email' placeholder='Email Address' />
+                <input type='submit' value='notify me' name='subscribe' className='button green' />
+              </form>
             </div>
             {/* SNS */}
             <div className='SNS'>
