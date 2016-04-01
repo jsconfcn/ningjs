@@ -2,9 +2,15 @@ import React, { Component } from 'react'
 import { Link } from 'react-router'
 
 import { checkCurrentLanguage } from 'Helpers/language.js'
+import { pageScrollTopAnimate } from 'Helpers/browser.js'
 import 'styles/pages/article.scss'
 
 export default class Footer extends Component {
+  _onNavToHeader() {
+    const timeInMS = 300
+    pageScrollTopAnimate(0, timeInMS)
+  }
+
   render() {
     const isZh = checkCurrentLanguage()
     const query = { ln: isZh ? 'zh' : 'en' }
@@ -37,7 +43,12 @@ export default class Footer extends Component {
          <div className='bottom'>
            <span>Buile by</span> <a href='http://wiredcraft.com'>Wiredcraft</a>
            <div>
-             <Link to={{ pathname: '/coc', query }}>Code Of Conduct</Link>
+             <Link
+              to={{ pathname: '/coc', query }}
+              onClick={() => this._onNavToHeader()}
+             >
+               Code Of Conduct
+             </Link>
              <a href="http://jsconf.cn" target="new">JSConf.cn</a>
              <a href="mailto:support@jsconf.cn">Media Contact</a>
              <a href="https://creativecommons.org/licenses/by/3.0/" target="new">CCA 3.0 License</a>
