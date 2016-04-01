@@ -39,7 +39,7 @@ export default class Footer extends Component {
            <div>
              <Link to={{ pathname: '/coc', query }}>Code Of Conduct</Link>
              <a href="http://jsconf.cn" target="new">JSConf.cn</a>
-             <a href="#" target="new">Media Contact</a>
+             <a href="mailto:support@jsconf.cn">Media Contact</a>
              <a href="https://creativecommons.org/licenses/by/3.0/" target="new">CCA 3.0 License</a>
            </div>
          </div>

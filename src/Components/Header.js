@@ -69,16 +69,16 @@ export default class Header extends Component {
         <button className='toggle-button'></button>
         <nav>
           <Link
-            className={activeTag === 'Proposals' ? 'active' : ''}
+            className={activeTag === 'Speakers' ? 'active' : ''}
             to={{
-              pathname: '/proposals',
+              pathname: '/speakers',
               query
             }}
           >
-            {__('Call for Proposals')}
+            {__('Call for Speakers')}
           </Link>
           <Link
-            className={activeTag === 'Sponsor' ? 'active' : ''}
+            className={activeTag === 'Sponsors' ? 'active' : ''}
             to={{
               pathname: '/sponsors',
               query
