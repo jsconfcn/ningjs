@@ -29,7 +29,7 @@
       s.setAttribute( 'src', src );
       document.body.appendChild( s );
     }
-    if(location.search.indexOf('ln=zh') !== -1) {
+    if(location.hash.indexOf('ln=zh') !== -1) {
       addScript('./zhBundle.js')
     }else {
       addScript('./enBundle.js')

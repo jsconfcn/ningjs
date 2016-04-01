@@ -9,27 +9,6 @@ export default class Index extends Component {
     this._onWindowChange = this._onWindowChange.bind(this)
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this._onWindowChange)
-    window.removeEventListener('scroll', this._onWindowChange)
-  }
-
-  componentDidMount() {
-    window.addEventListener('resize', this._onWindowChange)
-    window.addEventListener('scroll', this._onWindowChange)
-  }
-
-  _onWindowChange() {
-    if (document.body.offsetWidth > 1024) {
-      const heroSectionHeight = document.querySelector('#hero').offsetHeight
-      if (document.body.scrollTop < heroSectionHeight - 65) {
-        this.refs.container.classList.remove('header-fixed')
-      } else {
-        this.refs.container.classList.add('header-fixed')
-      }
-    }
-  }
-
   render() {
     return (
       <div id='container' ref='container'>
