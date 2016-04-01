@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
+
 import 'styles/pages/article.scss'
 
-export default class Index extends Component {
+export default class Speakers extends Component {
   render() {
     return (
       <div className='article call-for-speakers'>
