@@ -49,6 +49,14 @@ export default class Header extends Component {
     pageScrollTopAnimate(footer.offsetTop, timeInMS)
   }
 
+  _onNavToAbout() {
+    setTimeout(() => {
+      const about = document.querySelector('#about-us')
+      const timeInMS = 500
+      pageScrollTopAnimate(about.offsetTop, timeInMS)
+    }, 0)
+  }
+
   render() {
     const { activeTag } = this.props
     const isZh = checkCurrentLanguage()
@@ -86,7 +94,15 @@ export default class Header extends Component {
           >
             {__('Call for Sponsors')}
           </Link>
-          <a onClick={() => this._onNavToFooter()}>{__('About Us')}</a>
+          <Link
+            onClick={() => this._onNavToAbout()}
+            to={{
+              pathname: '/',
+              query
+            }}
+          >
+            {__('About Us')}
+          </Link>
         </nav>
         </div>
         <a
