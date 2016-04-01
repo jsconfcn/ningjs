@@ -42,7 +42,7 @@ export default class Header extends Component {
     }else {
       window.location.hash = window.location.hash.replace(`${isZh ? 'zh' : 'en'}`, `${isZh ? 'en' : 'zh'}`)
     }
-    isZh ? window.addScript('./enBundle.js') : window.addScript('./zhBundle.js')
+    window.location.reload()
   }
 
   render() {
