@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --devtool eval --colors --content-base build --port 6060",
-    "dist": "webpack --config webpack.config.prod.js"
+    "dist": "webpack --config webpack.config.prod.js",
+    "predeploy": "npm run dist && echo \"2016.jsconf.cn\" > build/CNAME",
+    "deploy": "gh-pages --dist build"
   },
   "repository": {
     "type": "git",
@@ -21,18 +23,19 @@
     "url": "https://github.com/jsconfcn/ningjs/issues"
   },
   "devDependencies": {
-    "eslint-plugin-react": "^3.11.1",
+    "autoprefixer-loader": "^3.2.0",
     "babel-core": "^5.8.24",
-    "babel-loader": "^5.3.2",
     "babel-eslint": "^5.0.0-beta6",
+    "babel-loader": "^5.3.2",
     "css-loader": "^0.18.0",
+    "eslint-plugin-react": "^3.11.1",
+    "gh-pages": "^0.11.0",
     "i18n-webpack-plugin": "^0.2.7",
+    "json-loader": "^0.5.4",
     "node-bourbon": "^4.2.3",
     "node-sass": "^3.4.2",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.12.3",
-    "autoprefixer-loader": "^3.2.0",
-    "json-loader": "^0.5.4",
     "webpack": "^1.12.1",
     "webpack-dev-server": "^1.14.1"
   },

@@ -34,3 +34,4 @@ node_modules
 *Bundle.js
 *.map
 .DS_Store
+build/CNAME
