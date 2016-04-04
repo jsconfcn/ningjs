@@ -15,6 +15,13 @@ export default class Speakers extends Component {
     pageScrollTopAnimate(submitForm.offsetTop, timeInMS)
   }
 
+  componentDidMount() {
+    let script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://jinshuju.net/f/Q5EBZW/embedded.js?banner=show&background=white&height=1444'
+    document.getElementById('form').appendChild(script);
+  }
+
   _renderContent() {
     const query = { ln: isZh ? 'zh' : 'en' }
     const isZh = checkCurrentLanguage()
@@ -143,51 +150,7 @@ export default class Speakers extends Component {
                     }}
                   >our sponsor page</Link>. The money we save on your travel and accommodation will go to making the event even better! </p>
            <p>Looking forward to your entry!</p>
-           <form id='submitForm'>
-             <p className='filed'>
-               <label><span>Name</span><em>*</em></label>
-               <input type='text' />
-             </p>
-              <p className='filed'>
-               <label><span>Current location</span><em>*</em></label>
-               <input type='text' />
-             </p>
-             <p className='filed'>
-               <label><span>Email</span><em>*</em></label>
-               <input type='text' />
-             </p>
-             <p className='filed'>
-               <label><span>Title of Talk</span><em>*</em></label>
-               <input type='text' />
-             </p>
-             <p className='filed'>
-               <label><span>Topic/Project+Summary</span><em>*</em></label>
-               <textarea placeholder='This will be used online to describe your talk please keep it to 300 words or less'></textarea>
-             </p>
-             <p className='filed'>
-               <label><span>Nominate another person?</span></label>
-               <textarea placeholder="Please give a reason and leave the person's name and contact info here"></textarea>
-             </p>
-             <p className='filed'>
-               <label><span>Past Presentations/Personal Blog (if you have any)</span></label>
-               <input type='text' />
-             </p>
-              <p className='filed'>
-               <label><span>Would your company be interested in sponsoring NingJS 2016? </span></label>
-               <span className='select'>
-                 <select>
-                   <option> </option>
-                   <option>Yes</option>
-                   <option>No</option>
-                 </select>
-               </span>
-             </p>
-             <p className='filed'>
-               <label><span>Anything else?</span></label>
-               <textarea placeholder='e.g. more info on your presentation, special requests, questions'></textarea>
-             </p>
-             <div className='action'><button type='submit' className='button green'>submit your proposal</button></div>
-           </form>
+           <div id='form'></div>
         </div>
       </article>
     )
