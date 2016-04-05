@@ -54,14 +54,14 @@ export default class Index extends Component {
               {/* masthead */}
               <div className='masthead'>
                 <h1>{__('NingJS')} · {__('JSConf China 2016')}</h1>
-                <h4>2016.09.02 - 09.03 @{__('Nanjing')}</h4>
+                <h4>2016.09.03 - 09.04 @{__('Nanjing')}</h4>
                 <div className='subscription'>
                   <label>{__('Stay Tuned')}</label>
                   <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=ce3898dd2e' method='post' target='_blank'>
                     <input type='email' name='EMAIL' className='required email' placeholder='Email Address' />
                     <button type='submit' name='subscribe' className='button green'>{__('notify me')}</button>
                   </form>
-                  <p>{__('Interested in sponsorship opportunities at NingJS 2016?')}?</p>
+                  <p>{__('Interested in sponsorship opportunities at NingJS 2016?')}</p>
                   <Link
                     to={{
                       pathname: '/sponsors',
@@ -145,7 +145,7 @@ export default class Index extends Component {
                 <li>
                   <span className='year'>2016</span>
                   <span className='title'>{__('NingJS@Nanjing')}</span>
-                  <span className='date'>09.02 - 09.03</span>
+                  <span className='date'>09.03 - 09.04</span>
                 </li>
               </ul>
             </div>
