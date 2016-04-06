@@ -26,17 +26,7 @@
 
 <body>
   <div id='app'></div>
-  <script>
-    function addScript( src ) {
-      var s = document.createElement('script');
-      s.setAttribute('src', src);
-      document.body.appendChild(s);
-    }
-    if(location.hash.indexOf('ln=zh') !== -1) {
-      addScript('./zhBundle.js')
-    }else {
-      addScript('./enBundle.js')
-    }
+  <script src='ningjs.min.js'>
   </script>
 </body>
 </html>
