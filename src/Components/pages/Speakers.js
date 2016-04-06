@@ -51,10 +51,10 @@ export default class Speakers extends Component {
           <p>{__('benifit_for_apply')}</p>
           <div className='icon-group'>
             <ul className='icon-list'>
-            <li>Flight and<br/> {__('accomodation')}</li>
-            <li>Speaker<br/> {__('dinner')}</li>
-            <li>Conference<br/> {__('ticket')}</li>
-            <li>Professional<br/> {__('photography')} / Video</li>
+            <li dangerouslySetInnerHTML={{__html:__('accomodation')}}></li>
+            <li dangerouslySetInnerHTML={{__html:__('dinner')}}></li>
+            <li dangerouslySetInnerHTML={{__html:__('ticket')}}></li>
+            <li dangerouslySetInnerHTML={{__html:__('photography')}}></li>
             </ul>
           </div>
           <div dangerouslySetInnerHTML={{__html: __('call_for_speakers_reminder')}} ></div>

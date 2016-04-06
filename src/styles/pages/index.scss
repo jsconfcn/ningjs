@@ -54,16 +54,19 @@ pages - index
       width: 100%;
       z-index: 0;
     }
-    &:last-child {
-      color: $purple;
+    &:first-child {
       height: 100%;
-      background: $green;
       position: absolute;
-      right: 0px;
+      left: 0px;
       top: 0px;
       @include breakpoint(mobile) {
         position: relative;
       }
+    }
+    &:last-child {
+      float: right;
+      color: $purple;
+      background: $green;
       h2 {
         color: $purple;
       }

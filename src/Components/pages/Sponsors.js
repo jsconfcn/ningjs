@@ -48,7 +48,7 @@ export default class Sponsors extends Component {
             </li>
           </ul>
           <div className='action'>
-            <a className='button green'>{__('download_sponsor_package')}</a>
+            <a className='button green disabled'>{__('download_sponsor_package')}</a>
           </div>
         </div>
       </article>

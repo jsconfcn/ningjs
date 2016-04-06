@@ -19,7 +19,7 @@ export default class Home extends Component {
 
               <div className='masthead'>
                 <h1>{__('ningjs')} · {__('jsconf_china_2016')}</h1>
-                <h4>2016.09.03 - 09.04 @{__('nanjing')}</h4>
+                <h4>2016.09.03 - 09.04 @ {__('nanjing')}</h4>
                 <div className='subscription'>
                   <label>{__('stay_tuned')}</label>
                   <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=ce3898dd2e' method='post' target='_blank'>
@@ -67,31 +67,31 @@ export default class Home extends Component {
               <ul>
                 <li>
                   <span className='year'>2012</span>
-                  <span className='title'><a href='http://2012.jsconf.cn' target='new'>{__('HuJS@Shanghai')}</a></span>
+                  <span className='title'><a href='http://2012.jsconf.cn' target='new'>{__('HuJS @ Shanghai')}</a></span>
                   <span className='progress'></span>
                   <span className='number'>237</span>
                 </li>
                 <li>
                   <span className='year'>2013</span>
-                  <span className='title'><a href='http://2013.jsconf.cn' target='new'>{__('JingJS@Beijing')}</a></span>
+                  <span className='title'><a href='http://2013.jsconf.cn' target='new'>{__('JingJS @ Beijing')}</a></span>
                   <span className='progress'></span>
                   <span className='number'>318</span>
                 </li>
                 <li>
                   <span className='year'>2014</span>
-                  <span className='title'><a href='http://2014.jsconf.cn' target='new'>{__('HangJS@Hangzhou')}</a></span>
+                  <span className='title'><a href='http://2014.jsconf.cn' target='new'>{__('HangJS @ Hangzhou')}</a></span>
                   <span className='progress'></span>
                   <span className='number'>525</span>
                 </li>
                 <li>
                   <span className='year'>2015</span>
-                  <span className='title'><a href='http://2015.jsconf.cn' target='new'>{__('ShenJS@Shenzhen')}</a></span>
+                  <span className='title'><a href='http://2015.jsconf.cn' target='new'>{__('ShenJS @ Shenzhen')}</a></span>
                   <span className='progress'></span>
                   <span className='number'>650</span>
                 </li>
                 <li>
                   <span className='year'>2016</span>
-                  <span className='title'>{__('NingJS@Nanjing')}</span>
+                  <span className='title'>{__('NingJS @ Nanjing')}</span>
                   <span className='date'>09.03 - 09.04</span>
                 </li>
               </ul>
@@ -108,7 +108,7 @@ export default class Home extends Component {
 
         <section id='review'>
           <div className='wrapper'>
-            <h2>{__('JSConf 2015@Shenzhen')}</h2>
+            <h2>{__('JSConf 2015 @ Shenzhen')}</h2>
             <p dangerouslySetInnerHTML={{__html:__('take_a_look_intro')}}></p>
             <a href='http://2015.jsconf.cn' target='new'>{__('take_a_look')} &gt;</a>
           </div>

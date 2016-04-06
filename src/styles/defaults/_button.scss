@@ -26,6 +26,10 @@
       color: #fff;
     }
   }
+  &.disabled {
+    border-color: $grey!important;
+    background: $grey!important;
+  }
 }
 
 article {
