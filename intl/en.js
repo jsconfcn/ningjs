@@ -25,6 +25,7 @@ export default {
   stay_tuned: 'Stay Tuned',
   stay_tuned_intro: 'Be the first to hear about our offers and announcements.',
   notify_me: 'Notify Me',
+  notify_me_footer: 'Subscribe',
   follow_wechat: 'Follow us on WeChat',
   interest_sponsor_2016: 'Interested in sponsorship opportunities at NingJS 2016?',
   sponsor_now: 'Sponsor now!',
