@@ -7,9 +7,10 @@ pages - index
 
 /* call-for-speakers*/
 
-#call-for-speakers{
+#call-for-speakers {
   background: $green;
   display: inline-block;
+  position: relative;
   width: 100%;
   .col-2 {
     box-sizing: border-box;
@@ -55,7 +56,14 @@ pages - index
     }
     &:last-child {
       color: $purple;
+      height: 100%;
       background: $green;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      @include breakpoint(mobile) {
+        position: relative;
+      }
       h2 {
         color: $purple;
       }
@@ -65,7 +73,7 @@ pages - index
       .bg {
         background: url('/assets/images/bg-col-call-for-sponsors.jpg') no-repeat center center;
         -webkit-background-size: cover;
-        -moz-background-size: cover;
+        -moz-background-size: covercall;
         -o-background-size: cover;
         background-size: cover;
       }
@@ -320,5 +328,10 @@ pages - index
   width: 100%;
   h2 {
     color: #fff;
+  }
+  p {
+    strong {
+      font-weight: normal;
+    }
   }
 }

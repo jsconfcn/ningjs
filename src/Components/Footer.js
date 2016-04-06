@@ -17,8 +17,8 @@ export default class Footer extends Component {
              <label>{__('stay_tuned')}</label>
              <p>{__('stay_tuned_intro')}</p>
              <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=ce3898dd2e' method='post' target='_blank'>
-               <input type='email' name='EMAIL' className='required email' placeholder='Email Address' />
-               <button type='submit' name='subscribe' className='button green'>{__('notify_me')}</button>
+               <input type='email' name='EMAIL' className='email' required placeholder='Email Address' />
+               <button type='submit' name='subscribe' className='button green'>{__('notify_me_footer')}</button>
              </form>
            </div>
            {/* SNS */}
@@ -35,7 +35,7 @@ export default class Footer extends Component {
            </div>
          </div>
          <div className='bottom'>
-           <span>Buile by</span> <a href='http://wiredcraft.com'>Wiredcraft with ❤️</a>
+           <span>Built by</span> <a href='http://wiredcraft.com'>Wiredcraft</a> <span>with &hearts;</span>
            <div>
              <Link to={{ pathname: '/coc', query }} onClick={() => pageScrollTopAnimate(0, 300)} > Code Of Conduct </Link>
              <a href="http://jsconf.cn" target="new">JSConf.cn</a>

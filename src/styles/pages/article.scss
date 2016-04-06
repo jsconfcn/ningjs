@@ -142,13 +142,14 @@ article {
       position: relative;
       padding-left: $gutter*8;
       margin-bottom: $gutter*3;
+      min-height: $gutter*5;
       @include breakpoint(mobile) {
         padding-left: 0;
         padding-top: $gutter*5;
       }
       h5 {
         display: inline-block;
-        margin-top: $gutter;
+        margin-top: $gutter + 5;
         width: 100%;
       }
       p {

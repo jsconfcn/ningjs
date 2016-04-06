@@ -11,10 +11,10 @@ export default {
   name: 'English',
 
   call_for_sponsors: 'Call for Sponsors',
-  call_for_speakers: 'Call For Speakers',
+  call_for_speakers: 'Call for Speakers',
   about_us: 'About us',
 
-  year: 'Year',
+  year: 'Years',
   attendees: 'Attendees',
   speakers: 'Speakers',
   sponsors: 'Sponsors',
@@ -28,14 +28,14 @@ export default {
   follow_wechat: 'Follow us on WeChat',
   interest_sponsor_2016: 'Interested in sponsorship opportunities at NingJS 2016?',
   sponsor_now: 'Sponsor now!',
-  proposals_accept_time:'Proposals are being accepted for the JS Conference China 2016 from now until Jun. 01, 2016.',
+  proposals_accept_time:'Proposals are being accepted for the JS Conference China 2016 from now until June 1st 12PM EST.',
   apply: 'apply',
-  get_out_ads_go_ahead: 'Get out all the ads you ran last year. Go ahead. Tear them out of your magazines or newspapers.',
+  get_out_ads_go_ahead: 'Get out all the ads you ran last year. Go ahead.',
   sponsor: 'sponsor',
 
   about_us_intro: `<p>JSConf China is a two-day developer-driven non-profit event focused on JavaScript and Node.js technologies. We bring together notable figures from both the Chinese and international JavaScript communities to share their knowledge and passion for JavaScript. Here is the program for the past years <a href='http://2012.jsconf.cn' target='new'>2012</a>, <a href='http://2013.jsconf.cn' target='new'>2013</a>, <a href='http://2014.jsconf.cn' target='new'>2014</a>, <a href='http://2015.jsconf.cn' target='new'>2015</a>. You can check out the videos from 2015 JSConf China in Shenzhen on <a href='https://www.youtube.com/channel/UCvFAekDfG_dL2Kcbq-vrPXQ' target='new'>YouTube</a> and <a href='http://www.tudou.com/home/wiredcraft' target='new'>Tudou</a>. This year we will hold the JSConf China in Nanjing on <strong>September 3rd-4th, 2016.</strong></p>`,
 
-  call_for_speakers_intro: `<p>We are inviting the JavaScript community to submit talks for the upcoming JSConf China 2016 (NingJS) on September 3rd-4th, 2016 in Nanjing, China. The Call for Speakers <strong>closes at 12pm GMT+8 on June 1st, 2016.</strong> (Strictly, no joke!).</p>
+  call_for_speakers_intro: `<p>We are inviting the JavaScript community to submit talks for the upcoming JSConf China 2016 (NingJS) on September 3rd-4th, 2016 in Nanjing, China. The Call for Speakers <strong>closes at June 1st 12PM EST., 2016.</strong> (Strictly, no joke!).</p>
   <p>JSConf China is a developer-driven conference where members of the Chinese and international JS community can share and discuss the newest techniques and tools in the JavaScript language. Talks in English and Mandarin are welcome.</p>
   <h4>If you or someone you know has something kick-ass to share, let us know!</h4>
   <p>If you have something kick-ass to share, tell us all about it. If you know someone who has something great to talk about, nominate them. And if you are interested in hearing about a particular topic, nominate the topic, we'll try to find a match. Fill in and submit this form.</p>

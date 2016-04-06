@@ -46,7 +46,7 @@ export default class Header extends Component {
       <a className='lang' onClick={changeLang.bind(null, 'zh-cn')}>中文</a>)
 
     return (
-      <div>
+      <div className='header-wrapper'>
         <header id='header' className='container'>
           {Logo}
           <NavTab __={this.props.__} query={query}/>

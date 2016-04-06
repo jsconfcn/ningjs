@@ -16,16 +16,15 @@
         top: -900px;
       }
     }
-    #sub-header {
-      visibility: visible;
-      bottom: 0;
-      opacity: 1;
-    }
   }
-}
-
-.article {
-  &.header-fixed {
+  #sub-header {
+    position: fixed;
+    top: 0px;
+    //bottom: -735px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .article {
     #hero {
       @include breakpoint(desktop) {
         .bg-container {

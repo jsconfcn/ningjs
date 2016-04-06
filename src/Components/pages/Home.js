@@ -23,8 +23,8 @@ export default class Home extends Component {
                 <div className='subscription'>
                   <label>{__('stay_tuned')}</label>
                   <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=ce3898dd2e' method='post' target='_blank'>
-                    <input type='email' name='EMAIL' className='required email' placeholder='Email Address' />
-                    <button type='submit' name='subscribe' className='button green'>{__('notify me')}</button>
+                    <input type='email' name='EMAIL' className='email' required placeholder='Email Address' />
+                    <button type='submit' name='subscribe' className='button green'>{__('notify_me')}</button>
                   </form>
                   <p>{__('interest_sponsor_2016')}</p>
                   <Link to={{ pathname: '/sponsors', query }} >{__('sponsor_now')}</Link>
@@ -108,8 +108,8 @@ export default class Home extends Component {
 
         <section id='review'>
           <div className='wrapper'>
-            <h2>{__('ShenJS 2015@Shenzhen')}</h2>
-            <p>{__('take_a_look_intro')}</p>
+            <h2>{__('JSConf 2015@Shenzhen')}</h2>
+            <p dangerouslySetInnerHTML={{__html:__('take_a_look_intro')}}></p>
             <a href='http://2015.jsconf.cn' target='new'>{__('take_a_look')} &gt;</a>
           </div>
         </section>

@@ -1,159 +1,167 @@
-/* header */
-
-#header {
-  box-sizing: border-box;
+.header-wrapper {
+  //height: 800px;
   height: 65px;
+  left: 0;
   position: absolute;
-  z-index: 1;
-  a {
-    color: #fff;
-    font-weight: normal;
-    line-height: 25px;
-    &:hover {
-      color: $green;
-    }
-  }
-  .nav {
-    float: right;
-    button {
-      border-radius: $radius;
-      background: #000;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+  // @include breakpoint(highres) {
+  //   height: 900px;
+  // }
+  // @include breakpoint(mobile) {
+  //   height: 600px;
+  // }
+  /* header */
+  #header {
+    box-sizing: border-box;
+    height: 65px;
+    position: absolute;
+    z-index: 1;
+    a {
       color: #fff;
-      display: block;
-      margin: 12.5px 0;
-      height: 40px;
-      margin-left: $gutter;
-      width: 40px;
-      position: relative;
-      &:after {
-        @include icon;
-        content: 'm';
-        font-size: 22px;
-        position: absolute;
-        line-height: 40px;
-        left: 0px;
-        height: 100%;
-        top: 0px;
-        text-align: center;
-        width: 100%;
+      font-weight: normal;
+      line-height: 25px;
+      &:hover {
+        color: $green;
       }
     }
-    nav {
-      display: none;
-      top: $gutter*2.5 + 4;
-      border-radius: $radius;
-      background: rgba(0, 0, 0, 0.9);
-      height: auto;
-      left: 0px;
-      position: absolute;
-      width: 100%;
-      a {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        float: left;
-        padding: $gutter/2 $gutter;
-        margin-right: $gutter*1.5;
-        width: 100%;
-        &:last-child {
-          margin-right: 0px;
-        }
-        &.active {
-          color: $green;
-        }
-      }
-    }
-    @include breakpoint(desktop) {
-      float: left;
+    .nav {
+      float: right;
       button {
-        display: none;
+        border-radius: $radius;
+        background: #000;
+        color: #fff;
+        display: block;
+        margin: 12.5px 0;
+        height: 40px;
+        margin-left: $gutter;
+        width: 40px;
+        position: relative;
+        &:after {
+          @include icon;
+          content: 'm';
+          font-size: 22px;
+          position: absolute;
+          line-height: 40px;
+          left: 0px;
+          height: 100%;
+          top: 0px;
+          text-align: center;
+          width: 100%;
+        }
       }
       nav {
-        background: none;
-        display: block;
-        top: 0;
-        position: relative;
-        padding: $gutter 0;
-        height: 65px;
-        float: none;
+        display: none;
+        top: $gutter*2.5 + 4;
+        border-radius: $radius;
+        background: rgba(0, 0, 0, 0.9);
+        height: auto;
+        left: 0px;
+        position: absolute;
+        width: 100%;
         a {
-          border: 0;
-          width: auto;
-          padding: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          float: left;
+          padding: $gutter/2 $gutter;
+          margin-right: $gutter*1.5;
+          width: 100%;
+          &:last-child {
+            margin-right: 0px;
+          }
           &.active {
-            border-bottom: 2px solid $green;
+            color: $green;
           }
         }
       }
-    }
-    &.menu-open {
-      nav {
-        display: block;
+      @include breakpoint(desktop) {
+        float: left;
+        button {
+          display: none;
+        }
+        nav {
+          background: none;
+          display: block;
+          top: 0;
+          position: relative;
+          padding: $gutter 0;
+          height: 65px;
+          float: none;
+          a {
+            border: 0;
+            width: auto;
+            padding: 0;
+            &.active {
+              border-bottom: 2px solid $green;
+            }
+          }
+        }
+      }
+      &.menu-open {
+        nav {
+          display: block;
+        }
       }
     }
+    .lang {
+      float: right;
+      height: 65px;
+      padding: 12.5px 0;
+      line-height: 40px;
+    }
   }
-  .lang {
-    float: right;
-    height: 65px;
-    padding: 12.5px 0;
-    line-height: 40px;
-  }
-}
-
-
-/* logo */
-
-.logo {
-  float: left;
-  font-size: 38px;
-  height: 65px;
-  line-height: 65px;
-  margin-right: $gutter*4;
-  padding: $gutter - 5 0;
-  width: 200px;
-  img {
-    float: left;
-    width: 100%;
-  }
-  @include breakpoint(mobile) {
-    font-size: 20px;
-    margin-right: $gutter;
-    width: 150px;
-  }
-}
-
-
-/* sub header */
-
-#sub-header {
-  display: none;
-  bottom: 65px;
-  line-height: 45px;
-  opacity: 0;
-  position: absolute;
-  visibility: hidden;
-  @include transition(all 0.2s ease-in-out);
+  /* logo */
   .logo {
-    width: 150px;
-    padding: 21px 0;
-  }
-  .subscription {
-    display: inline-block;
-    input,
-    button {
-      height: 40px;
+    float: left;
+    font-size: 38px;
+    height: 65px;
+    line-height: 65px;
+    margin-right: $gutter*4;
+    padding: $gutter - 5 0;
+    width: 200px;
+    img {
+      float: left;
+      width: 100%;
     }
-    input {
-      width: 246px;
+    @include breakpoint(mobile) {
+      font-size: 20px;
+      margin-right: $gutter;
+      width: 150px;
     }
   }
-  .SNS,
-  .lang {
-    padding: 12.5px 0;
-    float: right;
-  }
-  .lang {
-    color: #fff;
-  }
-  @include breakpoint(desktop) {
-    display: block;
+  /* sub header */
+  #sub-header {
+    display: none;
+    line-height: 45px;
+    opacity: 0;
+    position: fixed;
+    top: -10px;
+    visibility: hidden;
+    @include transition(all 0.2s ease-in-out);
+    .logo {
+      width: 150px;
+      padding: 21px 0;
+    }
+    .subscription {
+      display: inline-block;
+      input,
+      button {
+        height: 40px;
+      }
+      input {
+        width: 246px;
+      }
+    }
+    .SNS,
+    .lang {
+      padding: $gutter/2 0;
+      float: right;
+    }
+    .lang {
+      color: #fff;
+    }
+    @include breakpoint(desktop) {
+      display: block;
+    }
   }
 }
