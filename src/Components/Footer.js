@@ -41,7 +41,7 @@ export default class Footer extends Component {
            </div>
          </div>
          <div className='bottom'>
-           <span>Buile by</span> <a href='http://wiredcraft.com'>Wiredcraft</a>
+           <span>Built by</span> <a href='http://wiredcraft.com'>Wiredcraft</a>
            <div>
              <Link
               to={{ pathname: '/coc', query }}
