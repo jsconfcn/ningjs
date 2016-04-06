@@ -35,7 +35,7 @@ export default class Footer extends Component {
            </div>
          </div>
          <div className='bottom'>
-           <span>Buile by</span> <a href='http://wiredcraft.com'>Wiredcraft with ❤️</a>
+           <span>Built by</span> <a href='http://wiredcraft.com'>Wiredcraft with ❤️</a>
            <div>
              <Link to={{ pathname: '/coc', query }} onClick={() => pageScrollTopAnimate(0, 300)} > Code Of Conduct </Link>
              <a href="http://jsconf.cn" target="new">JSConf.cn</a>
