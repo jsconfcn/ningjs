@@ -24,7 +24,7 @@ export default class Index extends Component {
   changeLang(lang) {
     let {pathname, query} = this.props.location
     query.locale = lang
-    this.context.router.replace({pathname: location.pathname, query})
+    this.context.router.replace({pathname: pathname, query})
   }
 
   render() {
