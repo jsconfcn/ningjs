@@ -10,7 +10,7 @@ import 'styles/pages/article.scss'
 
 export default class Speakers extends Component {
   _onApply() {
-    const submitForm = document.querySelector('#submitForm')
+    const submitForm = document.querySelector('#form')
     const timeInMS = 300
     pageScrollTopAnimate(submitForm.offsetTop, timeInMS)
   }
@@ -64,51 +64,7 @@ export default class Speakers extends Component {
                     }}
                   >赞助商页面</Link>. 而我们将会利用省下的这项资金更好地投入到大会筹办中去。</p>
            <p>期待你加入宁JS！</p>
-           <form id='submitForm'>
-             <p className='filed'>
-               <label><span>Name</span><em>*</em></label>
-               <input type='text' />
-             </p>
-              <p className='filed'>
-               <label><span>Current location</span><em>*</em></label>
-               <input type='text' />
-             </p>
-             <p className='filed'>
-               <label><span>Email</span><em>*</em></label>
-               <input type='text' />
-             </p>
-             <p className='filed'>
-               <label><span>Title of Talk</span><em>*</em></label>
-               <input type='text' />
-             </p>
-             <p className='filed'>
-               <label><span>Topic/Project+Summary</span><em>*</em></label>
-               <textarea placeholder='This will be used online to describe your talk please keep it to 300 words or less'></textarea>
-             </p>
-             <p className='filed'>
-               <label><span>Nominate another person?</span></label>
-               <textarea placeholder="Please give a reason and leave the person's name and contact info here"></textarea>
-             </p>
-             <p className='filed'>
-               <label><span>Past Presentations/Personal Blog (if you have any)</span></label>
-               <input type='text' />
-             </p>
-              <p className='filed'>
-               <label><span>Would your company be interested in sponsoring NingJS 2016? </span></label>
-               <span className='select'>
-                 <select>
-                   <option> </option>
-                   <option>Yes</option>
-                   <option>No</option>
-                 </select>
-               </span>
-             </p>
-             <p className='filed'>
-               <label><span>Anything else?</span></label>
-               <textarea placeholder='e.g. more info on your presentation, special requests, questions'></textarea>
-             </p>
-             <div className='action'><button type='submit' className='button green'>submit your proposal</button></div>
-           </form>
+           <div id='form'></div>
         </div>
       </article>
     ) : (
