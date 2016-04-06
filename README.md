@@ -7,4 +7,8 @@ The repository for the upcoming Nanjing Javascript Meetup
 npm i
 npm run dev
 ```
-Now go to http://localhost:6060/
+Now go to http://localhost:3000/
+
+
+## License 
+MIT

@@ -35,3 +35,4 @@ node_modules
 *.map
 .DS_Store
 build/CNAME
+ningjs.min.js*
