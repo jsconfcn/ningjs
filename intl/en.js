@@ -20,7 +20,7 @@ export default {
 
   ningjs: 'NingJS',
   jsconf_china_2016: 'JSConf China 2016',
-  nanjing: 'NanJing',
+  nanjing: 'Nanjing',
   stay_tuned: 'Stay Tuned',
   stay_tuned_intro: 'Be the first to hear about our offers and announcements.',
   notify_me: 'Notify Me',
@@ -66,7 +66,9 @@ export default {
   food_sponsor: 'After-party food & beverage sponsor',
   food_sponsor_intro: 'Brand exposure limited to the after-party/coffee break. Can be a non-tech type of brand.',
   media_sponsor: 'Media partner',
-  media_sponsor_intro: 'Non-cash partnership. Mutual relationship with the partner company while getting as much promotional value as possible.',
+  media_sponsor_intro: 'Mutual brand exposure with the partner company.',
+  others_sponsor: 'À la carte la carte sponsoring',
+  others_sponsor_intro: 'We can also offer you brand exposure in exchange of merchandises (raffle prizes or gifts, books, badge lanyards) or services (wifi, accommodation…). ',
   download_sponsor_package: 'DOWNLOAD THE SPONSOR PACKAGE (Coming soon)',
 
   take_a_look: 'Take a look',

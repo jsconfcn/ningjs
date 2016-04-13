@@ -30,9 +30,9 @@ export default class Footer extends Component {
          </div>
          <div className='right'>
            <span>{__('follow_wechat')}</span>
-           <div className='qrcode'>
+           <a className='qrcode' href='./assets/images/qrcode.jpg' target='new'>
              <img src='./assets/images/qrcode.jpg' className='img' width='80' />
-           </div>
+           </a>
          </div>
          <div className='bottom'>
            <span>Built by</span> <a href='http://wiredcraft.com'>Wiredcraft</a> <span>with &hearts;</span>

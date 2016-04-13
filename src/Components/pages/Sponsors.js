@@ -46,6 +46,10 @@ export default class Sponsors extends Component {
               <h5>{__('media_sponsor')}</h5>
               <p>{__('media_sponsor_intro')}</p>
             </li>
+            <li>
+              <h5>{__('others_sponsor')}</h5>
+              <p>{__('others_sponsor_intro')}</p>
+            </li>
           </ul>
           <div className='action'>
             <a className='button green disabled'>{__('download_sponsor_package')}</a>

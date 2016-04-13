@@ -183,6 +183,11 @@ article {
           background-position: -240px -274px;
         }
       }
+      &:nth-child(4) {
+        &:before {
+          background-position: -356px -282px
+        }
+      }
     }
   }
 }

@@ -35,9 +35,10 @@
     }
     .qrcode {
       @include font-size($normal - 1);
+      display: block;
       margin: ($gutter - 5) auto 0;
-      width: 80px;
       position: relative;
+      width: 80px;
       @include breakpoint(mobile) {
         margin: ($gutter - 5) 0 0
       }
