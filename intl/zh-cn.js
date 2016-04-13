@@ -50,7 +50,7 @@ export default {
   dinner: '讲师晚餐',
   ticket: '大会门票',
   photography: '专业摄像及摄影服务',
-  call_for_speakers_reminder: `<p>提示：JSconf中国所有演讲的目的都是为了分享知识与经验，或是你在技术方面做过的一些很牛的事情。我们欢迎你在演讲中向大家介绍你在工作中使用的工具，但是我们不鼓励任何形式的产品或服务推广。</p><p><strong>对了，如果你的公司愿意报销你的往返交通费及大会期间的住宿费，我们将把他们列为特别赞助商。</strong> 具体信息请查看我们的<a href=#/sponsors'>赞助商页面</a>。而我们将会利用省下的这项资金更好地投入到大会筹办中去。</p><p>期待你加入宁JS！</p>`,
+  call_for_speakers_reminder: `<p>提示：JSconf中国所有演讲的目的都是为了分享知识与经验，或是你在技术方面做过的一些很牛的事情。我们欢迎你在演讲中向大家介绍你在工作中使用的工具，但是我们不鼓励任何形式的产品或服务推广。</p><p><strong>对了，如果你的公司愿意报销你的往返交通费及大会期间的住宿费，我们将把他们列为特别赞助商。</strong> 具体信息请查看我们的<a href='#/sponsors'>赞助商页面</a>。而我们将会利用省下的这项资金更好地投入到大会筹办中去。</p><p>期待你加入宁JS！</p>`,
 
   call_for_sponsors_intro: ` <p>邀请您支持即将于2016年9月3日-9月4日在中国南京举办的2016 JS中国开发者大会（宁JS）。JSConf China（JavaScript 中国开发者大会）是一个为期两天的以技术开发者为中心的非营利国际性技术大会，主要关注JavaScript和Node.JS 方面的技术。我们将邀请众多国内外JavaScript社区著名的开发者来分享他们的知识及对JavaScript的独到见解。这里是过去几届活动的链接：（<a href='http://2012.jsconf.cn' target='new'>2012</a>，<a href='http://2013.jsconf.cn' target='new'>2013</a>，<a href='http://2014.jsconf.cn' target='new'>2014</a>，<a href='http://2015.jsconf.cn' target='new'>2015</a>）。 </p>
   <p>这是一次展示贵公司对JavaScript社区热忱及影响力的绝佳机会。赞助商的资金赞助一般用于支付场地的费用、餐饮、扬声器，以及相关活动的推广和执行。赞助商的支持让我们可以以更低的价格提供门票，提高参加率，更好地支持中国本土JS社区的发展。</p>
