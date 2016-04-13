@@ -69,7 +69,7 @@ export default {
   media_sponsor_intro: '互为合作伙伴，尽可能为大会提供媒体推广宣传及追踪报导。',
   others_sponsor: '定制赞助',
   others_sponsor_intro: '通过定制化的赞助（礼品、书籍、参会名牌、T恤、无线网络、住宿等），获取相应品牌曝光机会。',
-  download_sponsor_package: '下载赞助协议文档（敬请期待）',
+  download_sponsor_package: '下载赞助协议文档',
 
   'HuJS@Shanghai': '沪JS @ 上海',
   'JingJS @ Beijing': '京JS @ 北京',

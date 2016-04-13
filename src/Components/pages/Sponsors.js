@@ -52,7 +52,7 @@ export default class Sponsors extends Component {
             </li>
           </ul>
           <div className='action'>
-            <a className='button green disabled'>{__('download_sponsor_package')}</a>
+            <a className='button green' href='./assets/doc/NingJS-2016-Sponsorship-Agreement.pdf' target='new'>{__('download_sponsor_package')}</a>
           </div>
         </div>
       </article>

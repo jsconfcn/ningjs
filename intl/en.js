@@ -69,7 +69,7 @@ export default {
   media_sponsor_intro: 'Mutual brand exposure with the partner company.',
   others_sponsor: 'À la carte la carte sponsoring',
   others_sponsor_intro: 'We can also offer you brand exposure in exchange of merchandises (raffle prizes or gifts, books, badge lanyards) or services (wifi, accommodation…). ',
-  download_sponsor_package: 'DOWNLOAD THE SPONSOR PACKAGE (Coming soon)',
+  download_sponsor_package: 'DOWNLOAD THE SPONSOR PACKAGE',
 
   take_a_look: 'Take a look',
   take_a_look_intro: `To see presentations from last year's ShenJS, please look at our past conference sites at <a href='http://2015.jsconf.cn/' target='new'>http://2015.jsconf.cn</a> or check out the videos on <a href="https://www.youtube.com/channel/UCvFAekDfG_dL2Kcbq-vrPXQ" target="new" >YouTube</a><span> or </span><a href="http://www.tudou.com/home/wiredcraft" target="new" >Tudou</a>.`,
