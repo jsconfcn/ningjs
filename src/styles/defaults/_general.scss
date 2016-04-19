@@ -69,6 +69,9 @@ h4 {
   @include breakpoint(tablet) {
     @include font-size($large - 2);
   }
+  @include breakpoint(desktop) {
+    @include font-size($huge - 2);
+  }
 }
 
 h5 {
