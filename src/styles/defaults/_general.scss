@@ -44,6 +44,9 @@ h1 {
   @include breakpoint(tablet) {
     @include font-size($gigantic + 1);
   }
+  @include breakpoint(desktop) {
+    @include font-size($humongous + 1);
+  }
 }
 
 h2 {
