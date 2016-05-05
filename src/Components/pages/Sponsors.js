@@ -28,7 +28,7 @@ export default class Sponsors extends Component {
           <div className='icon-group'>
             <ul className='icon-list'>
               <li><div>{__('gold_sponsor')}</div></li>
-              <li><div>{__('sliver_sponsor')}</div></li>
+              <li><div>{__('silver_sponsor')}</div></li>
               <li><div>{__('bronze_sponsor')}</div></li>
             </ul>
           </div>

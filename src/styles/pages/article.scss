@@ -106,7 +106,7 @@ article {
         position: relative;
         width: 25%;
         &:before {
-          background: url('/assets/images/icons.png') no-repeat -4px -5px;
+          background: url('/assets/images/icons.png?') no-repeat -4px -5px;
           content: '';
           position: absolute;
           top: 0px;
@@ -156,7 +156,7 @@ article {
         margin: 0;
       }
       &:before {
-        background: url('/assets/images/icons.png') no-repeat -4px -5px;
+        background: url('/assets/images/icons.png?') no-repeat -4px -5px;
         content: '';
         position: absolute;
         left: 0px;

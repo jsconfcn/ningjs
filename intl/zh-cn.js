@@ -58,7 +58,7 @@ export default {
   <p>2016宁JS提供三个等级的赞助方案: 金，银，铜。您的支持对于大会来说非常重要，能够保证大会主办人员更好地组织与筹办这次活动。我们将详细列出不同方案的特权以及费用，如果您对于赞助文档有任何的需求与疑问，请告诉我们！<a href='mailto:support@jsconf.cn'>support@jsconf.cn</a></p>`,
   call_for_sponsors_mini_intro: '有兴趣支持JavaScript中国社区？成为我们2016宁JS的赞助商吧',
   gold_sponsor: '金牌赞助商',
-  sliver_sponsor: '银牌赞助商',
+  silver_sponsor: '银牌赞助商',
   bronze_sponsor: '铜牌赞助商',
   what_else_sponsor: '您还可以在以下方面为我们提供帮助：',
   speaker_sponsor: '讲师赞助',

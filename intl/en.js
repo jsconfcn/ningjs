@@ -58,7 +58,7 @@ export default {
   <p>NingJS Conf has three sponsorship levels: gold, silver, bronze. Your support is very important to the conference, and the conference committee ensures that these contributions are well recognized. We list the benefits and costs below. We are open to any sponsorship needs - chat with an organizer about package details at <a href='mailto:support@jsconf.cn'>support@jsconf.cn</a>.</p>`,
   call_for_sponsors_mini_intro: 'Interested in supporting the local JavaScript community in China? There is no better way then helping sponsor JSConf 2016 in Nanjing.',
   gold_sponsor: 'Gold Sponsor',
-  sliver_sponsor: 'Sliver Sponsor',
+  silver_sponsor: 'Silver Sponsor',
   bronze_sponsor: 'Bronze Sponsor',
   what_else_sponsor: 'What else can you sponsor?',
   speaker_sponsor: 'Speaker sponsor',
