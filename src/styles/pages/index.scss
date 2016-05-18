@@ -277,6 +277,93 @@ pages - index
 }
 
 
+/* speakers */
+
+#speakers {
+  @extend .padding;
+  padding-top: 0px;
+  ul {
+    margin: 0;
+    padding: 0;
+    @include breakpoint(mobile) {
+      text-align: center;
+    }
+    li {
+      display: inline-block;
+      list-style: none;
+      margin-right: 3.7%;
+      position: relative;
+      text-align: left;
+      width: 48%;
+      &:nth-child(2n) {
+        margin-right: 0px;
+      }
+      @include breakpoint(desktop) {
+        width: 17%;
+        &:nth-child(2n) {
+        margin-right: 3.7%;
+      }
+        &:nth-child(5n) {
+          margin-right: 0px;
+        }
+      }
+      @include breakpoint(mobile) {
+        width: 50%;
+        &:nth-child {
+          margin-right: 0px;
+        }
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+      div {
+        float: left;
+        position: relative;
+        width: 100%;
+        &:after {
+          @include background(radial-gradient(transparent,
+          rgba(47, 34, 79, 0.3)) left repeat);
+          bottom: 0;
+          content: '';
+          left: 0;
+          opacity: 1;
+          position: absolute;
+          right: 0;
+          top: 0;
+          @include transition-property(bottom,
+          opacity);
+          @include transition-duration(0.2s);
+          z-index: 999;
+        }
+      }
+      a {
+        float: left;
+        width: 100%;
+        &:hover {
+          h5 {
+            color: $purple;
+          }
+        }
+        h5 {
+          text-align: center;
+          margin: $gutter 0 $gutter/2;
+          @include font-size($larger + 2);
+          float: left;
+          width: 100%;
+          // position: absolute;
+          // top: 100%;
+          // width: 100%;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+
 /* display */
 
 #display-list {

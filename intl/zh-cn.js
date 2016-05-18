@@ -16,6 +16,7 @@ export default {
   year: '年',
   attendees: '参会者',
   speakers: '讲师',
+  confirmed_speakers: '已确认讲师',
   sponsors: '赞助商',
 
   ningjs: '宁JS',

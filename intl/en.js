@@ -16,6 +16,7 @@ export default {
   year: 'Years',
   attendees: 'Attendees',
   speakers: 'Speakers',
+  confirmed_speakers: 'Confirmed speakers',
   sponsors: 'Sponsors',
 
   ningjs: 'NingJS',

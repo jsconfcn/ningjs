@@ -100,6 +100,42 @@ export default class Home extends Component {
           <img src='./assets/images/map.jpg' className='map' />
         </section>
 
+        <section id='speakers' className='wrapper'>
+          <h2>{__('confirmed_speakers')}</h2>
+          <ul>
+            <li>
+              <a href='http://github.com/blesh' target='new'>
+                <div><img src='./assets/images/speakers/ben-lesh.jpg' /></div>
+                <h5>Ben Lesh</h5>
+              </a>
+            </li>
+            <li>
+              <a href='https://github.com/dmarcos/' target='new'>
+                <div><img src='./assets/images/speakers/diego-marcos.png' /></div>
+                <h5>Diego Marcos</h5>
+              </a>
+            </li>
+            <li>
+              <a href='https://github.com/yyx990803' target='new'>
+                <div><img src='./assets/images/speakers/evan-you.jpg' /></div>
+                <h5>Even You</h5>
+              </a>
+            </li>
+            <li>
+              <a href='https://github.com/thejameskyle' target='new'>
+                <div><img src='./assets/images/speakers/james-kyle.jpg' /></div>
+                <h5>James Kyle</h5>
+              </a>
+            </li>
+            <li>
+              <a href='https://github.com/soldair' target='new'>
+                <div><img src='./assets/images/speakers/ryan-day.png' /></div>
+                <h5>Ryan Day</h5>
+              </a>
+            </li>
+          </ul>
+        </section>
+
         <ul id='display-list'>
           <li><img src='./assets/images/media-01.jpg' /></li>
           <li><img src='./assets/images/media-02.jpg' /><img src='./assets/images/media-03.jpg' /></li>
