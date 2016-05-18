@@ -301,8 +301,8 @@ pages - index
       @include breakpoint(desktop) {
         width: 17%;
         &:nth-child(2n) {
-        margin-right: 3.7%;
-      }
+          margin-right: 3.7%;
+        }
         &:nth-child(5n) {
           margin-right: 0px;
         }
@@ -333,8 +333,8 @@ pages - index
           top: 0;
           @include transition-property(bottom,
           opacity);
-          @include transition-duration(0.2s);
           z-index: 999;
+          @include transition(all 0.2s ease-in-out);
         }
       }
       a {
@@ -343,6 +343,10 @@ pages - index
         &:hover {
           h5 {
             color: $purple;
+          }
+          div:after {
+            @include background(radial-gradient(transparent,
+            rgba(47, 34, 79, 0.2)) left repeat);
           }
         }
         h5 {

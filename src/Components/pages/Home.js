@@ -104,7 +104,7 @@ export default class Home extends Component {
           <h2>{__('confirmed_speakers')}</h2>
           <ul>
             <li>
-              <a href='http://github.com/blesh' target='new'>
+              <a href='https://github.com/blesh' target='new'>
                 <div><img src='./assets/images/speakers/ben-lesh.jpg' /></div>
                 <h5>Ben Lesh</h5>
               </a>
@@ -118,7 +118,7 @@ export default class Home extends Component {
             <li>
               <a href='https://github.com/yyx990803' target='new'>
                 <div><img src='./assets/images/speakers/evan-you.jpg' /></div>
-                <h5>Even You</h5>
+                <h5>Evan You</h5>
               </a>
             </li>
             <li>
