@@ -20,12 +20,8 @@ export default class Home extends Component {
               <div className='masthead'>
                 <h1>{__('ningjs')} · {__('jsconf_china_2016')}</h1>
                 <h4>2016.09.03 - 09.04 @ {__('nanjing')}</h4>
-                <div className='subscription'>
-                  <label>{__('stay_tuned')}</label>
-                  <form action='http://wiredcraft.us2.list-manage1.com/subscribe/post?u=18eb8d6c34ad5d4e781541da9&amp;id=ce3898dd2e' method='post' target='_blank'>
-                    <input type='email' name='EMAIL' className='email' required placeholder='Email Address' />
-                    <button type='submit' name='subscribe' className='button green'>{__('notify_me')}</button>
-                  </form>
+                <a className='button green tickets' href='http://www.bagevent.com/event/58905' target='new'>{__('buy_tickets')}</a>
+                <div className='subscription'>      
                   <p>{__('interest_sponsor_2016')}</p>
                   <Link to={{ pathname: '/sponsors', query }} >{__('sponsor_now')}</Link>
                 </div>
@@ -36,10 +32,10 @@ export default class Home extends Component {
         </section>
 
         <section id='call-for-speakers'>
-          <Link to={{ pathname: '/speakers', query }} className='col-2'>
-            <h2>{__('call_for_speakers')}</h2>
-            <p>{__('proposals_accept_time')}</p>
-            <button className='button green'>{__('apply')}</button>
+          <Link to='' className='col-2'>
+            <h2>{__('call_for_volunteers')}</h2>
+            <p></p>
+            <button className='button green'>{__('coming_soon')}</button>
             <div className='bg'></div>
           </Link>
           <Link to={{ pathname: '/sponsors', query }} className='col-2'>
@@ -127,10 +123,47 @@ export default class Home extends Component {
                 <h5>James Kyle</h5>
               </a>
             </li>
+
+
+
             <li>
-              <a href='https://github.com/soldair' target='new'>
-                <div><img src='./assets/images/speakers/ryan-day.png' /></div>
-                <h5>Ryan Day</h5>
+              <a href='https://github.com/atian25' target='new'>
+                <div><img src='./assets/images/speakers/tianzhu.png' /></div>
+                <h5>天猪</h5>
+              </a>
+            </li>
+            <li>
+              <a href='#' target='new'>
+                <div><img src='./assets/images/speakers/kenneth.png' /></div>
+                <h5>Kenneth Auchenberg</h5>
+              </a>
+            </li>
+
+            <li>
+              <a href='https://github.com/Unitech' target='new'>
+                <div><img src='./assets/images/speakers/alexandre.png' /></div>
+                <h5>Alexandre Strzelewicz</h5>
+              </a>
+            </li>
+
+            <li>
+              <a href='https://github.com/dfguo' target='new'>
+                <div><img src='./assets/images/speakers/guodafeng.png' /></div>
+                <h5>Dafeng Guo</h5>
+              </a>
+            </li>
+
+            <li>
+              <a href='https://github.com/wyvernnot' target='new'>
+                <div><img src='./assets/images/speakers/wangyan.png' /></div>
+                <h5>王龑</h5>
+              </a>
+            </li>
+
+            <li>
+              <a href='https://github.com/xudafeng' target='new'>
+                <div><img src='./assets/images/speakers/xudafeng.jpg' /></div>
+                <h5>徐达峰</h5>
               </a>
             </li>
           </ul>

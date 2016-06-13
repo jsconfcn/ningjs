@@ -11,13 +11,16 @@ export default {
 
   call_for_sponsors: '成为赞助商',
   call_for_speakers: '征寻讲师',
+  call_for_volunteers: '志愿者征集',
   about_us: '关于我们',
-
+  coming_soon: '即将开放',
   year: '年',
   attendees: '参会者',
   speakers: '讲师',
   confirmed_speakers: '已确认讲师',
   sponsors: '赞助商',
+  tickets: '购票',
+  buy_tickets: '购票参会',
 
   ningjs: '宁JS',
   jsconf_china_2016: 'JavaScript中国开发者大会2016',

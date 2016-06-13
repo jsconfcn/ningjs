@@ -12,12 +12,16 @@ export default {
 
   call_for_sponsors: 'Call for Sponsors',
   call_for_speakers: 'Call for Speakers',
+  call_for_volunteers: 'Call for Volunteers',
   about_us: 'About us',
+  coming_soon: 'Coming soon',
   year: 'Years',
   attendees: 'Attendees',
   speakers: 'Speakers',
   confirmed_speakers: 'Confirmed speakers',
   sponsors: 'Sponsors',
+  tickets: 'Tickets',
+  buy_tickets: 'buy tickets',
 
   ningjs: 'NingJS',
   jsconf_china_2016: 'JSConf China 2016',

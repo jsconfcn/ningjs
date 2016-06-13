@@ -352,6 +352,7 @@ pages - index
         h5 {
           text-align: center;
           margin: $gutter 0 $gutter/2;
+          min-height: 60px;
           @include font-size($larger + 2);
           float: left;
           width: 100%;

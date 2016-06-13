@@ -44,18 +44,18 @@ export default class Header extends Component {
     const Lang = (query.locale === 'zh-cn' ?
       <a className='lang' onClick={changeLang.bind(null, 'en')} >English</a> :
       <a className='lang' onClick={changeLang.bind(null, 'zh-cn')}>中文</a>)
-
+    const __ = this.props.__
     return (
       <div className='header-wrapper'>
         <header id='header' className='container'>
           {Logo}
           <NavTab __={this.props.__} query={query}/>
           {Lang}
+          <a className='button green tickets' href='http://www.bagevent.com/event/58905' target='new'>{__('tickets')}</a>     
         </header>
         <header id='sub-header' className='container'>
           {Logo}
           {Lang}
-          {/* SNS */}
           <div className='SNS'>
             <a className='weibo' href='http://weibo.com/JSConfChina' target='_blank'><span>Weibo</span></a>
             <a className='twitter' href='https://twitter.com/jsconfchina' target='_blank'><span>Twitter</span></a>

@@ -25,6 +25,20 @@
       &:hover {
         color: $green;
       }
+      &.tickets {
+        display: none;
+        color: $green;
+        height: $button - 10;
+        line-height: $button - 10;
+        margin: 15px 15px 0 0;
+        float: right;
+        &:hover {
+          color: $black;
+        }
+        @include breakpoint(desktop) {
+          display: block;
+        }
+      }
     }
     .nav {
       float: right;
@@ -71,6 +85,12 @@
           }
           &.active {
             color: $green;
+          }
+          &.ticket {
+            display: block;
+            @include breakpoint(desktop) {
+              display: none;
+            }
           }
         }
       }
@@ -126,9 +146,11 @@
     @include breakpoint(mobile) {
       font-size: 20px;
       margin-right: $gutter;
-      width: 150px;
+      margin-top: 10px;
+      width: 100px;
     }
   }
+
   /* sub header */
   #sub-header {
     display: none;

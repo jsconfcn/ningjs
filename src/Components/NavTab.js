@@ -60,6 +60,7 @@ export default class NavTab extends Component {
             to={{ pathname: '/', query }} >
             {__('about_us')}
           </Link>
+          <a href='http://www.bagevent.com/event/58905' target='new' className='ticket'>{__('tickets')}</a>
         </nav>
         </div>
     )

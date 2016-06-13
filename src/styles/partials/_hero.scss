@@ -53,6 +53,11 @@
         width: 100%;
         a {
           @include font-size($smaller + 1);
+          &.tickets {
+            display: inline-block;
+            line-height: $button;
+            height: $button;
+          }
         }
         h1 {
           color: #fff;
