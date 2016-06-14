@@ -22,6 +22,13 @@ export default class NavTab extends Component {
       pageScrollTopAnimate(about.offsetTop, timeInMS)
     }, 0)
   }
+  scrollToSpeakers(evt) {
+    setTimeout(() => {
+      const about = document.querySelector('#speakers')
+      const timeInMS = 500
+      pageScrollTopAnimate(about.offsetTop, timeInMS)
+    }, 0)
+  }
 
   openMenu() {
     this.setState({
@@ -46,15 +53,14 @@ export default class NavTab extends Component {
           className='toggle-button'
           onClick={this.openMenu.bind(this)}/>
         <nav>
-          <Link className={ isActive('/speakers') ? 'active' : ''}
-            to={{ pathname: '/speakers', query }}
-            onClick={this.active.bind(this, 'speakers')}>
-            {__('call_for_speakers')}
-          </Link>
           <Link className={isActive('/sponsors') ? 'active' : ''}
             to={{ pathname: '/sponsors', query }}
             onClick={this.active.bind(this, 'sponsors')}>
             {__('call_for_sponsors')}
+          </Link>
+          <Link onClick={this.scrollToSpeakers}
+            to={{ pathname: '/', query }} >
+            {__('speakers')}
           </Link>
           <Link onClick={this.scrollToAbout}
             to={{ pathname: '/', query }} >
