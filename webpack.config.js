@@ -1,4 +1,5 @@
 const bourbon = require('node-bourbon').includePaths;
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: ['./src/app.js'],
@@ -43,5 +44,12 @@ module.exports = {
       test: /\.json$/,
       loader: 'json'
     }, ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      hash: true,
+      filename: 'index.html',
+      template: 'src/index.template.html'
+    })
+  ]
 }

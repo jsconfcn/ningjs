@@ -1,5 +1,6 @@
 const webpack = require('webpack')
 const bourbon = require('node-bourbon').includePaths;
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   devtool: 'cheap-module-source-map',
@@ -60,5 +61,10 @@ module.exports = {
         NODE_ENV: JSON.stringify('production')
       }
     }),
+    new HtmlWebpackPlugin({
+      hash: true,
+      filename: 'index.html',
+      template: 'src/index.template.html'
+    })
   ]
 }
