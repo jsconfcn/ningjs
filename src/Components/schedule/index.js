@@ -184,7 +184,7 @@ export default class Index extends Component {
         avatar: '/assets/images/speakers/wangyan.png',
         title: '前端 DevOps 实践',
         social: 'https://github.com/wyvernnot',
-        company: 'Oneapm'
+        company: 'OneAPM'
       },{
         time: '17:20',
         title: 'Raffle'
