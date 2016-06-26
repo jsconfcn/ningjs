@@ -1,0 +1,82 @@
+.speakers-container {
+  .days {
+    display: flex;
+    flex-direction: row;
+    h3 {
+      flex: 1;
+    }
+
+  }
+
+  .schedule {
+    h4 {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .speakers {
+      display: flex;
+      flex-direction: row;
+    }
+
+    article {
+      flex: 1 100%;
+      padding: 0 20px;
+      max-width: 50%;
+
+      .avatar {
+        max-width: 160px;
+        max-height: 160px;
+        border-radius: 2px;
+      }
+      .content {
+        a {
+          color: rgb(82, 69, 160);
+        }
+      }
+    }
+
+    article:nth-of-type(odd) {
+      background-image: url(/assets/images/pattern-vertical.gif);
+      background-position: top right;
+      background-repeat: repeat-y;
+      padding-left: 2%;
+      padding-right: 5%;
+      text-align: right;
+
+      .avatar {
+        float: right;
+        margin-left: 20px;
+      }
+    }
+
+    article:nth-of-type(even) {
+      padding-left: 5%;
+      margin-right: 0;
+      padding-right: 2%;
+      text-align: left;
+      .avatar {
+        float: left;
+        margin-right: 20px;
+      }
+    }
+
+  }
+  .title {
+    width: 90%;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(24, 20, 46);
+    color: rgb(25, 230, 155);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  article {
+    .avatar {
+      max-width: 120px !important;
+      max-height: 120px !important;
+    }
+  }
+}

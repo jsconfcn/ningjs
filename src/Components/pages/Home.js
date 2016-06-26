@@ -6,6 +6,7 @@
 
 import React, { Component,createElement } from 'react'
 import { Link } from 'react-router'
+import Schedule from '../schedule'
 
 export default class Home extends Component {
 
@@ -21,7 +22,7 @@ export default class Home extends Component {
                 <h1>{__('ningjs')} · {__('jsconf_china_2016')}</h1>
                 <h4>2016.09.03 - 09.04 @ {__('nanjing')}</h4>
                 <a className='button green tickets' href='http://www.bagevent.com/event/58905' target='new'>{__('buy_tickets')}</a>
-                <div className='subscription'>      
+                <div className='subscription'>
                   <p>{__('interest_sponsor_2016')}</p>
                   <Link to={{ pathname: '/sponsors', query }} >{__('sponsor_now')}</Link>
                 </div>
@@ -55,7 +56,7 @@ export default class Home extends Component {
             <ul className='statistic'>
               <li><h1>5</h1><span>{__('year')}</span></li>
               <li><h1>1730+</h1><span>{__('attendees')}</span></li>
-              <li><h1>80+</h1><span>{__('speakers')}</span></li>
+              <li><h1>80+</h1><span>{__('Schedule')}</span></li>
               <li><h1>40+</h1><span>{__('sponsors')}</span></li>
             </ul>
             <div className='graph'>
@@ -97,76 +98,8 @@ export default class Home extends Component {
         </section>
 
         <section id='speakers' className='wrapper'>
-          <h2>{__('confirmed_speakers')}</h2>
-          <ul>
-            <li>
-              <a href='https://github.com/blesh' target='new'>
-                <div><img src='./assets/images/speakers/ben-lesh.jpg' /></div>
-                <h5>Ben Lesh</h5>
-              </a>
-            </li>
-            <li>
-              <a href='https://github.com/dmarcos/' target='new'>
-                <div><img src='./assets/images/speakers/diego-marcos.png' /></div>
-                <h5>Diego Marcos</h5>
-              </a>
-            </li>
-            <li>
-              <a href='https://github.com/yyx990803' target='new'>
-                <div><img src='./assets/images/speakers/evan-you.jpg' /></div>
-                <h5>Evan You</h5>
-              </a>
-            </li>
-            <li>
-              <a href='https://github.com/thejameskyle' target='new'>
-                <div><img src='./assets/images/speakers/james-kyle.jpg' /></div>
-                <h5>James Kyle</h5>
-              </a>
-            </li>
-
-
-
-            <li>
-              <a href='https://github.com/atian25' target='new'>
-                <div><img src='./assets/images/speakers/tianzhu.png' /></div>
-                <h5>天猪</h5>
-              </a>
-            </li>
-            <li>
-              <a href='#' target='new'>
-                <div><img src='./assets/images/speakers/kenneth.png' /></div>
-                <h5>Kenneth Auchenberg</h5>
-              </a>
-            </li>
-
-            <li>
-              <a href='https://github.com/Unitech' target='new'>
-                <div><img src='./assets/images/speakers/alexandre.png' /></div>
-                <h5>Alexandre Strzelewicz</h5>
-              </a>
-            </li>
-
-            <li>
-              <a href='https://github.com/dfguo' target='new'>
-                <div><img src='./assets/images/speakers/guodafeng.png' /></div>
-                <h5>Dafeng Guo</h5>
-              </a>
-            </li>
-
-            <li>
-              <a href='https://github.com/wyvernnot' target='new'>
-                <div><img src='./assets/images/speakers/wangyan.png' /></div>
-                <h5>王龑</h5>
-              </a>
-            </li>
-
-            <li>
-              <a href='https://github.com/xudafeng' target='new'>
-                <div><img src='./assets/images/speakers/xudafeng.jpg' /></div>
-                <h5>徐达峰</h5>
-              </a>
-            </li>
-          </ul>
+          <h2>{__('Schedule')}</h2>
+          <Schedule __={__}/>
         </section>
 
         <ul id='display-list'>

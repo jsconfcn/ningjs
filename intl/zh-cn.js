@@ -101,6 +101,8 @@ export default {
   <h4>会场 & 社交场所</h4>
   <p>我们希望参会者能够在所有的大会会场以及相关的社交场所遵守行为守则。</p>
   <h4>许可证</h4>
-  <p>这份行为准则借鉴自Ada Initiative和其他志愿者创建的Geek Feminism wiki示例政策，遵守Creative Commons Zero许可证。</p>`
+  <p>这份行为准则借鉴自Ada Initiative和其他志愿者创建的Geek Feminism wiki示例政策，遵守Creative Commons Zero许可证。</p>`,
+
+  Schedule: '日程'
 
 }

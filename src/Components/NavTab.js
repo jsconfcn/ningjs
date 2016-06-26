@@ -24,9 +24,9 @@ export default class NavTab extends Component {
   }
   scrollToSpeakers(evt) {
     setTimeout(() => {
-      const about = document.querySelector('#speakers')
+      const element = document.querySelector('#speakers')
       const timeInMS = 500
-      pageScrollTopAnimate(about.offsetTop, timeInMS)
+      pageScrollTopAnimate(element.offsetTop - 100, timeInMS)
     }, 0)
   }
 
@@ -60,7 +60,7 @@ export default class NavTab extends Component {
           </Link>
           <Link onClick={this.scrollToSpeakers}
             to={{ pathname: '/', query }} >
-            {__('speakers')}
+            {__('Schedule')}
           </Link>
           <Link onClick={this.scrollToAbout}
             to={{ pathname: '/', query }} >
