@@ -4,23 +4,18 @@ import 'styles/speakers/style.scss'
 class Article extends Component {
 
   render() {
-    const { __, name, avatar, title, desc, social } = this.props
+    const { __, name, avatar, title, desc, social, company } = this.props
+    const avatarEl = avatar ? <img className='avatar' src={avatar} /> : null
+    const companyEL = company ? <h5>From {company}</h5> : null
+    const nameEl = name ? <div><a href={social}>By {name}</a></div> : null
     return (
       <article>
-        {
-          avatar
-          ? <img className='avatar' src={avatar} />
-          : null
-        }
+        { avatarEl }
         <div className='content'>
           <h3>{__(title)}</h3>
           <p>{__(desc)}</p>
-          {
-            name
-            ? <div><a href={social}>By {name}</a></div>
-            : null
-          }
-
+          { nameEl }
+          { companyEL }
         </div>
       </article>
     )

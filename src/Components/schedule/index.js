@@ -25,7 +25,8 @@ export default class Index extends Component {
         name: 'James Kyle',
         avatar: '/assets/images/speakers/james-kyle.jpg',
         title: 'How to build a compiler',
-        social: 'https://github.com/thejameskyle'
+        social: 'https://github.com/thejameskyle',
+        company: 'Cloudflare'
       }, {
         time: '10:45',
         title: 'Break'
@@ -34,13 +35,15 @@ export default class Index extends Component {
         name: '天猪',
         avatar: '/assets/images/speakers/tianzhu.png',
         title: '阿里node 团队开源项目，企业级框架EGG',
-        social: 'https://github.com/eggjs'
+        social: 'https://github.com/eggjs',
+        company: 'Alibaba UC Group'
       }, {
         time: '11:30',
         name: '严清',
         avatar: '/assets/images/speakers/yanqing.png',
         title: '聊聊 JS 测试框架',
-        social: 'https://github.com/zensh'
+        social: 'https://github.com/zensh',
+        company: 'Teambition'
       }, {
         time: '12:00',
         title: 'Lunch & Break'
@@ -49,13 +52,15 @@ export default class Index extends Component {
         name: 'Alexandre Strzelewicz',
         avatar: '/assets/images/speakers/alexandre.png',
         title: 'GridControl: Networked PM2 for Microservices applications',
-        social: 'https://github.com/Unitech'
+        social: 'https://github.com/Unitech',
+        company: 'PM2'
       }, {
         time: '14:00',
         name: '罗诗亚',
         avatar: '/assets/images/speakers/luoshiya.png',
         title: '3D on the Web',
-        social: 'https://github.com/shiya'
+        social: 'https://github.com/shiya',
+        company: 'Autodesk'
       }, {
         time: '14:30',
         title: 'Break'
@@ -67,13 +72,15 @@ export default class Index extends Component {
         name: 'Diego Marcos',
         avatar: '/assets/images/speakers/diego-marcos.png',
         title: 'Aframe and WebVR',
-        social: 'https://github.com/dmarcos'
+        social: 'https://github.com/dmarcos',
+        company: 'Mozilla'
       }, {
         time: '15:40',
         name: '郭达峰',
         avatar: '/assets/images/speakers/guodafeng.png',
         title: 'Building a Unified Frontend and Mobile Team',
-        social: 'https://github.com/dfguo'
+        social: 'https://github.com/dfguo',
+        company: 'Strikingly'
       },{
         time: '16:10',
         title: 'Break'
@@ -85,7 +92,8 @@ export default class Index extends Component {
         name: 'Ryan Day',
         avatar: '/assets/images/speakers/ryan.png',
         title: 'Npm install food',
-        social: 'https://github.com/soldair'
+        social: 'https://github.com/soldair',
+        company: 'NPM'
       },{
         time: '17:20',
         title: 'Raffle'
@@ -101,13 +109,15 @@ export default class Index extends Component {
         name: '孙坤鹏',
         avatar: '/assets/images/speakers/sunkunpeng.png',
         title: '单页应用“联邦制”实践',
-        social: '／'
+        social: '／',
+        company: 'ucloud'
       }, {
         time: '10:15',
         name: 'Kenneth Auchenberg',
         avatar: '/assets/images/speakers/kenneth.png',
         title: 'DevTools for the Progressive Web',
-        social: 'https://kenneth.io'
+        social: 'https://kenneth.io',
+        company: 'Microsoft'
       }, {
         time: '10:45',
         title: 'Break'
@@ -116,13 +126,15 @@ export default class Index extends Component {
         name: 'Aliyun Node Team',
         avatar: '//2015.jsconf.cn/images/speakers/2.jpg',
         title: 'Waiting',
-        social: 'https://github.com/aliyun-node'
+        social: 'https://github.com/aliyun-node',
+        company: 'Aliyun'
       }, {
         time: '11:30',
         name: 'Karolina Szczur',
         avatar: '/assets/images/speakers/karolina.jpg',
         title: 'The Cost of Open Source',
-        social: 'https://github.com/thefoxis'
+        social: 'https://github.com/thefoxis',
+        company: 'Envato'
       }, {
         time: '12:00',
         title: 'Lunch & Break'
@@ -131,13 +143,15 @@ export default class Index extends Component {
         name: '徐达峰',
         avatar: '/assets/images/speakers/xudafeng.jpg',
         title: '面向未来的自动化测试-Macaca',
-        social: 'https://github.com/xudafeng'
+        social: 'https://github.com/xudafeng',
+        company: 'Alipay'
       }, {
         time: '14:00',
         name: 'Ben Lesh',
         avatar: '/assets/images/speakers/ben-lesh.jpg',
         title: 'Managing Async with RxJS 5 at Netflix',
-        social: 'https://github.com/blesh'
+        social: 'https://github.com/blesh',
+        company: 'Netflix'
       }, {
         time: '14:30',
         title: 'Break'
@@ -149,13 +163,15 @@ export default class Index extends Component {
         name: '梁伟盛',
         avatar: '/assets/images/speakers/dasheng.png',
         title: '移动海量服务下基于React的高性能同构实践',
-        social: '/'
+        social: '/',
+        company: 'Tencent Cloud'
       }, {
         time: '15:40',
         name: 'Peter Liu',
         avatar: '/assets/images/speakers/peter.png',
         title: 'Build a Better App with Mapbox',
-        social: 'https://github.com/peterqliu'
+        social: 'https://github.com/peterqliu',
+        company: 'Mapbox'
       },{
         time: '16:10',
         title: 'Break'
@@ -167,7 +183,8 @@ export default class Index extends Component {
         name: '王龑',
         avatar: '/assets/images/speakers/wangyan.png',
         title: '前端 DevOps 实践',
-        social: 'https://github.com/wyvernnot'
+        social: 'https://github.com/wyvernnot',
+        company: 'Oneapm'
       },{
         time: '17:20',
         title: 'Raffle'
