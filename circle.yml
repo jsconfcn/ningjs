@@ -2,6 +2,11 @@ machine:
   node:
     version: 4.4.5
 
+general:
+  branches:
+    only:
+      - master
+
 dependencies:
   pre:
     - git config --global user.email "support@jsconf.cn"
