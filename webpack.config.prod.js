@@ -4,10 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   devtool: 'cheap-module-source-map',
-  entry: ['./src/app.js'],
+  entry: {
+    app: './src/app.js',
+    vendor: ['react', 'lodash', 'react', 'react-dom', 'react-router']
+  },
   output: {
     path: __dirname + '/build',
-    filename: 'ningjs.min.js'
+    filename: 'ningjs.min.[hash].js'
   },
   resolve: {
     modulesDirectories: [
@@ -48,6 +51,7 @@ module.exports = {
     }, ]
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.min.js'),
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
       compress: {
@@ -62,7 +66,6 @@ module.exports = {
       }
     }),
     new HtmlWebpackPlugin({
-      hash: true,
       filename: 'index.html',
       template: 'src/index.template.html'
     })

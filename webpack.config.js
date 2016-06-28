@@ -1,11 +1,15 @@
-const bourbon = require('node-bourbon').includePaths;
+const webpack = require('webpack')
+const bourbon = require('node-bourbon').includePaths
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: ['./src/app.js'],
+  entry: {
+    app: './src/app.js',
+    vendor: ['react', 'lodash', 'react', 'react-dom', 'react-router']
+  },
   output: {
     path: __dirname + '/build',
-    filename: 'ningjs.min.js'
+    filename: 'ningjs.min.[hash].js'
   },
   resolve: {
     modulesDirectories: [
@@ -46,8 +50,8 @@ module.exports = {
     }, ]
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.min.js'),
     new HtmlWebpackPlugin({
-      hash: true,
       filename: 'index.html',
       template: 'src/index.template.html'
     })
