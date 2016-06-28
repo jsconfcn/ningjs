@@ -4,8 +4,8 @@ machine:
 
 dependencies:
   pre:
-    - git config user.email "support@jsconf.cn"
-    - git config user.name "jsconfcn"
+    - git config --global user.email "support@jsconf.cn"
+    - git config --global user.name "jsconfcn"
     - npm i npm@^3.9.0 -g
 
 deployment:
