@@ -7,6 +7,8 @@ dependencies:
     - git config --global user.email "support@jsconf.cn"
     - git config --global user.name "jsconfcn"
     - npm i npm@^3.9.0 -g
+  post:
+    - npm rebuild
 
 deployment:
   deploy:
