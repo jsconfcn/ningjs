@@ -164,7 +164,7 @@ export default class Index extends Component {
         avatar: '/assets/images/speakers/dasheng.png',
         title: '移动海量服务下基于React的高性能同构实践',
         social: '/',
-        company: 'Tencent Cloud'
+        company: 'Tencent IMWeb Team'
       }, {
         time: '15:40',
         name: 'Peter Liu',
