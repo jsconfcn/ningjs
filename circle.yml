@@ -1,0 +1,15 @@
+machine:
+  node:
+    version: 4.4.5
+
+dependencies:
+  pre:
+    - npm i npm@^3.9.0 -g
+
+
+deployment:
+  deploy:
+    branch: master
+    commands:
+      - npm run deploy
+
