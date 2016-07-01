@@ -110,7 +110,7 @@ export default class Index extends Component {
         avatar: '/assets/images/speakers/sunkunpeng.png',
         title: '单页应用“联邦制”实践',
         social: '／',
-        company: 'ucloud'
+        company: 'UCloud'
       }, {
         time: '10:15',
         name: 'Kenneth Auchenberg',
