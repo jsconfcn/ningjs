@@ -109,7 +109,7 @@ export default class Index extends Component {
         name: '孙坤鹏',
         avatar: '/assets/images/speakers/sunkunpeng.png',
         title: '单页应用“联邦制”实践',
-        social: '／',
+        social: 'http://weibo.com/u/3275479734',
         company: 'UCloud'
       }, {
         time: '10:15',
