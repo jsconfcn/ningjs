@@ -93,6 +93,13 @@ export default class Home extends Component {
                 </li>
               </ul>
             </div>
+            <div className='organizer'>
+              <h3>{__('organizer')}</h3>
+              <div className='cols'>
+                <p dangerouslySetInnerHTML={{__html: __('organizer_intro')}} ></p>
+              </div>
+              
+            </div>
           </div>
           <img src='./assets/images/map.jpg' className='map' />
         </section>

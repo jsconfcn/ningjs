@@ -37,6 +37,9 @@ export default {
   apply: 'apply',
   get_out_ads_go_ahead: 'Interested in supporting the local JavaScript community in China? Check our sponsor packages now - limited sponsorship opportunities available.',
   sponsor: 'sponsor',
+  organizer: `Who's the organizer?`,
+  organizer_intro: `<a href='http://wiredcraft.com' target='new'>Wiredcraft</a> is a full service digital agency based in Shanghai, Washington DC and Berlin. We are Design, Data Science, API and DevOps experts. Think data visualizations for the World Bank Open Data Portal, or election software for the first democratic elections in Myanmar in 25 years. We support our local tech and design communities by organizing monthly meetups, JSConf China and <a href='http://2016.uiuxconf.com' target='new'>UI/UX Conf China</a>.`,
+
 
   about_us_intro: `<p>JSConf China is a two-day developer-driven non-profit event focused on JavaScript and Node.js technologies. We bring together notable figures from both the Chinese and international JavaScript communities to share their knowledge and passion for JavaScript. Here is the program for the past years <a href='http://2012.jsconf.cn' target='new'>2012</a>, <a href='http://2013.jsconf.cn' target='new'>2013</a>, <a href='http://2014.jsconf.cn' target='new'>2014</a>, <a href='http://2015.jsconf.cn' target='new'>2015</a>. You can check out the videos from 2015 JSConf China in Shenzhen on <a href='https://www.youtube.com/channel/UCvFAekDfG_dL2Kcbq-vrPXQ' target='new'>YouTube</a> and <a href='http://www.tudou.com/home/wiredcraft' target='new'>Tudou</a>. This year we will hold the JSConf China in Nanjing on <strong>September 3rd-4th, 2016.</strong></p>`,
 

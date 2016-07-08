@@ -36,6 +36,8 @@ export default {
   apply: '在线申请',
   get_out_ads_go_ahead: '有兴趣支持JavaScript中国社区？查看我们的赞助协议文档 —— 机会有限！',
   sponsor: '赞助详情',
+  organizer: `大会组织者`,
+  organizer_intro: `<a href='http://wiredcraft.com' target='new'>Wiredcraft</a>是一家本部位于上海的电子科技公司，在美国华盛顿及德国柏林均有分部。我们的专长是设计、数据科学，API和 DevOps，我们曾帮助世界银行实现开源数据门户的数据可视化，为25年来缅甸第一次民主选举设计选票系统。我们通过每月组织线下活动(UIUX meetup, JS meetup, Hacker News meetup, Docker meetup)来支持本土科技与设计社区，每年我们都组织JS Conf及<a href='http://2016.uiuxconf.com' target='new'>UIUX Conf</a>。`,
 
   about_us_intro: `<p><span>JSConf China（JavaScript 中国开发者大会）是一个为期两天的以技术开发者为中心的非营利国际性技术大会，主要关注JavaScript和Node.JS 方面的技术。期间我们将邀请众多国内外JavaScript社区著名的开发者来分享他们的知识及对JavaScript的独到见解。这里是过去几届活动的链接：</span><span>（</span><a href="http://2012.jsconf.cn" target="new" >2012</a><span>，</span><a href="http://2013.jsconf.cn" target="new" >2013</a><span>，</span><a href="http://2014.jsconf.cn" target="new" >2014</a><span>，</span><a href="http://2015.jsconf.cn" target="new" >2015</a><span>）。</span>去年深圳JS大会的视频可以在 <a href='https://www.youtube.com/channel/UCvFAekDfG_dL2Kcbq-vrPXQ' target='new'>YouTube</a> 和 <a href='http://www.tudou.com/home/wiredcraft' target='new'>Tudou</a>上看到。<span>今年JS中国开发者大会将在南京于</span><strong ><span>2016年9月3日 － 9月4日举行</span>.</strong</p>`,
 

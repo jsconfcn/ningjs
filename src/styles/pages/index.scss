@@ -274,6 +274,53 @@ pages - index
     top: 300px;
     z-index: 0;
   }
+  .organizer {
+    margin-top: $gutter*5;
+    .cols {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      div {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        float: left;
+        width: 33.33%;
+        a {
+          text-align: center;
+          display: block;
+          img {
+            width: 70%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto 15%;
+          }
+        }
+      }
+      // p {
+      //   margin: 0;
+      //   padding-left: 33.33%;
+      //   width: 66.66%;
+      // }
+      @include breakpoint(mobile) {
+        div {
+          height: 100px;
+          position: relative;
+          width: 100%;
+          margin-bottom: $gutter*2;
+        }
+        // p.intro {
+        //   padding: 0;
+        //   width: 100%;
+        // }
+      }
+    }
+  }
 }
 
 
