@@ -26,7 +26,7 @@ export default class Index extends Component {
         avatar: '/assets/images/speakers/james-kyle.jpg',
         title: 'How to build a compiler',
         social: 'https://github.com/thejameskyle',
-        company: 'Cloudflare'
+        company: 'Facebook'
       }, {
         time: '10:45',
         title: 'Break'
