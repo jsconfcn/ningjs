@@ -5,9 +5,9 @@ class Article extends Component {
 
   render() {
     const { __, name, avatar, title, desc, social, company } = this.props
-    const avatarEl = avatar ? <img className='avatar' src={avatar} /> : null
-    const companyEL = company ? <h5>From {company}</h5> : null
-    const nameEl = name ? <div><a href={social}>By {name}</a></div> : null
+    const avatarEl = avatar ? <div className='avatar'><img src={avatar} /></div> : null
+    const companyEL = company ? <h5>{company}</h5> : null
+    const nameEl = name ? <div><a href={social}>{name}</a></div> : null
     return (
       <article>
         { avatarEl }

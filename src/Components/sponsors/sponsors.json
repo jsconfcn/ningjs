@@ -1,0 +1,49 @@
+{
+  "Organizer": [{
+    "name": "Wiredcraft",
+    "logo": "/assets/images/sponsors/wiredcraft.png",
+    "link": "https://wiredcraft.com/"
+  }],
+  "Gold": [{
+    "name": "Ucloud",
+    "logo": "/assets/images/sponsors/ucloud.png",
+    "link": "https://www.ucloud.cn/"
+  }],
+
+  "Silver": [{
+    "name": "Teambition",
+    "logo": "/assets/images/sponsors/teambition.png",
+    "link": "https://www.teambition.com/"
+  }, {
+    "name": "Qiniu",
+    "logo": "/assets/images/sponsors/qiniu.png",
+    "link": "https://github.com/yyx990803"
+  }, {
+    "name": "Mapbox",
+    "logo": "/assets/images/sponsors/mapbox.png",
+    "link": "https://www.mapbox.com/"
+  }, {
+    "name": "aliyun",
+    "logo": "/assets/images/sponsors/aliyun.png",
+    "link": "https://www.aliyun.com/"
+
+  }, {
+    "name": "goyoo",
+    "logo": "/assets/images/sponsors/goyoo.png",
+    "link": "http://www.goyoo.com/"
+  }],
+  "Bronze": [{
+    "name": "Oneapm",
+    "logo": "/assets/images/sponsors/oneapm.png",
+    "link": "http://www.oneapm.com/"
+  }],
+  "Media": [{
+    "name": "Segmentfault",
+    "logo": "/assets/images/sponsors/sf.png",
+    "link": "https://segmentfault.com/"
+  }, {
+    "name": "Technode",
+    "logo": "/assets/images/sponsors/technode.png",
+    "link": "http://technode.com/"
+  }]
+}

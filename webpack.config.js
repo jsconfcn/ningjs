@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     app: './src/app.js',
     vendor: ['react', 'lodash', 'react', 'react-dom', 'react-router']
+    //'leaflet', 'react-leaflet'
   },
   output: {
     path: __dirname + '/build',

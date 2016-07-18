@@ -45,7 +45,7 @@ h1 {
     @include font-size($gigantic + 1);
   }
   @include breakpoint(desktop) {
-    @include font-size($humongous + 1);
+    @include font-size($humongous - 2);
   }
 }
 
@@ -96,7 +96,7 @@ button {
 .wrapper {
   margin: 0 auto;
   max-width: 1400px;
-  width: 80%;
+  width: 60%;
   // @include breakpoint(highres) {
   //   max-width: 1100px;
   // }

@@ -19,6 +19,11 @@ export default {
   speakers: '讲师',
   confirmed_speakers: '已确认讲师',
   sponsors: '赞助商',
+  confirmed_sponsors: '部分赞助商',
+  location: '地址',
+  location_title: '大会地址',
+  hotel: '南京绿地洲际酒店',
+  address: '南京市鼓楼区中央路1号(地铁1号线鼓楼站4A口出北行170米)',
   tickets: '购票',
   buy_tickets: '购票参会',
 
@@ -63,6 +68,7 @@ export default {
   <h4>赞助方案</h4>
   <p>2016宁JS提供三个等级的赞助方案: 金，银，铜。您的支持对于大会来说非常重要，能够保证大会主办人员更好地组织与筹办这次活动。我们将详细列出不同方案的特权以及费用，如果您对于赞助文档有任何的需求与疑问，请告诉我们！<a href='mailto:support@jsconf.cn'>support@jsconf.cn</a></p>`,
   call_for_sponsors_mini_intro: '有兴趣支持JavaScript中国社区？成为我们2016宁JS的赞助商吧',
+  call_for_volunteers_intro: '你是Javascript/Node.js/React的忠实粉丝吗？想要成为国际开发者社区的一员吗？你愿意接受更大的挑战吗？',
   gold_sponsor: '金牌赞助商',
   silver_sponsor: '银牌赞助商',
   bronze_sponsor: '铜牌赞助商',

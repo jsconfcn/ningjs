@@ -1,0 +1,17 @@
+#map-container {
+  height: 280px;
+  width: 100%;
+  @include breakpoint(mobile) {}
+  #map1 {
+    height: 280px;
+    .leaflet-control-attribution.leaflet-control {
+    	display: none;
+    }
+  }
+  @include breakpoint(desktop) {
+  	height: 400px;
+  	#map1 {
+  		height: 400px;
+  	}
+  }
+}

@@ -1,4 +1,5 @@
 @import '../main';
+@import '../partials/_map';
 
 /* ------
 pages - index
@@ -40,7 +41,7 @@ pages - index
       width: 100%;
     }
     .bg {
-      background: url('/assets/images/bg-col-call-for-proposals.jpg') no-repeat center center;
+      background: url('/assets/images/bg-col-call-for-volunteers.jpg') no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -100,11 +101,12 @@ pages - index
     padding: 0px;
   }
   .left {
-    width: 70%;
+    width: 100%;
     position: relative;
     z-index: 1;
     @include breakpoint(mobile) {
       width: 80%;
+      margin: 0 10%;
     }
     ul.statistic {
       margin-top: $gutter*4;
@@ -269,7 +271,7 @@ pages - index
     }
   }
   .map {
-    right: 0px;
+    right: -22%;
     position: absolute;
     top: 300px;
     z-index: 0;
@@ -327,7 +329,7 @@ pages - index
 /* speakers */
 
 #speakers {
-  @extend .padding;
+  // @extend .padding;
   padding-top: 0px;
   ul {
     margin: 0;
@@ -416,6 +418,94 @@ pages - index
 }
 
 
+/* schedule */
+
+#schedule {
+  @extend .padding;
+  background: url('/assets/images/pattern.png') repeat top center;
+  //  background: #eee;
+  width: 100%;
+  max-width: 100%;
+  .speakers-container {
+    padding: $gutter;
+    // background: #fff;
+    // border-radius: 2px;
+    // border: 1px solid #ddd;
+    @include breakpoint(desktop) {
+      padding: $gutter*1.5;
+    }
+  }
+}
+
+
+/*sponsors*/
+
+#sponsors {
+  @extend .padding;
+  .level {
+    h4 {
+      margin-bottom: $gutter/2;
+    }
+    text-align: center;
+    margin-bottom: $gutter*3;
+    .list {
+      display: inline-block;
+      max-width: 100%;
+      a {
+        display: inline-block;
+        vertical-align: middle;
+        margin: $gutter;
+        img {
+          display: block;
+          max-height: 50px;
+          max-width: 150px;
+        }
+      }
+    }
+    &:nth-child(1) {
+      .list {
+        a {
+          img {
+            max-height: 100px;
+            max-width: 300px;
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      .list {
+        a {
+          img {
+            max-height: 80px;
+            max-width: 250px;
+          }
+        }
+      }
+    }
+    &:nth-child(3) {
+      .list {
+        a {
+          img {
+            max-height: 55px;
+            max-width: 150px;
+          }
+        }
+      }
+    }
+    &:nth-child(4) {
+      .list {
+        a {
+          img {
+            max-height: 50px;
+            max-width: 140px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 /* display */
 
 #display-list {
@@ -455,6 +545,20 @@ pages - index
   }
 }
 
+#location {
+  background: url('/assets/images/bg-map.jpg') repeat 100% 0;
+  @extend .padding;
+  .imgs {
+    width: 100%;
+    img {
+      width: 49%;
+      margin-right: 2%;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
 
 /* Review */
 

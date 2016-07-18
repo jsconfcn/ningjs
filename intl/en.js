@@ -18,8 +18,13 @@ export default {
   year: 'Years',
   attendees: 'Attendees',
   speakers: 'Speakers',
-  confirmed_speakers: 'Confirmed speakers',
+  confirmed_speakers: 'Confirmed Speakers',
   sponsors: 'Sponsors',
+  confirmed_sponsors: 'Some of our Sponsors',
+  location: 'Location',
+  location_title: 'Location',
+  hotel: 'Intercontinental Nanjing',
+  address: 'No.1 Zhongyang Road, Gulou District, Nanjing, China',
   tickets: 'Tickets',
   buy_tickets: 'buy tickets',
 
@@ -66,6 +71,8 @@ export default {
   <p>NingJS Conf has three sponsorship levels: gold, silver, bronze. Your support is very important to the conference, and the conference committee ensures that these contributions are well recognized. We list the benefits and costs below. We are open to any sponsorship needs - chat with an organizer about package details at <a href='mailto:support@jsconf.cn'>support@jsconf.cn</a>.</p>`,
   call_for_sponsors_mini_intro: 'Interested in supporting the local JavaScript community in China? There is no better way then helping sponsor JSConf 2016 in Nanjing.',
   gold_sponsor: 'Gold Sponsor',
+
+  call_for_volunteers_intro: 'Are you a fan of Javascript/Node.js/React, etc.? Do you want to be a part of an international developer community? Do you think you can be up for a big challenge?',
   silver_sponsor: 'Silver Sponsor',
   bronze_sponsor: 'Bronze Sponsor',
   what_else_sponsor: 'What else can you sponsor?',

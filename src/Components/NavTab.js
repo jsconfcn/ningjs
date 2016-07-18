@@ -22,9 +22,23 @@ export default class NavTab extends Component {
       pageScrollTopAnimate(about.offsetTop, timeInMS)
     }, 0)
   }
-  scrollToSpeakers(evt) {
+  scrollToSchedule(evt) {
     setTimeout(() => {
-      const element = document.querySelector('#speakers')
+      const element = document.querySelector('#schedule')
+      const timeInMS = 500
+      pageScrollTopAnimate(element.offsetTop - 100, timeInMS)
+    }, 0)
+  }
+  scrollToSponsor(evt) {
+    setTimeout(() => {
+      const element = document.querySelector('#sponsors')
+      const timeInMS = 500
+      pageScrollTopAnimate(element.offsetTop - 100, timeInMS)
+    }, 0)
+  }
+  scrollToLocation(evt) {
+    setTimeout(() => {
+      const element = document.querySelector('#location')
       const timeInMS = 500
       pageScrollTopAnimate(element.offsetTop - 100, timeInMS)
     }, 0)
@@ -53,22 +67,33 @@ export default class NavTab extends Component {
           className='toggle-button'
           onClick={this.openMenu.bind(this)}/>
         <nav>
+          <Link onClick={this.scrollToAbout}
+            to={{ pathname: '/', query }} >
+            {__('about_us')}
+          </Link>
           <Link className={isActive('/sponsors') ? 'active' : ''}
             to={{ pathname: '/sponsors', query }}
             onClick={this.active.bind(this, 'sponsors')}>
             {__('call_for_sponsors')}
           </Link>
-          <Link onClick={this.scrollToSpeakers}
+          <Link onClick={this.scrollToSchedule}
             to={{ pathname: '/', query }} >
             {__('Schedule')}
           </Link>
-          <Link onClick={this.scrollToAbout}
+          <Link onClick={this.scrollToLocation}
             to={{ pathname: '/', query }} >
-            {__('about_us')}
+            {__('location')}
           </Link>
+          { /*
+            <Link onClick={this.scrollToSponsor}
+            to={{ pathname: '/', query }} >
+            {__('sponsors')}
+          </Link>
+          */ }
+          
           <a href='http://www.bagevent.com/event/58905' target='new' className='ticket'>{__('tickets')}</a>
         </nav>
-        </div>
+      </div>
     )
   }
 

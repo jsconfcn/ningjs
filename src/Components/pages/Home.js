@@ -7,6 +7,8 @@
 import React, { Component,createElement } from 'react'
 import { Link } from 'react-router'
 import Schedule from '../schedule'
+import Sponsors from '../sponsors'
+// import Map from '../Map'
 
 export default class Home extends Component {
 
@@ -17,7 +19,6 @@ export default class Home extends Component {
         <section id='hero'>
           <div className='bg-container'>
             <div className='box'>
-
               <div className='masthead'>
                 <h1>{__('ningjs')} · {__('jsconf_china_2016')}</h1>
                 <h4>2016.09.03 - 09.04 @ {__('nanjing')}</h4>
@@ -33,12 +34,12 @@ export default class Home extends Component {
         </section>
 
         <section id='call-for-speakers'>
-          <Link to='' className='col-2'>
+          <a href='https://jinshuju.net/f/HsuWJ5' className='col-2' target='new'>
             <h2>{__('call_for_volunteers')}</h2>
-            <p></p>
-            <button className='button green'>{__('coming_soon')}</button>
+            <p>{__('call_for_volunteers_intro')}</p>
+            <button className='button green'>{__('apply_now')}</button>
             <div className='bg'></div>
-          </Link>
+          </a>
           <Link to={{ pathname: '/sponsors', query }} className='col-2'>
             <h2>{__('call_for_sponsors')}</h2>
             <p>{__('get_out_ads_go_ahead')}</p>
@@ -104,10 +105,36 @@ export default class Home extends Component {
           <img src='./assets/images/map.jpg' className='map' />
         </section>
 
-        <section id='speakers' className='wrapper'>
-          <h2>{__('Schedule')}</h2>
-          <Schedule __={__}/>
+        <section id='schedule'>
+          <div className='wrapper'>
+            <h2>{__('Schedule')}</h2>
+            <Schedule __={__}/>
+          </div>
         </section>
+
+        <section id='location'>
+          <div className='wrapper'>
+            <h2>{__('location_title')}</h2> 
+            <div className='address'>
+              <h3>{__('hotel')}</h3>
+              <p>{__('address')}</p>
+            </div>
+            <div className='imgs'>
+              <img src='./assets/images/address.jpg' />
+              <img src='./assets/images/address1.jpg' />
+            </div>
+          </div>
+
+        </section>
+
+
+  {/*        <section id='sponsors'>
+  //        <div className='wrapper'>
+  //        <h2>{__('confirmed_sponsors')}</h2>
+  //      <Sponsors __={__}/>
+  //   </div>
+  // </section>*/}
+    
 
         <ul id='display-list'>
           <li><img src='./assets/images/media-01.jpg' /></li>

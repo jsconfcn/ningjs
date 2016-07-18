@@ -8,7 +8,7 @@ export default class Index extends Component {
 
   speakers() {
     return {
-      'DAY ONE': [{
+      'Day 1': [{
         time: '8:15',
         title: 'Check In'
       },{
@@ -40,7 +40,7 @@ export default class Index extends Component {
       }, {
         time: '11:30',
         name: '严清',
-        avatar: '/assets/images/speakers/yanqing.png',
+        avatar: '/assets/images/speakers/yanqing.jpg',
         title: '聊聊 JS 测试框架',
         social: 'https://github.com/zensh',
         company: 'Teambition'
@@ -104,10 +104,10 @@ export default class Index extends Component {
         time: '18:10',
         title: 'After Party Announcements'
       }],
-      'DAY TWO': [{
+      'Day 2': [{
         time: '9:45',
         name: '孙坤鹏',
-        avatar: '/assets/images/speakers/sunkunpeng.png',
+        avatar: '/assets/images/speakers/sunkunpeng.jpg',
         title: '单页应用“联邦制”实践',
         social: 'http://weibo.com/u/3275479734',
         company: 'UCloud'
@@ -161,7 +161,7 @@ export default class Index extends Component {
       },{
         time: '15:10',
         name: '梁伟盛',
-        avatar: '/assets/images/speakers/dasheng.png',
+        avatar: '/assets/images/speakers/dasheng.jpg',
         title: '移动海量服务下基于React的高性能同构实践',
         social: '/',
         company: 'Tencent IMWeb Team'
@@ -208,18 +208,13 @@ export default class Index extends Component {
   render() {
     const { __, query } = this.props
     const speakers = this.speakers();
-    const days = Object.keys(speakers)
+    const days = Object.keys(speakers);
     const schedules = this.covert(speakers[days[0]], speakers[days[1]])
     return (
       <div className='speakers-container'>
         <div className='days'>
-        {
-          days.map((i, j)=> {
-            return (
-              <h3 className='title' key={j}>{i}</h3>
-            )
-          })
-        }
+          <div><h3>Day 1</h3><i>09.03</i></div>
+          <div><h3>Day 2</h3><i>09.04</i></div>
         </div>
         {
           Object.keys(schedules).map((i, j) => <Item time={i} speakers={schedules[i]} __={__} key={j}/>)

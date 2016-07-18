@@ -5,7 +5,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 11;
+  z-index: 10001;
   // @include breakpoint(highres) {
   //   height: 900px;
   // }
@@ -40,94 +40,95 @@
         }
       }
     }
-    .nav {
-      float: right;
-      button {
-        border-radius: $radius;
-        background: #000;
-        color: #fff;
-        display: block;
-        margin: 12.5px 0;
-        height: 40px;
-        margin-left: $gutter;
-        width: 40px;
-        position: relative;
-        &:after {
-          @include icon;
-          content: 'm';
-          font-size: 22px;
-          position: absolute;
-          line-height: 40px;
-          left: 0px;
-          height: 100%;
-          top: 0px;
-          text-align: center;
-          width: 100%;
-        }
-      }
-      nav {
-        display: none;
-        top: $gutter*2.5 + 4;
-        border-radius: $radius;
-        background: rgba(0, 0, 0, 0.9);
-        height: auto;
-        left: 0px;
-        position: absolute;
-        width: 100%;
-        a {
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-          float: left;
-          padding: $gutter/2 $gutter;
-          margin-right: $gutter*1.5;
-          width: 100%;
-          &:last-child {
-            margin-right: 0px;
-          }
-          &.active {
-            color: $green;
-          }
-          &.ticket {
-            display: block;
-            @include breakpoint(desktop) {
-              display: none;
-            }
-          }
-        }
-      }
-      @include breakpoint(desktop) {
-        float: left;
-        button {
-          display: none;
-        }
-        nav {
-          background: none;
-          display: block;
-          top: 0;
-          position: relative;
-          padding: $gutter 0;
-          height: 65px;
-          float: none;
-          a {
-            border: 0;
-            width: auto;
-            padding: 0;
-            &.active {
-              border-bottom: 2px solid $green;
-            }
-          }
-        }
-      }
-      &.menu-open {
-        nav {
-          display: block;
-        }
-      }
-    }
     .lang {
       float: right;
       height: 65px;
       padding: 12.5px 0;
       line-height: 40px;
+    }
+  }
+  /* nav */
+  .nav {
+    float: right;
+    button {
+      border-radius: $radius;
+      background: #000;
+      color: #fff;
+      display: block;
+      margin: 12.5px 0;
+      height: 40px;
+      margin-left: $gutter;
+      width: 40px;
+      position: relative;
+      &:after {
+        @include icon;
+        content: 'm';
+        font-size: 22px;
+        position: absolute;
+        line-height: 40px;
+        left: 0px;
+        height: 100%;
+        top: 0px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    nav {
+      display: none;
+      top: $gutter*2.5 + 4;
+      border-radius: $radius;
+      background: rgba(0, 0, 0, 0.9);
+      height: auto;
+      left: 0px;
+      position: absolute;
+      width: 100%;
+      a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        float: left;
+        padding: $gutter/2 $gutter;
+        margin-right: $gutter*1.5;
+        width: 100%;
+        &:last-child {
+          margin-right: 0px;
+        }
+        &.active {
+          color: $green;
+        }
+        &.ticket {
+          display: block;
+          @include breakpoint(desktop) {
+            display: none;
+          }
+        }
+      }
+    }
+    @include breakpoint(desktop) {
+      float: left;
+      button {
+        display: none;
+      }
+      nav {
+        background: none;
+        display: block;
+        top: 0;
+        position: relative;
+        padding: $gutter 0;
+        height: 65px;
+        float: none;
+        a {
+          border: 0;
+          width: auto;
+          padding: 0;
+          &.active {
+            border-bottom: 2px solid $green;
+          }
+        }
+      }
+    }
+    &.menu-open {
+      nav {
+        display: block;
+      }
     }
   }
   /* logo */
@@ -150,7 +151,6 @@
       width: 100px;
     }
   }
-
   /* sub header */
   #sub-header {
     display: none;

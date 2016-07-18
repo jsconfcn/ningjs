@@ -50,6 +50,7 @@
         padding: 65px 8% 0;
         display: table-cell;
         vertical-align: middle;
+        text-align: center;
         width: 100%;
         a {
           @include font-size($smaller + 1);
