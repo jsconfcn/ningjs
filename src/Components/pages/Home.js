@@ -128,12 +128,12 @@ export default class Home extends Component {
         </section>
 
 
-  {/*        <section id='sponsors'>
-  //        <div className='wrapper'>
-  //        <h2>{__('confirmed_sponsors')}</h2>
-  //      <Sponsors __={__}/>
-  //   </div>
-  // </section>*/}
+        <section id='sponsors'>
+          <div className='wrapper'>
+            <h2>{__('confirmed_sponsors')}</h2>
+            <Sponsors __={__}/>
+          </div>
+        </section>
     
 
         <ul id='display-list'>
