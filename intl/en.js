@@ -20,7 +20,7 @@ export default {
   speakers: 'Speakers',
   confirmed_speakers: 'Confirmed Speakers',
   sponsors: 'Sponsors',
-  confirmed_sponsors: 'Some of our Sponsors',
+  confirmed_sponsors: 'Sponsors',
   location: 'Location',
   location_title: 'Location',
   hotel: 'Intercontinental Nanjing',

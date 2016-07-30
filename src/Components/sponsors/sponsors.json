@@ -1,9 +1,4 @@
 {
-  "Organizer": [{
-    "name": "Wiredcraft",
-    "logo": "/assets/images/sponsors/wiredcraft.png",
-    "link": "https://wiredcraft.com/"
-  }],
   "Gold": [{
     "name": "Ucloud",
     "logo": "/assets/images/sponsors/ucloud.png",
@@ -49,5 +44,10 @@
     "name": "Techcrunch",
     "logo": "/assets/images/sponsors/techcrunch.png",
     "link": "http://technode.com/"
+  }],
+  "Organizer": [{
+    "name": "Wiredcraft",
+    "logo": "/assets/images/sponsors/wiredcraft.png",
+    "link": "https://wiredcraft.com/"
   }]
 }

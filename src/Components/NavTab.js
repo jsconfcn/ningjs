@@ -67,30 +67,23 @@ export default class NavTab extends Component {
           className='toggle-button'
           onClick={this.openMenu.bind(this)}/>
         <nav>
-          <Link onClick={this.scrollToAbout}
-            to={{ pathname: '/', query }} >
-            {__('about_us')}
-          </Link>
-          <Link className={isActive('/sponsors') ? 'active' : ''}
-            to={{ pathname: '/sponsors', query }}
-            onClick={this.active.bind(this, 'sponsors')}>
-            {__('call_for_sponsors')}
-          </Link>
           <Link onClick={this.scrollToSchedule}
             to={{ pathname: '/', query }} >
             {__('Schedule')}
+          </Link>
+          <Link onClick={this.scrollToSponsor}
+            to={{ pathname: '/', query }} >
+            {__('sponsors')}
           </Link>
           <Link onClick={this.scrollToLocation}
             to={{ pathname: '/', query }} >
             {__('location')}
           </Link>
-          { /*
-            <Link onClick={this.scrollToSponsor}
+          <Link onClick={this.scrollToAbout}
             to={{ pathname: '/', query }} >
-            {__('sponsors')}
+            {__('about_us')}
           </Link>
-          */ }
-          
+
           <a href='http://www.bagevent.com/event/58905' target='new' className='ticket'>{__('tickets')}</a>
         </nav>
       </div>
