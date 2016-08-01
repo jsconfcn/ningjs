@@ -19,7 +19,7 @@ export default {
   speakers: '讲师',
   confirmed_speakers: '已确认讲师',
   sponsors: '赞助商',
-  confirmed_sponsors: '部分赞助商',
+  confirmed_sponsors: '赞助商',
   location: '地址',
   location_title: '大会地址',
   hotel: '南京绿地洲际酒店',
