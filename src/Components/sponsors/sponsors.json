@@ -19,6 +19,10 @@
     "logo": "/assets/images/sponsors/qiniu.png",
     "link": "https://github.com/yyx990803"
   }, {
+    "name": "pwc google",
+    "logo": "/assets/images/sponsors/pwc-google.png",
+    "link": "http://google.pwc.com/"
+  }, {
     "name": "Mapbox",
     "logo": "/assets/images/sponsors/mapbox.png",
     "link": "https://www.mapbox.com/"
@@ -45,9 +49,13 @@
     "name": "Technode",
     "logo": "/assets/images/sponsors/technode.png",
     "link": "http://technode.com/"
-    }, {
+  }, {
     "name": "Techcrunch",
     "logo": "/assets/images/sponsors/techcrunch.png",
     "link": "http://technode.com/"
+  }, {
+    "name": "cnodejs",
+    "logo": "/assets/images/sponsors/cnodejs.png",
+    "link": "https://cnodejs.org/"
   }]
 }
