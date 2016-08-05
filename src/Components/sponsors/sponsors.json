@@ -30,6 +30,10 @@
     "name": "goyoo",
     "logo": "/assets/images/sponsors/goyoo.png",
     "link": "http://www.goyoo.com/"
+  }, {
+    "name": "doubanyuedu",
+    "logo": "/assets/images/sponsors/douban.png",
+    "link": "https://read.douban.com/"
   }],
   "Bronze": [{
     "name": "Oneapm",
