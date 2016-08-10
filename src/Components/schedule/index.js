@@ -130,10 +130,10 @@ export default class Index extends Component {
         company: 'Aliyun'
       }, {
         time: '11:30',
-        name: 'Karolina Szczur',
-        avatar: '/assets/images/speakers/karolina.jpg',
-        title: 'The Cost of Open Source',
-        social: 'https://github.com/thefoxis',
+        name: 'Fraser Xu',
+        avatar: '/assets/images/speakers/fraserxu.jpg',
+        title: 'Learning design patterns from modern JavaScript frameworks',
+        social: 'https://github.com/fraserxu',
         company: 'Envato'
       }, {
         time: '12:00',
