@@ -39,6 +39,10 @@
     "name": "Oneapm",
     "logo": "/assets/images/sponsors/oneapm.png",
     "link": "http://www.oneapm.com/"
+  },{
+    "name": "Mozilla",
+    "logo": "/assets/images/sponsors/mozilla.png",
+    "link": "https://www.mozilla.org"
   }],
   "Media": [{
     "name": "Segmentfault",
