@@ -58,6 +58,11 @@
     "logo": "/assets/images/sponsors/cnodejs.png",
     "link": "https://cnodejs.org/"
   }],
+  "Special Sponsor": [{
+    "name": "uber",
+    "logo": "/assets/images/sponsors/uber.png",
+    "link": "https://www.uber.com.cn/"
+  }],
   "Organizer": [{
     "name": "Wiredcraft",
     "logo": "/assets/images/sponsors/wiredcraft.png",
