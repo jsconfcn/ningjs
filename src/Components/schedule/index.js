@@ -70,7 +70,7 @@ export default class Index extends Component {
       }, {
         time: '15:10',
         name: 'Kevin Ngo',
-        avatar: '/assets/images/speakers/kevin.png',
+        avatar: '/assets/images/speakers/kevin.jpg',
         title: 'A-Frame and WebVR',
         social: 'https://github.com/ngokevin',
         company: 'Mozilla'
