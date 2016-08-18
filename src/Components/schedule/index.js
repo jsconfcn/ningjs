@@ -69,10 +69,10 @@ export default class Index extends Component {
         title: 'Lighting Talk'
       }, {
         time: '15:10',
-        name: 'Diego Marcos',
-        avatar: '/assets/images/speakers/diego-marcos.png',
-        title: 'Aframe and WebVR',
-        social: 'https://github.com/dmarcos',
+        name: 'Kevin Ngo',
+        avatar: '/assets/images/speakers/kevin.png',
+        title: 'A-Frame and WebVR',
+        social: 'https://github.com/ngokevin',
         company: 'Mozilla'
       }, {
         time: '15:40',
