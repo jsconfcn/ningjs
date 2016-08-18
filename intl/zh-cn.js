@@ -13,6 +13,7 @@ export default {
   call_for_speakers: '征寻讲师',
   call_for_volunteers: '志愿者征集',
   about_us: '关于我们',
+  Live: '直播',
   coming_soon: '即将开放',
   year: '年',
   attendees: '参会者',
