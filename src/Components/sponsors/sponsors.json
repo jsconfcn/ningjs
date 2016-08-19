@@ -27,6 +27,11 @@
     "link": "https://www.aliyun.com/"
 
   }, {
+    "name": "qingcloud",
+    "logo": "/assets/images/sponsors/qingcloud.png",
+    "link": "https://www.qingcloud.com/"
+
+  }, {
     "name": "goyoo",
     "logo": "/assets/images/sponsors/goyoo.png",
     "link": "http://www.goyoo.com/"
@@ -39,6 +44,10 @@
     "name": "Oneapm",
     "logo": "/assets/images/sponsors/oneapm.png",
     "link": "http://www.oneapm.com/"
+   }, {
+    "name": "juejin",
+    "logo": "/assets/images/sponsors/juejin.png",
+    "link": "http://gold.xitu.io/"
   }],
   "Media": [{
     "name": "Segmentfault",
