@@ -86,7 +86,11 @@ export default class Index extends Component {
         title: 'Break'
       },{
         time: '16:20',
-        title: 'Confirming'
+        name: 'Makara Wang',
+        title: 'Building asynchronous microservices that get along',
+        avatar: '/assets/images/speakers/makara.jpg',
+        social: 'https://github.com/makara',
+        company: 'Wiredcraft'
       }, {
         time: '16:50',
         name: 'Ryan Day',
