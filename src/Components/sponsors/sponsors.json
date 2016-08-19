@@ -44,10 +44,14 @@
     "name": "Oneapm",
     "logo": "/assets/images/sponsors/oneapm.png",
     "link": "http://www.oneapm.com/"
-   }, {
+  }, {
     "name": "juejin",
     "logo": "/assets/images/sponsors/juejin.png",
     "link": "http://gold.xitu.io/"
+  }, {
+    "name": "Mozilla",
+    "logo": "/assets/images/sponsors/mozilla.png",
+    "link": "https://www.mozilla.org"
   }],
   "Media": [{
     "name": "Segmentfault",
@@ -69,7 +73,7 @@
   }],
   "Special Sponsor": [{
     "name": "uber",
-    "logo": "/assets/images/sponsors/uber.png",
+    "logo": "/assets/images/sponsors/uber.png?",
     "link": "https://www.uber.com.cn/"
   }],
   "Organizer": [{

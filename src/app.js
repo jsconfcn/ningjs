@@ -5,6 +5,8 @@ import Home from 'Components/pages/Home'
 import Speakers from 'Components/pages/Speakers'
 import Sponsors from 'Components/pages/Sponsors'
 import Coc from 'Components/pages/Coc'
+import Live from 'Components/pages/Live'
+
 import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
 const routes = (
@@ -13,6 +15,7 @@ const routes = (
       <IndexRoute component={Home} />
       <Route path='/speakers' component={Speakers}/>
       <Route path='/sponsors' component={Sponsors}/>
+      <Route path='/live' component={Live}/>
       <Route path='/coc' component={Coc}/>
     </Route>
   </Router>

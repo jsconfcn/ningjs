@@ -1,0 +1,168 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M298 426h428l-214 214z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"arrow_drop_down"
+				],
+				"defaultCode": 58821,
+				"grid": 24
+			},
+			"attrs": [],
+			"properties": {
+				"order": 3,
+				"ligatures": "arrow_drop_down",
+				"id": 47,
+				"prevSize": 24,
+				"code": 100,
+				"name": "arrow_drop_down"
+			},
+			"setIdx": 0,
+			"setId": 1,
+			"iconIdx": 47
+		},
+		{
+			"icon": {
+				"paths": [
+					"M298 598l214-214 214 214h-428z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"arrow_drop_up"
+				],
+				"defaultCode": 58823,
+				"grid": 24
+			},
+			"attrs": [],
+			"properties": {
+				"order": 5,
+				"ligatures": "arrow_drop_up",
+				"id": 49,
+				"prevSize": 24,
+				"code": 117,
+				"name": "arrow_drop_up"
+			},
+			"setIdx": 0,
+			"setId": 1,
+			"iconIdx": 49
+		},
+		{
+			"icon": {
+				"paths": [
+					"M426 256l256 256-256 256-60-60 196-196-196-196z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"navigate_next"
+				],
+				"defaultCode": 58377,
+				"grid": 24
+			},
+			"attrs": [],
+			"properties": {
+				"order": 1,
+				"ligatures": "chevron_right, navigate_next",
+				"id": 153,
+				"prevSize": 24,
+				"code": 110,
+				"name": "navigate_next"
+			},
+			"setIdx": 0,
+			"setId": 1,
+			"iconIdx": 153
+		},
+		{
+			"icon": {
+				"paths": [
+					"M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"close"
+				],
+				"defaultCode": 58829,
+				"grid": 24
+			},
+			"attrs": [],
+			"properties": {
+				"order": 2,
+				"ligatures": "clear, close",
+				"id": 157,
+				"prevSize": 24,
+				"code": 120,
+				"name": "close"
+			},
+			"setIdx": 0,
+			"setId": 1,
+			"iconIdx": 157
+		},
+		{
+			"icon": {
+				"paths": [
+					"M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"menu"
+				],
+				"defaultCode": 58834,
+				"grid": 24
+			},
+			"attrs": [],
+			"properties": {
+				"order": 4,
+				"ligatures": "menu",
+				"id": 489,
+				"prevSize": 24,
+				"code": 109,
+				"name": "menu"
+			},
+			"setIdx": 0,
+			"setId": 1,
+			"iconIdx": 489
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"embed": false
+		},
+		"imagePref": {
+			"prefix": "icon-",
+			"png": true,
+			"useClassSelector": true,
+			"color": 0,
+			"bgColor": 16777215,
+			"classSelector": ".icon"
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16
+	}
+}

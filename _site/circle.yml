@@ -1,0 +1,23 @@
+machine:
+  node:
+    version: 4.4.5
+
+general:
+  branches:
+    only:
+      - master
+
+dependencies:
+  pre:
+    - git config --global user.email "support@jsconf.cn"
+    - git config --global user.name "jsconfcn"
+    - npm i npm@^3.9.0 -g
+  post:
+    - npm rebuild
+
+deployment:
+  deploy:
+    branch: master
+    commands:
+      - npm run deploy
+
