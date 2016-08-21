@@ -127,9 +127,9 @@ export default class Index extends Component {
         title: 'Break'
       }, {
         time: '11:00',
-        name: 'Aliyun Node Team',
+        name: '朴灵',
         avatar: '//2015.jsconf.cn/images/speakers/2.jpg',
-        title: 'Waiting',
+        title: 'Node.js在线性能调优与故障排查',
         social: 'https://github.com/aliyun-node',
         company: 'Aliyun'
       }, {
@@ -168,7 +168,7 @@ export default class Index extends Component {
         avatar: '/assets/images/speakers/dasheng.jpg',
         title: '移动海量服务下基于React的高性能同构实践',
         social: '/',
-        company: 'Tencent IMWeb Team'
+        company: 'Tencent Now 直播'
       }, {
         time: '15:40',
         name: 'Peter Liu',

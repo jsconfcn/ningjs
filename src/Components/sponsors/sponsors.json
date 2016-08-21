@@ -76,6 +76,11 @@
     "logo": "/assets/images/sponsors/uber.png?",
     "link": "https://www.uber.com.cn/"
   }],
+  "Speaker Sponsrs": [{
+    "name": "Now 直播",
+    "logo": "/assets/images/sponsors/now_live.png",
+    "link": "http://now.qq.com/"
+  }],
   "Organizer": [{
     "name": "Wiredcraft",
     "logo": "/assets/images/sponsors/wiredcraft.png",
