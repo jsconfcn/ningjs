@@ -71,7 +71,7 @@ export default class Index extends Component {
         time: '15:10',
         name: 'Kevin Ngo',
         avatar: '/assets/images/speakers/kevin.jpg',
-        title: 'A-Frame and WebVR',
+        title: 'Building virtual reality on the web',
         social: 'https://github.com/ngokevin',
         company: 'Mozilla'
       }, {
@@ -186,11 +186,18 @@ export default class Index extends Component {
         title: '前端 DevOps 实践',
         social: 'https://github.com/wyvernnot',
         company: 'OneAPM'
-      }, {
+      },{
         time: '16:50',
-        title: 'Raffle'
+        name: 'Guillaume',
+        avatar: '/assets/images/speakers/guillaume.jpeg',
+        title: 'Using nodejs to count 30 billion requests per day',
+        social: 'https://github.com/Doweig',
+        company: 'Goyoo Networks'
       },{
         time: '17:20',
+        title: 'Raffle'
+      }, {
+        time: '17:30',
         title: 'Table Discussion'
       }]
     }
