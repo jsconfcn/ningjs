@@ -454,7 +454,7 @@ pages - index
       a {
         display: inline-block;
         vertical-align: middle;
-        margin: $gutter;
+        margin: $gutter*1.5;
         img {
           display: block;
           max-height: 50px;
@@ -462,7 +462,7 @@ pages - index
         }
       }
     }
-    &:nth-child(1) {
+    &:nth-child(2),&:nth-child(1) {
       .list {
         a {
           img {
@@ -472,17 +472,22 @@ pages - index
         }
       }
     }
-    &:nth-child(2) {
+    &:nth-child(3) {
       .list {
         a {
           img {
             max-height: 60px;
             max-width: 200px;
           }
+          &.pwc {
+            img {
+              max-width: 250px;
+            }
+          }
         }
       }
     }
-    &:nth-child(3) {
+    &:nth-child(4) {
       .list {
         a {
           img {
@@ -492,12 +497,22 @@ pages - index
         }
       }
     }
-    &:nth-child(4) {
+    &:nth-child(5) {
       .list {
         a {
           img {
             max-height: 50px;
             max-width: 160px;
+          }
+        }
+      }
+    }
+    &:nth-child(6) {
+      .list {
+        a {
+          img {
+            max-height: 40px;
+            max-width: 130px;
           }
         }
       }
@@ -559,6 +574,7 @@ pages - index
     }
   }
 }
+
 
 /* Review */
 

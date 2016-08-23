@@ -5,7 +5,7 @@ export default class LevelItem extends Component {
     const {level, data} = this.props
     const sponsorArray = data.map((sponsor, i) => {
       return (
-        <a key={i} href={sponsor.link} target='new'><img src={sponsor.logo} /></a>
+        <a key={i} href={sponsor.link} target='new' className={sponsor.class}><img src={sponsor.logo} /></a>
       )
     })
     return (

@@ -181,23 +181,17 @@ export default class Index extends Component {
         title: 'Break'
       },{
         time: '16:20',
-        title: 'Confirming'
-      }, {
-        time: '16:50',
         name: '王龑',
         avatar: '/assets/images/speakers/wangyan.png',
         title: '前端 DevOps 实践',
         social: 'https://github.com/wyvernnot',
         company: 'OneAPM'
+      }, {
+        time: '16:50',
+        title: 'Raffle'
       },{
         time: '17:20',
-        title: 'Raffle'
-      }, {
-        time: '17:30',
         title: 'Table Discussion'
-      }, {
-        time: '18:10',
-        title: 'Waiting'
       }]
     }
   }

@@ -1,4 +1,10 @@
 {
+  "Organizer": [{
+    "name": "Wiredcraft",
+    "logo": "/assets/images/sponsors/wiredcraft.png",
+    "link": "https://wiredcraft.com/"
+  }],
+
   "Gold": [{
     "name": "Ucloud",
     "logo": "/assets/images/sponsors/ucloud.png",
@@ -12,11 +18,12 @@
   }, {
     "name": "Qiniu",
     "logo": "/assets/images/sponsors/qiniu.png",
-    "link": "https://github.com/yyx990803"
+    "link": "https://www.qiniu.com"
   }, {
     "name": "pwc google",
     "logo": "/assets/images/sponsors/pwc-google.png",
-    "link": "http://google.pwc.com/"
+    "link": "http://google.pwc.com/",
+    "class": "pwc"
   }, {
     "name": "Mapbox",
     "logo": "/assets/images/sponsors/mapbox.png",
@@ -53,7 +60,17 @@
     "logo": "/assets/images/sponsors/mozilla.png",
     "link": "https://www.mozilla.org"
   }],
-  "Media": [{
+  "Special Sponsor": [{
+    "name": "uber",
+    "logo": "/assets/images/sponsors/uber.png?",
+    "link": "https://www.uber.com.cn/"
+  }],
+  "Speaker Sponsor": [{
+    "name": "Now 直播",
+    "logo": "/assets/images/sponsors/now_live.png",
+    "link": "http://now.qq.com/"
+  }],
+    "Media": [{
     "name": "Segmentfault",
     "logo": "/assets/images/sponsors/sf.png",
     "link": "https://segmentfault.com/"
@@ -65,25 +82,9 @@
     "name": "Techcrunch",
     "logo": "/assets/images/sponsors/techcrunch.png",
     "link": "http://technode.com/"
-
   }, {
     "name": "cnodejs",
     "logo": "/assets/images/sponsors/cnodejs.png",
     "link": "https://cnodejs.org/"
-  }],
-  "Special Sponsor": [{
-    "name": "uber",
-    "logo": "/assets/images/sponsors/uber.png?",
-    "link": "https://www.uber.com.cn/"
-  }],
-  "Speaker Sponsrs": [{
-    "name": "Now 直播",
-    "logo": "/assets/images/sponsors/now_live.png",
-    "link": "http://now.qq.com/"
-  }],
-  "Organizer": [{
-    "name": "Wiredcraft",
-    "logo": "/assets/images/sponsors/wiredcraft.png",
-    "link": "https://wiredcraft.com/"
   }]
 }
