@@ -11,10 +11,10 @@ export default class Index extends Component {
       'Day 1': [{
         time: '8:15',
         title: 'Check In'
-      },{
+      }, {
         time: '9:15',
         title: 'Intro Session'
-      },{
+      }, {
         time: '9:45',
         name: 'Evan You',
         avatar: '/assets/images/speakers/evan-you.jpg',
@@ -71,7 +71,7 @@ export default class Index extends Component {
         time: '15:10',
         name: 'Kevin Ngo',
         avatar: '/assets/images/speakers/kevin.jpg',
-        title: 'A-Frame and WebVR',
+        title: 'Building virtual reality on the web',
         social: 'https://github.com/ngokevin',
         company: 'Mozilla'
       }, {
@@ -81,10 +81,10 @@ export default class Index extends Component {
         title: 'Building a Unified Frontend and Mobile Team',
         social: 'https://github.com/dfguo',
         company: 'Strikingly'
-      },{
+      }, {
         time: '16:10',
         title: 'Break'
-      },{
+      }, {
         time: '16:20',
         name: 'Makara Wang',
         title: 'Building asynchronous microservices that get along',
@@ -98,7 +98,7 @@ export default class Index extends Component {
         title: 'Npm install food',
         social: 'https://github.com/soldair',
         company: 'NPM'
-      },{
+      }, {
         time: '17:20',
         title: 'Raffle'
       }, {
@@ -162,7 +162,7 @@ export default class Index extends Component {
       }, {
         time: '14:40',
         title: 'Lighting Talk'
-      },{
+      }, {
         time: '15:10',
         name: '梁伟盛',
         avatar: '/assets/images/speakers/dasheng.jpg',
@@ -176,10 +176,10 @@ export default class Index extends Component {
         title: 'Build a Better App with Mapbox',
         social: 'https://github.com/peterqliu',
         company: 'Mapbox'
-      },{
+      }, {
         time: '16:10',
         title: 'Break'
-      },{
+      }, {
         time: '16:20',
         name: '王龑',
         avatar: '/assets/images/speakers/wangyan.png',
@@ -188,9 +188,16 @@ export default class Index extends Component {
         company: 'OneAPM'
       }, {
         time: '16:50',
-        title: 'Raffle'
-      },{
+        name: 'Guillaume',
+        avatar: '/assets/images/speakers/guillaume.jpeg',
+        title: 'Using nodejs to count 30 billion requests per day',
+        social: 'https://github.com/Doweig',
+        company: 'Goyoo Networks'
+      }, {
         time: '17:20',
+        title: 'Raffle'
+      }, {
+        time: '17:30',
         title: 'Table Discussion'
       }]
     }
