@@ -71,7 +71,7 @@ export default class Index extends Component {
         time: '15:10',
         name: 'Kevin Ngo',
         avatar: '/assets/images/speakers/kevin.jpg',
-        title: 'Building virtual reality on the web',
+        title: 'Building Virtual Reality on the Web',
         social: 'https://github.com/ngokevin',
         company: 'Mozilla'
       }, {
