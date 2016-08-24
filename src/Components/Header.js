@@ -51,7 +51,7 @@ export default class Header extends Component {
           {Logo}
           <NavTab __={this.props.__} query={query}/>
           {Lang}
-          <a className='button green tickets' href='http://www.bagevent.com/event/58905' target='new'>{__('tickets')}</a>     
+          <a className='button green tickets' href='http://www.bagevent.com/event/58905' target='new'>{__('tickets')}</a>
         </header>
         <header id='sub-header' className='container'>
           {Logo}
