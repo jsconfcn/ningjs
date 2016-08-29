@@ -27,6 +27,7 @@ export default {
   address: 'No.1 Zhongyang Road, Gulou District, Nanjing, China',
   tickets: 'Tickets',
   buy_tickets: 'buy tickets',
+  sold_out: 'sold out',
 
   ningjs: 'NingJS',
   jsconf_china_2016: 'JSConf China 2016',

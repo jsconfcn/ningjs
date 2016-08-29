@@ -22,11 +22,7 @@ export default class Home extends Component {
               <div className='masthead'>
                 <h1>{__('ningjs')} · {__('jsconf_china_2016')}</h1>
                 <h4>2016.09.03 - 09.04 @ {__('nanjing')}</h4>
-                <a className='button green tickets' href='http://www.bagevent.com/event/58905' target='new'>{__('buy_tickets')}</a>
-                <div className='subscription'>
-                  <p>{__('interest_sponsor_2016')}</p>
-                  <Link to={{ pathname: '/sponsors', query }} >{__('sponsor_now')}</Link>
-                </div>
+                <a className='button green tickets disabled' target='new'>{__('sold_out')}</a>
               </div>
             </div>
             <div className='bg'></div>
@@ -34,13 +30,13 @@ export default class Home extends Component {
         </section>
 
         <section id='call-for-speakers'>
-          <a href='https://jinshuju.net/f/HsuWJ5' className='col-2' target='new'>
+          <a className='col-2' target='new'>
             <h2>{__('call_for_volunteers')}</h2>
             <p>{__('call_for_volunteers_intro')}</p>
             <button className='button green'>{__('apply_now')}</button>
             <div className='bg'></div>
           </a>
-          <Link to={{ pathname: '/sponsors', query }} className='col-2'>
+          <Link to={{ }} className='col-2'>
             <h2>{__('call_for_sponsors')}</h2>
             <p>{__('get_out_ads_go_ahead')}</p>
             <button className='button purple'>{__('sponsor')}</button>

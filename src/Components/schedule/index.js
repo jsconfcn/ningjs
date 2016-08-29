@@ -66,7 +66,7 @@ export default class Index extends Component {
         title: 'Break'
       }, {
         time: '14:40',
-        title: 'Lighting Talk'
+        title: 'Lightning Talk'
       }, {
         time: '15:10',
         name: 'Kevin Ngo',
@@ -161,7 +161,7 @@ export default class Index extends Component {
         title: 'Break'
       }, {
         time: '14:40',
-        title: 'Lighting Talk'
+        title: 'Lightning Talk'
       },{
         time: '15:10',
         name: '梁伟盛',

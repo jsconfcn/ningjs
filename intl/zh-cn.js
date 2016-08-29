@@ -27,6 +27,7 @@ export default {
   address: '南京市鼓楼区中央路1号(地铁1号线鼓楼站4A口出北行170米)',
   tickets: '购票',
   buy_tickets: '购票参会',
+  sold_out: '售罄',
 
   ningjs: '宁JS',
   jsconf_china_2016: 'JavaScript中国开发者大会2016',
