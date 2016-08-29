@@ -18,9 +18,9 @@ export default class Index extends Component {
 
   render() {
     const { __, query } = this.props
-    
+
     const levels = Object.keys(sponsorData).map((level, i) => {
-      return (<LevelItem key={i} level={level} data={sponsorData[level]} />)
+      return (<LevelItem __={__} key={i} level={level} data={sponsorData[level]} />)
     })
     return (
       <div className='sponsors-container'>

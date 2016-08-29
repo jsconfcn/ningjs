@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 export default class LevelItem extends Component {
 	render () {
-    const {level, data} = this.props
+    const {level, data, __} = this.props
     const sponsorArray = data.map((sponsor, i) => {
       return (
         <a key={i} href={sponsor.link} target='new' className={sponsor.class}><img src={sponsor.logo} /></a>
@@ -10,9 +10,9 @@ export default class LevelItem extends Component {
     })
     return (
      <div className='level'>
-      <h3>{ level }</h3>
+      <h3>{ __(level) }</h3>
       <div className='list'>
-      { sponsorArray } 
+      { sponsorArray }
       </div>
     </div>
     )

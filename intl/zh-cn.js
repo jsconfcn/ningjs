@@ -29,6 +29,13 @@ export default {
   buy_tickets: '购票参会',
   sold_out: '售罄',
 
+  Gold: '金牌赞助商',
+  Silver: '银牌赞助商',
+  Bronze: '铜牌赞助商',
+  'Speaker Sponsor': '讲师行程赞助商',
+  'Special Sponsor': '特别赞助商',
+  Media: '合作媒体',
+
   ningjs: '宁JS',
   jsconf_china_2016: 'JavaScript中国开发者大会2016',
   nanjing: '南京',

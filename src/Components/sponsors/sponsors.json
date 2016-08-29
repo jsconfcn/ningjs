@@ -65,7 +65,7 @@
     "logo": "/assets/images/sponsors/now_live.png",
     "link": "http://now.qq.com/"
   }],
-    "Media": [{
+  "Media": [{
     "name": "Segmentfault",
     "logo": "/assets/images/sponsors/sf.png",
     "link": "https://segmentfault.com/"
@@ -81,5 +81,9 @@
     "name": "cnodejs",
     "logo": "/assets/images/sponsors/cnodejs.png",
     "link": "https://cnodejs.org/"
+  }, {
+    "name": "turing",
+    "logo": "/assets/images/sponsors/turing.jpeg",
+    "link": "http://www.ituring.com.cn/"
   }]
 }
