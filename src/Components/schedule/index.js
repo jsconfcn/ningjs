@@ -19,12 +19,14 @@ export default class Index extends Component {
         name: 'Evan You',
         avatar: '/assets/images/speakers/evan-you.jpg',
         title: 'Vue.js: the Past and the Future',
+        slide: null,
         social: 'https://github.com/yyx990803'
       }, {
         time: '10:15',
         name: 'James Kyle',
         avatar: '/assets/images/speakers/james-kyle.jpg',
         title: 'How to build a compiler',
+        slide: null,
         social: 'https://github.com/thejameskyle',
         company: 'Facebook'
       }, {
@@ -35,6 +37,7 @@ export default class Index extends Component {
         name: '天猪',
         avatar: '/assets/images/speakers/tianzhu.png',
         title: '阿里node 团队开源项目，企业级框架EGG',
+        slide: null,
         social: 'https://github.com/eggjs',
         company: 'Alibaba UC Group'
       }, {
@@ -42,6 +45,7 @@ export default class Index extends Component {
         name: '严清',
         avatar: '/assets/images/speakers/yanqing.jpg',
         title: '聊聊 JS 测试框架',
+        slide: null,
         social: 'https://github.com/zensh',
         company: 'Teambition'
       }, {
@@ -52,6 +56,7 @@ export default class Index extends Component {
         name: 'Alexandre Strzelewicz',
         avatar: '/assets/images/speakers/alexandre.png',
         title: 'GridControl: Networked PM2 for Microservices applications',
+        slide: null,
         social: 'https://github.com/Unitech',
         company: 'PM2'
       }, {
@@ -59,6 +64,7 @@ export default class Index extends Component {
         name: '罗诗亚',
         avatar: '/assets/images/speakers/luoshiya.png',
         title: '3D on the Web',
+        slide: null,
         social: 'https://github.com/shiya',
         company: 'Autodesk'
       }, {
@@ -72,6 +78,7 @@ export default class Index extends Component {
         name: 'Kevin Ngo',
         avatar: '/assets/images/speakers/kevin.jpg',
         title: 'Building Virtual Reality on the Web',
+        slide: null,
         social: 'https://github.com/ngokevin',
         company: 'Mozilla'
       }, {
@@ -79,6 +86,7 @@ export default class Index extends Component {
         name: '郭达峰',
         avatar: '/assets/images/speakers/guodafeng.png',
         title: 'Building a Unified Frontend and Mobile Team',
+        slide: null,
         social: 'https://github.com/dfguo',
         company: 'Strikingly'
       }, {
@@ -88,6 +96,7 @@ export default class Index extends Component {
         time: '16:20',
         name: 'Makara Wang',
         title: 'Building asynchronous microservices that get along',
+        slide: null,
         avatar: '/assets/images/speakers/makara.jpg',
         social: 'https://github.com/makara',
         company: 'Wiredcraft'
@@ -96,6 +105,7 @@ export default class Index extends Component {
         name: 'Ryan Day',
         avatar: '/assets/images/speakers/ryan.png',
         title: 'Npm install food',
+        slide: null,
         social: 'https://github.com/soldair',
         company: 'NPM'
       }, {
@@ -113,6 +123,7 @@ export default class Index extends Component {
         name: '孙坤鹏',
         avatar: '/assets/images/speakers/sunkunpeng.jpg',
         title: '单页应用“联邦制”实践',
+        slide: null,
         social: 'http://weibo.com/u/3275479734',
         company: 'UCloud'
       }, {
@@ -120,6 +131,7 @@ export default class Index extends Component {
         name: 'Kenneth Auchenberg',
         avatar: '/assets/images/speakers/kenneth.png',
         title: 'DevTools for the Progressive Web',
+        slide: null,
         social: 'https://kenneth.io',
         company: 'Microsoft'
       }, {
@@ -130,6 +142,7 @@ export default class Index extends Component {
         name: '朴灵',
         avatar: '//2015.jsconf.cn/images/speakers/2.jpg',
         title: 'Node.js在线性能调优与故障排查',
+        slide: null,
         social: 'https://github.com/aliyun-node',
         company: 'Aliyun'
       }, {
@@ -137,6 +150,7 @@ export default class Index extends Component {
         name: 'Fraser Xu',
         avatar: '/assets/images/speakers/fraserxu.jpg',
         title: 'Learning design patterns from modern JavaScript frameworks',
+        slide: null,
         social: 'https://github.com/fraserxu',
         company: 'Envato'
       }, {
@@ -147,6 +161,7 @@ export default class Index extends Component {
         name: '徐达峰',
         avatar: '/assets/images/speakers/xudafeng.jpg',
         title: '面向未来的自动化测试-Macaca',
+        slide: null,
         social: 'https://github.com/xudafeng',
         company: 'Alipay'
       }, {
@@ -154,6 +169,7 @@ export default class Index extends Component {
         name: 'Ben Lesh',
         avatar: '/assets/images/speakers/ben-lesh.jpg',
         title: 'Managing Async with RxJS 5 at Netflix',
+        slide: null,
         social: 'https://github.com/blesh',
         company: 'Netflix'
       }, {
@@ -167,6 +183,7 @@ export default class Index extends Component {
         name: '梁伟盛',
         avatar: '/assets/images/speakers/dasheng.jpg',
         title: '移动海量服务下基于React的高性能同构实践',
+        slide: null,
         social: '/',
         company: 'Tencent Now 直播'
       }, {
@@ -174,6 +191,7 @@ export default class Index extends Component {
         name: 'Peter Liu',
         avatar: '/assets/images/speakers/peter.png',
         title: 'Build a Better App with Mapbox',
+        slide: null,
         social: 'https://github.com/peterqliu',
         company: 'Mapbox'
       }, {
@@ -184,6 +202,7 @@ export default class Index extends Component {
         name: '王龑',
         avatar: '/assets/images/speakers/wangyan.png',
         title: '前端 DevOps 实践',
+        slide: null,
         social: 'https://github.com/wyvernnot',
         company: 'OneAPM'
       }, {
@@ -191,6 +210,7 @@ export default class Index extends Component {
         name: 'Guillaume',
         avatar: '/assets/images/speakers/guillaume.jpeg',
         title: 'Using nodejs to count 30 billion requests per day',
+        slide: null,
         social: 'https://github.com/Doweig',
         company: 'Goyoo Networks'
       }, {
