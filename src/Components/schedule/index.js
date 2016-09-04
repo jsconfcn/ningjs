@@ -34,7 +34,8 @@ export default class Index extends Component {
         time: '11:00',
         name: '天猪',
         avatar: '/assets/images/speakers/tianzhu.png',
-        title: '阿里node 团队开源项目，企业级框架EGG',
+        title: 'egg - 企业级 node 框架',
+        slide: 'https://github.com/atian25/blog/blob/master/assets/files/egg%20-%20JSConf%20China%202016.pdf',
         social: 'https://github.com/eggjs',
         company: 'Alibaba UC Group'
       }, {
