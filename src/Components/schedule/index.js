@@ -64,7 +64,7 @@ export default class Index extends Component {
         name: '罗诗亚',
         avatar: '/assets/images/speakers/luoshiya.png',
         title: '3D on the Web',
-        slide: null,
+        slide: 'http://www.shiyaluo.com/slidedecks/jsconf-china-2016/',
         social: 'https://github.com/shiya',
         company: 'Autodesk'
       }, {
