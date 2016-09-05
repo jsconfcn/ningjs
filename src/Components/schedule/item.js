@@ -4,7 +4,7 @@ import 'styles/speakers/style.scss'
 class Article extends Component {
 
   render() {
-    const { __, name, avatar, title, desc, social, company } = this.props
+    const { __, name, avatar, title, slide, desc, social, company } = this.props
     const avatarEl = avatar ? <div className='avatar'><img src={avatar} /></div> : null
     const companyEL = company ? <h5>{company}</h5> : null
     const nameEl = name ? <div><a href={social}>{name}</a></div> : null
@@ -12,7 +12,7 @@ class Article extends Component {
       <article>
         { avatarEl }
         <div className='content'>
-          <h3>{__(title)}</h3>
+          <a className='title' href={slide || '#'} title={__(title)}>{__(title)}</a>
           <p>{__(desc)}</p>
           { nameEl }
           { companyEL }
