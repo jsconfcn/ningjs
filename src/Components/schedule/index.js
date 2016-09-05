@@ -78,7 +78,6 @@ export default class Index extends Component {
         name: 'Kevin Ngo',
         avatar: '/assets/images/speakers/kevin.jpg',
         title: 'Building Virtual Reality on the Web',
-        slide: null,
         social: 'https://github.com/ngokevin',
         slide: 'https://ngokevin.github.io/ningjs-presentation/',
         company: 'Mozilla (Firefox)'
