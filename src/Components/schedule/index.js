@@ -56,7 +56,7 @@ export default class Index extends Component {
         name: 'Alexandre Strzelewicz',
         avatar: '/assets/images/speakers/alexandre.png',
         title: 'GridControl: Networked PM2 for Microservices applications',
-        slide: null,
+        slide: 'https://github.com/jsconfcn/ningjs/raw/master/slides/GridControl_NingJS.pdf',
         social: 'https://github.com/Unitech',
         company: 'PM2'
       }, {
@@ -102,12 +102,6 @@ export default class Index extends Component {
         company: 'Wiredcraft'
       }, {
         time: '16:50',
-        name: 'Ryan Day',
-        avatar: '/assets/images/speakers/ryan.png',
-        title: 'Npm install food',
-        slide: null,
-        social: 'https://github.com/soldair',
-        company: 'NPM'
       }, {
         time: '17:20',
         title: 'Raffle'
@@ -123,17 +117,17 @@ export default class Index extends Component {
         name: '孙坤鹏',
         avatar: '/assets/images/speakers/sunkunpeng.jpg',
         title: '单页应用“联邦制”实践',
-        slide: null,
+        slide: 'https://github.com/jsconfcn/ningjs/files/454959/UCloud.pdf',
         social: 'http://weibo.com/u/3275479734',
         company: 'UCloud'
       }, {
         time: '10:15',
-        name: 'Kenneth Auchenberg',
-        avatar: '/assets/images/speakers/kenneth.png',
-        title: 'DevTools for the Progressive Web',
-        slide: null,
-        social: 'https://kenneth.io',
-        company: 'Microsoft'
+        name: '王龑',
+        avatar: '/assets/images/speakers/wangyan.png',
+        title: '前端 DevOps 实践',
+        slide: 'https://c.oneapm.com/slides/frontend_devops_at_cloudinsight.pptx',
+        social: 'https://github.com/wyvernnot',
+        company: 'OneAPM'
       }, {
         time: '10:45',
         title: 'Break'
@@ -142,7 +136,7 @@ export default class Index extends Component {
         name: '朴灵',
         avatar: '//2015.jsconf.cn/images/speakers/2.jpg',
         title: 'Node.js在线性能调优与故障排查',
-        slide: null,
+        slide: 'https://github.com/JacksonTian/jsconfcn2016',
         social: 'https://github.com/aliyun-node',
         company: 'Aliyun'
       }, {
@@ -150,7 +144,7 @@ export default class Index extends Component {
         name: 'Fraser Xu',
         avatar: '/assets/images/speakers/fraserxu.jpg',
         title: 'Learning design patterns from modern JavaScript frameworks',
-        slide: null,
+        slide: 'https://github.com/fraserxu/jsconf-china-2016-talk',
         social: 'https://github.com/fraserxu',
         company: 'Envato'
       }, {
@@ -178,7 +172,7 @@ export default class Index extends Component {
       }, {
         time: '14:40',
         title: 'Lightning Talk'
-      },{
+      }, {
         time: '15:10',
         name: '梁伟盛',
         avatar: '/assets/images/speakers/dasheng.jpg',
@@ -199,18 +193,18 @@ export default class Index extends Component {
         title: 'Break'
       }, {
         time: '16:20',
-        name: '王龑',
-        avatar: '/assets/images/speakers/wangyan.png',
-        title: '前端 DevOps 实践',
-        slide: 'https://c.oneapm.com/slides/frontend_devops_at_cloudinsight.pptx',
-        social: 'https://github.com/wyvernnot',
-        company: 'OneAPM'
+        name: 'Kenneth Auchenberg',
+        avatar: '/assets/images/speakers/kenneth.png',
+        title: 'DevTools for the Progressive Web',
+        slide: null,
+        social: 'https://kenneth.io',
+        company: 'Microsoft'
       }, {
         time: '16:50',
         name: 'Guillaume',
         avatar: '/assets/images/speakers/guillaume.jpeg',
         title: 'Using nodejs to count 30 billion requests per day',
-        slide: 'https://github.com/Goyoo/ningjs/blob/master/docs/slides.pdf',
+        slide: 'https://github.com/Goyoo/ningjs',
         social: 'https://github.com/Doweig',
         company: 'Goyoo Networks'
       }, {
