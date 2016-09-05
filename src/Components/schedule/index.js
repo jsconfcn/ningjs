@@ -45,7 +45,7 @@ export default class Index extends Component {
         name: '严清',
         avatar: '/assets/images/speakers/yanqing.jpg',
         title: '聊聊 JS 测试框架',
-        slide: null,
+        slide: 'https://github.com/zensh/slides/tree/gh-pages/2016test-framework',
         social: 'https://github.com/zensh',
         company: 'Teambition'
       }, {
@@ -78,7 +78,6 @@ export default class Index extends Component {
         name: 'Kevin Ngo',
         avatar: '/assets/images/speakers/kevin.jpg',
         title: 'Building Virtual Reality on the Web',
-        slide: null,
         social: 'https://github.com/ngokevin',
         slide: 'https://ngokevin.github.io/ningjs-presentation/',
         company: 'Mozilla (Firefox)'
@@ -162,7 +161,7 @@ export default class Index extends Component {
         name: '徐达峰',
         avatar: '/assets/images/speakers/xudafeng.jpg',
         title: '面向未来的自动化测试-Macaca',
-        slide: null,
+        slide: 'https://xudafeng.github.io/slide/archives/ningjs/',
         social: 'https://github.com/xudafeng',
         company: 'Alipay'
       }, {
