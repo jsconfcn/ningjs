@@ -95,8 +95,8 @@ export default class Index extends Component {
       }, {
         time: '16:20',
         name: 'Makara Wang',
-        title: 'Building asynchronous microservices that get along',
-        slide: null,
+        title: 'Building asynchronous micro-services that get along',
+        slide: 'https://github.com/jsconfcn/ningjs/raw/master/slides/NingJS_Building_Async_Microservices.pdf',
         avatar: '/assets/images/speakers/makara.jpg',
         social: 'https://github.com/makara',
         company: 'Wiredcraft'
