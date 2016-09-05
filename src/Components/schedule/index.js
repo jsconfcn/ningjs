@@ -202,7 +202,7 @@ export default class Index extends Component {
         name: '王龑',
         avatar: '/assets/images/speakers/wangyan.png',
         title: '前端 DevOps 实践',
-        slide: null,
+        slide: 'https://c.oneapm.com/slides/frontend_devops_at_cloudinsight.pptx',
         social: 'https://github.com/wyvernnot',
         company: 'OneAPM'
       }, {
