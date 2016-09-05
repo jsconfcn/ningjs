@@ -210,7 +210,7 @@ export default class Index extends Component {
         name: 'Guillaume',
         avatar: '/assets/images/speakers/guillaume.jpeg',
         title: 'Using nodejs to count 30 billion requests per day',
-        slide: null,
+        slide: 'https://github.com/Goyoo/ningjs/blob/master/docs/slides.pdf',
         social: 'https://github.com/Doweig',
         company: 'Goyoo Networks'
       }, {
