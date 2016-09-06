@@ -177,7 +177,7 @@ export default class Index extends Component {
         name: '梁伟盛',
         avatar: '/assets/images/speakers/dasheng.jpg',
         title: '移动海量服务下基于React的高性能同构实践',
-        slide: null,
+        slide: 'https://github.com/jsconfcn/ningjs/files/455791/React.pdf',
         social: '/',
         company: 'Tencent Now 直播'
       }, {
