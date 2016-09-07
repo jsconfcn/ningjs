@@ -86,7 +86,7 @@ export default class Index extends Component {
         name: '郭达峰',
         avatar: '/assets/images/speakers/guodafeng.png',
         title: 'Building a Unified Frontend and Mobile Team',
-        slide: null,
+        slide: 'https://github.com/dfguo/talks/raw/master/ningjs2016/unified-client.pdf',
         social: 'https://github.com/dfguo',
         company: 'Strikingly'
       }, {
