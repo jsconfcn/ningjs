@@ -28,6 +28,7 @@ export default {
   tickets: '购票',
   buy_tickets: '购票参会',
   sold_out: '售罄',
+  Videos: '视频回放',
 
   Gold: '金牌赞助商',
   Silver: '银牌赞助商',
