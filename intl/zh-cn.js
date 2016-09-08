@@ -120,6 +120,7 @@ export default {
   <h4>许可证</h4>
   <p>这份行为准则借鉴自Ada Initiative和其他志愿者创建的Geek Feminism wiki示例政策，遵守Creative Commons Zero许可证。</p>`,
 
-  Schedule: '日程'
+  Schedule: '日程',
+  'SLIDE DOWNLOAD': '下载讲义'
 
 }
