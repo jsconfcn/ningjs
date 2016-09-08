@@ -19,8 +19,9 @@ export default class Index extends Component {
         name: 'Evan You',
         avatar: '/assets/images/speakers/evan-you.jpg',
         title: 'Vue.js: the Past and the Future',
-        slide: null,
-        social: 'https://github.com/yyx990803'
+        slide: 'https://github.com/jsconfcn/ningjs/files/461401/Vue.js.NingJS.2016.pdf',
+        social: 'https://github.com/yyx990803',
+        company: 'Author Of Vue.JS'
       }, {
         time: '10:15',
         name: 'James Kyle',

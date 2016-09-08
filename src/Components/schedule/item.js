@@ -1,21 +1,36 @@
 import React, { Component } from 'react'
 import 'styles/speakers/style.scss'
 
+class Avatar extends Component {
+  render() {
+    const {avatar, name, company, social } = this.props;
+    if (!name) {
+      return null
+    }
+    return (
+      <div className='info'>
+        <div className='avatar'><img src={avatar} alt={name}/></div>
+        <div>
+          <a href={social} title={name}>{name}</a>
+          <h5>{company}</h5>
+        </div>
+      </div>
+    )
+  }
+}
+
 class Article extends Component {
 
   render() {
     const { __, name, avatar, title, slide, desc, social, company } = this.props
-    const avatarEl = avatar ? <div className='avatar'><img src={avatar} /></div> : null
-    const companyEL = company ? <h5>{company}</h5> : null
-    const nameEl = name ? <div><a href={social}>{name}</a></div> : null
+    const slideLink = slide ? (<div><a className='slide' href={slide} title={slide}>{__('SLIDE DOWNLOAD')}</a></div>) : null
     return (
       <article>
-        { avatarEl }
+        <Avatar {...{avatar, name, company, social}} />
         <div className='content'>
-          <a className='title' href={slide || '#'} title={__(title)}>{__(title)}</a>
+          <span className='title'>{__(title)}</span>
           <p>{__(desc)}</p>
-          { nameEl }
-          { companyEL }
+          {slideLink}
         </div>
       </article>
     )
