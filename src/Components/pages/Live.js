@@ -84,7 +84,7 @@ export default class Live extends Component {
                 className='video-js vjs-default-skin'
                 controls
                 preload='auto'
-                poster=''>
+                poster='http://ningjs2.ufile.ucloud.com.cn/backgroud.jpg'>
                 <source src={video.url} type='video/mp4' />
               </video>
             </div>
