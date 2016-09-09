@@ -17,13 +17,15 @@ export default class Live extends Component {
       selected: 0,
       videos: [{
         name: '2016-09-03 Morning',
-        url: 'http://ningjs.cn-bj.ufileos.com/2016-09-03-Morning.mp4'
+        url: 'http://ningjs2.ufile.ucloud.com.cn/2016-09-03-Morning.mp4'
       }, {
-        name: '2016-09-03 Afternoon'
+        name: '2016-09-03 Afternoon',
+        url: 'http://ningjs2.ufile.ucloud.com.cn/2016-09-03-Afternoon.mp4'
       }, {
         name: '2016-09-04 Morning'
       }, {
-        name: '2016-09-04 Afternoon'
+        name: '2016-09-04 Afternoon',
+        url: 'http://ningjs2.ufile.ucloud.com.cn/2016-09-04-Afternoon.mp4'
       }]
     }
   }
@@ -37,10 +39,13 @@ export default class Live extends Component {
   onSelectVideo(i, e) {
     e.preventDefault();
     e.stopPropagation();
-
-    this.setState({
-      selected: i
+    const { videos } = this.state;
+    var player = videojs.getPlayers()['ningjs_live']
+    player.src({
+      type: 'video/mp4',
+      src: videos[i].url
     })
+    player.play()
   }
 
   render() {
@@ -69,6 +74,7 @@ export default class Live extends Component {
                     )
                   })
                 }
+                <li><span>{__('Thanks UCloud Support CDN Service.')}</span></li>
               </ul>
             </div>
             <div className='box'>
