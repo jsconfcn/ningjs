@@ -197,7 +197,7 @@ export default class Index extends Component {
         name: 'Kenneth Auchenberg',
         avatar: '/assets/images/speakers/kenneth.png',
         title: 'DevTools for the Progressive Web',
-        slide: null,
+        slide: 'https://speakerdeck.com/auchenberg/jsconf-china-2016-devtools-for-the-progressive-web',
         social: 'https://kenneth.io',
         company: 'Microsoft'
       }, {
