@@ -16,13 +16,17 @@ export default class Live extends Component {
     this.state = {
       selected: 0,
       videos: [{
+        name: '2016-09-03-Intro-Session',
+        url: 'http://ningjs2.ufile.ucloud.com.cn/2016-09-03-Intro-Session.mp4'
+      }, {
         name: '2016-09-03 Morning',
         url: 'http://ningjs2.ufile.ucloud.com.cn/2016-09-03-Morning.mp4'
       }, {
         name: '2016-09-03 Afternoon',
         url: 'http://ningjs2.ufile.ucloud.com.cn/2016-09-03-Afternoon.mp4'
       }, {
-        name: '2016-09-04 Morning'
+        name: '2016-09-04 Morning',
+        url: 'http://ningjs2.ufile.ucloud.com.cn/2016-09-04-Morning.mp4'
       }, {
         name: '2016-09-04 Afternoon',
         url: 'http://ningjs2.ufile.ucloud.com.cn/2016-09-04-Afternoon.mp4'
