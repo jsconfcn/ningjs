@@ -80,7 +80,7 @@ export default class NavTab extends Component {
             {__('location')}
           </Link>
           <Link onClick={this.scrollToLocation}
-            to={{ pathname: '/live', query }} >
+            to={{ pathname: '/videos', query }} >
             {__('Videos')}
           </Link>
           <Link onClick={this.scrollToAbout}
