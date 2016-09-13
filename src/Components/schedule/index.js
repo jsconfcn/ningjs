@@ -164,7 +164,7 @@ export default class Index extends Component {
         name: 'Ben Lesh',
         avatar: '/assets/images/speakers/ben-lesh.jpg',
         title: 'Managing Async with RxJS 5 at Netflix',
-        slide: null,
+        slide: 'https://github.com/jsconfcn/ningjs/files/468680/JSConf.China.2016.-.RxJS.pptx',
         social: 'https://github.com/blesh',
         company: 'Netflix'
       }, {
