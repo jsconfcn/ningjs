@@ -38,8 +38,8 @@ export default class Footer extends Component {
            <span>Built by</span> <a href='http://wiredcraft.com'>Wiredcraft</a> <span>with &hearts;</span>
            <div>
              <Link to={{ pathname: '/coc', query }} onClick={() => pageScrollTopAnimate(0, 300)} > Code Of Conduct </Link>
-             <a href="http://jsconf.cn" target="new">JSConf.cn</a>
-             <a href="mailto:support@jsconf.cn">Media Contact</a>
+             <a href="http://jsconfchina.com" target="new">JSConf China</a>
+             <a href="mailto:support@jsconfchina.com">Media Contact</a>
              <a href="https://creativecommons.org/licenses/by/3.0/" target="new">CCA 3.0 License</a>
            </div>
          </div>

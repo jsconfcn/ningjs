@@ -61,25 +61,25 @@ export default class Home extends Component {
               <ul>
                 <li>
                   <span className='year'>2012</span>
-                  <span className='title'><a href='http://2012.jsconf.cn' target='new'>{__('HuJS @ Shanghai')}</a></span>
+                  <span className='title'><a href='http://2012.jsconfchina.com' target='new'>{__('HuJS @ Shanghai')}</a></span>
                   <span className='progress'></span>
                   <span className='number'>237</span>
                 </li>
                 <li>
                   <span className='year'>2013</span>
-                  <span className='title'><a href='http://2013.jsconf.cn' target='new'>{__('JingJS @ Beijing')}</a></span>
+                  <span className='title'><a href='http://2013.jsconfchina.com' target='new'>{__('JingJS @ Beijing')}</a></span>
                   <span className='progress'></span>
                   <span className='number'>318</span>
                 </li>
                 <li>
                   <span className='year'>2014</span>
-                  <span className='title'><a href='http://2014.jsconf.cn' target='new'>{__('HangJS @ Hangzhou')}</a></span>
+                  <span className='title'><a href='http://2014.jsconfchina.com' target='new'>{__('HangJS @ Hangzhou')}</a></span>
                   <span className='progress'></span>
                   <span className='number'>525</span>
                 </li>
                 <li>
                   <span className='year'>2015</span>
-                  <span className='title'><a href='http://2015.jsconf.cn' target='new'>{__('ShenJS @ Shenzhen')}</a></span>
+                  <span className='title'><a href='http://2015.jsconfchina.com' target='new'>{__('ShenJS @ Shenzhen')}</a></span>
                   <span className='progress'></span>
                   <span className='number'>650</span>
                 </li>
@@ -142,7 +142,7 @@ export default class Home extends Component {
           <div className='wrapper'>
             <h2>{__('JSConf 2015 @ Shenzhen')}</h2>
             <p dangerouslySetInnerHTML={{__html:__('take_a_look_intro')}}></p>
-            <a href='http://2015.jsconf.cn' target='new'>{__('take_a_look')} &gt;</a>
+            <a href='http://2015.jsconfchina.com' target='new'>{__('take_a_look')} &gt;</a>
           </div>
         </section>
       </div>

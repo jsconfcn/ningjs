@@ -135,7 +135,7 @@ export default class Index extends Component {
       }, {
         time: '11:00',
         name: '朴灵',
-        avatar: '//2015.jsconf.cn/images/speakers/2.jpg',
+        avatar: '//2015.jsconfchina.com/images/speakers/2.jpg',
         title: 'Node.js在线性能调优与故障排查',
         slide: 'https://github.com/JacksonTian/jsconfcn2016',
         social: 'https://github.com/aliyun-node',

@@ -7,7 +7,7 @@
     "test": "node -v",
     "dev": "webpack-dev-server --devtool eval --colors --content-base build --port 3000",
     "dist": "webpack --config webpack.config.prod.js",
-    "predeploy": "npm run dist && echo \"2016.jsconf.cn\" > build/CNAME",
+    "predeploy": "npm run dist && echo \"2016.jsconfchina.com\" > build/CNAME",
     "deploy": "gh-pages --dist build"
   },
   "repository": {
